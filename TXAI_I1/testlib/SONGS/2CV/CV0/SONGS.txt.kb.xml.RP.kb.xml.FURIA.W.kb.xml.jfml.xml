@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fuzzySystem xmlns="http://www.ieee1855.org" name="SONGS">
+    <knowledgeBase>
+        <fuzzyVariable name="acoustics" scale="" domainleft="0.0" domainright="0.99" type="input">
+            <fuzzyTerm name="MF0" complement="false">
+                <trapezoidShape param1="0.01" param2="0.013" param3="0.99" param4="0.99"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF1" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.136" param4="0.139"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF2" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.516" param4="0.519"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="danceability" scale="" domainleft="0.12" domainright="0.98" type="input">
+            <fuzzyTerm name="MF0" complement="false">
+                <trapezoidShape param1="0.12" param2="0.12" param3="0.68" param4="0.706"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF1" complement="false">
+                <trapezoidShape param1="0.12" param2="0.12" param3="0.77" param4="0.771"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF2" complement="false">
+                <trapezoidShape param1="0.447" param2="0.485" param3="0.827" param4="0.828"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF3" complement="false">
+                <trapezoidShape param1="0.602" param2="0.603" param3="0.98" param4="0.98"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF4" complement="false">
+                <trapezoidShape param1="0.732" param2="0.735" param3="0.98" param4="0.98"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF5" complement="false">
+                <trapezoidShape param1="0.12" param2="0.12" param3="0.535" param4="0.555"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="duration" scale="" domainleft="16042.0" domainright="1004627.0" type="input">
+            <fuzzyTerm name="MF0" complement="false">
+                <trapezoidShape param1="16042.0" param2="16042.0" param3="212701.0" param4="212712.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF1" complement="false">
+                <trapezoidShape param1="245053.0" param2="246823.0" param3="1004627.0" param4="1004627.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF2" complement="false">
+                <trapezoidShape param1="204960.0" param2="204992.0" param3="1004627.0" param4="1004627.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF3" complement="false">
+                <trapezoidShape param1="16042.0" param2="16042.0" param3="202710.0" param4="203992.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="energy" scale="" domainleft="0.01" domainright="1.0" type="input">
+            <fuzzyTerm name="MF0" complement="false">
+                <trapezoidShape param1="0.95" param2="0.951" param3="1.0" param4="1.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF1" complement="false">
+                <trapezoidShape param1="0.01" param2="0.01" param3="0.249" param4="0.265"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF2" complement="false">
+                <trapezoidShape param1="0.489" param2="0.504" param3="1.0" param4="1.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF3" complement="false">
+                <trapezoidShape param1="0.249" param2="0.313" param3="1.0" param4="1.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="instrumentalness" scale="" domainleft="0.0" domainright="0.98" type="input">
+            <fuzzyTerm name="MF0" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.0" param4="0.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF1" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.001" param4="0.001"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF2" complement="false">
+                <trapezoidShape param1="0.053" param2="0.069" param3="0.98" param4="0.98"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF3" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.98" param4="0.98"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF4" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.98" param4="0.98"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF5" complement="false">
+                <trapezoidShape param1="0.016" param2="0.024" param3="0.98" param4="0.98"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF6" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.98" param4="0.98"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF7" complement="false">
+                <trapezoidShape param1="0.001" param2="0.001" param3="0.98" param4="0.98"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="key" scale="" domainleft="0.0" domainright="11.0" type="input">
+            <fuzzyTerm name="MF0" complement="false">
+                <trapezoidShape param1="8.0" param2="9.0" param3="11.0" param4="11.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="liveness" scale="" domainleft="0.02" domainright="0.97" type="input">
+            <fuzzyTerm name="MF0" complement="false">
+                <trapezoidShape param1="0.116" param2="0.12" param3="0.97" param4="0.97"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF1" complement="false">
+                <trapezoidShape param1="0.118" param2="0.122" param3="0.97" param4="0.97"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF2" complement="false">
+                <trapezoidShape param1="0.111" param2="0.113" param3="0.97" param4="0.97"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF3" complement="false">
+                <trapezoidShape param1="0.02" param2="0.02" param3="0.105" param4="0.106"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="loudness" scale="" domainleft="-33.1" domainright="-0.31" type="input">
+            <fuzzyTerm name="MF0" complement="false">
+                <trapezoidShape param1="-5.605" param2="-5.594" param3="-0.31" param4="-0.31"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF1" complement="false">
+                <trapezoidShape param1="-6.101" param2="-5.594" param3="-0.31" param4="-0.31"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF2" complement="false">
+                <trapezoidShape param1="-5.784" param2="-5.758" param3="-0.31" param4="-0.31"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF3" complement="false">
+                <trapezoidShape param1="-33.1" param2="-33.1" param3="-5.065" param4="-4.749"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF4" complement="false">
+                <trapezoidShape param1="-33.1" param2="-33.1" param3="-6.884" param4="-6.532"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF5" complement="false">
+                <trapezoidShape param1="-33.1" param2="-33.1" param3="-6.193" param4="-5.474"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF6" complement="false">
+                <trapezoidShape param1="-33.1" param2="-33.1" param3="-6.339" param4="-6.252"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="mode" scale="" domainleft="0.0" domainright="1.0" type="input"/>
+        <fuzzyVariable name="speechiness" scale="" domainleft="0.02" domainright="0.82" type="input">
+            <fuzzyTerm name="MF0" complement="false">
+                <trapezoidShape param1="0.02" param2="0.02" param3="0.058" param4="0.059"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF1" complement="false">
+                <trapezoidShape param1="0.047" param2="0.047" param3="0.82" param4="0.82"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF2" complement="false">
+                <trapezoidShape param1="0.058" param2="0.058" param3="0.82" param4="0.82"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF3" complement="false">
+                <trapezoidShape param1="0.216" param2="0.235" param3="0.82" param4="0.82"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF4" complement="false">
+                <trapezoidShape param1="0.051" param2="0.051" param3="0.82" param4="0.82"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="tempo" scale="" domainleft="47.86" domainright="219.33" type="input">
+            <fuzzyTerm name="MF0" complement="false">
+                <trapezoidShape param1="107.024" param2="109.982" param3="219.33" param4="219.33"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="timeSignature" scale="" domainleft="1.0" domainright="5.0" type="input"/>
+        <fuzzyVariable name="valence" scale="" domainleft="0.03" domainright="0.99" type="input">
+            <fuzzyTerm name="MF0" complement="false">
+                <trapezoidShape param1="0.03" param2="0.03" param3="0.623" param4="0.64"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF1" complement="false">
+                <trapezoidShape param1="0.378" param2="0.391" param3="0.99" param4="0.99"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF2" complement="false">
+                <trapezoidShape param1="0.461" param2="0.464" param3="0.99" param4="0.99"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="MF3" complement="false">
+                <trapezoidShape param1="0.372" param2="0.381" param3="0.99" param4="0.99"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="like" scale="" domainleft="1.0" domainright="2.0" type="output" accumulation="MAX" defuzzifier="MOM" defaultValue="1.0">
+            <fuzzyTerm name="1.0" complement="false">
+                <trapezoidShape param1="1.0" param2="1.0" param3="1.0" param4="2.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="2.0" complement="false">
+                <trapezoidShape param1="1.0" param2="2.0" param3="2.0" param4="2.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+    </knowledgeBase>
+    <mamdaniRuleBase name="rulebase-SONGS" activationMethod="MIN" andMethod="MIN" orMethod="MAX">
+        <rule name="rule1" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>MF0</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>MF0</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule2" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>loudness</variable>
+                    <term>MF0</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>MF0</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule3" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>MF0</term>
+                </clause>
+                <clause>
+                    <variable>loudness</variable>
+                    <term>MF1</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>MF0</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule4" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>MF1</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule5" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>MF0</term>
+                </clause>
+                <clause>
+                    <variable>loudness</variable>
+                    <term>MF2</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>MF1</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule6" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>duration</variable>
+                    <term>MF1</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>MF2</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>MF1</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule7" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>MF1</term>
+                </clause>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>MF1</term>
+                </clause>
+                <clause>
+                    <variable>liveness</variable>
+                    <term>MF0</term>
+                </clause>
+                <clause>
+                    <variable>loudness</variable>
+                    <term>MF3</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>MF3</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>MF2</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule8" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>MF2</term>
+                </clause>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>MF2</term>
+                </clause>
+                <clause>
+                    <variable>loudness</variable>
+                    <term>MF4</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>MF4</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule9" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>MF3</term>
+                </clause>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>MF3</term>
+                </clause>
+                <clause>
+                    <variable>liveness</variable>
+                    <term>MF1</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>MF2</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule10" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>acoustics</variable>
+                    <term>MF0</term>
+                </clause>
+                <clause>
+                    <variable>liveness</variable>
+                    <term>MF2</term>
+                </clause>
+                <clause>
+                    <variable>loudness</variable>
+                    <term>MF5</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>MF3</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>MF5</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule11" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>acoustics</variable>
+                    <term>MF1</term>
+                </clause>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>MF4</term>
+                </clause>
+                <clause>
+                    <variable>tempo</variable>
+                    <term>MF0</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>MF2</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule12" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>acoustics</variable>
+                    <term>MF2</term>
+                </clause>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>MF4</term>
+                </clause>
+                <clause>
+                    <variable>loudness</variable>
+                    <term>MF6</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>MF3</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule13" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>key</variable>
+                    <term>MF0</term>
+                </clause>
+                <clause>
+                    <variable>liveness</variable>
+                    <term>MF3</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>MF6</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule14" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>MF5</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>MF7</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>MF3</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+    </mamdaniRuleBase>
+</fuzzySystem>

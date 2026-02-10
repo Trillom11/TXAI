@@ -1,0 +1,85 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=3
+Noutputs=1
+Nrules=13
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='Color'
+Range=[   0.000,   45.000]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   0.000,   3.258,   9.905]
+MF2='low','triangular',[   3.258,   9.905,   17.096]
+MF3='average low','triangular',[   9.905,   17.096,   27.571]
+MF4='average high','triangular',[   17.096,   27.571,   34.769]
+MF5='high OR very high','SemiTrapezoidalSup',[   27.571,   34.769,   45.000]
+
+
+[Input2]
+Active='yes'
+Name='Bitterness'
+Range=[   8.000,   250.000]
+NMFs=9
+MF1='very low','SemiTrapezoidalInf',[   8.000,   22.007,   36.664]
+MF2='low','triangular',[   22.007,   36.664,   73.512]
+MF3='average low','triangular',[   36.664,   73.512,   101.976]
+MF4='average high','triangular',[   73.512,   101.976,   201.600]
+MF5='high','triangular',[   101.976,   201.600,   250.000]
+MF6='very high','SemiTrapezoidalSup',[   201.600,   250.000,   250.000]
+MF7='(low) OR (average low) OR (average high)','trapezoidal',[   22.007,   36.664,   101.976,   201.600]
+MF8='(average low) OR (average high)','trapezoidal',[   36.664,   73.512,   101.976,   201.600]
+MF9='(very low) OR (low)','SemiTrapezoidalInf',[   8.000,   36.664,   73.512]
+
+
+[Input3]
+Active='yes'
+Name='Strength'
+Range=[   0.039,   0.136]
+NMFs=10
+MF1='very low','SemiTrapezoidalInf',[   0.039,   0.047,   0.054]
+MF2='low','triangular',[   0.047,   0.054,   0.079]
+MF3='average low','triangular',[   0.054,   0.079,   0.092]
+MF4='average high','triangular',[   0.079,   0.092,   0.104]
+MF5='high','triangular',[   0.092,   0.104,   0.122]
+MF6='very high','SemiTrapezoidalSup',[   0.104,   0.122,   0.136]
+MF7='(average high) OR (high) OR (very high)','SemiTrapezoidalSup',[   0.079,   0.092,   0.136]
+MF8='(very low) OR (low) OR (average low)','SemiTrapezoidalInf',[   0.039,   0.079,   0.092]
+MF9='(very low) OR (low)','SemiTrapezoidalInf',[   0.039,   0.054,   0.079]
+MF10='(average low) OR (average high) OR (high) OR (very high)','SemiTrapezoidalSup',[   0.054,   0.079,   0.136]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='Class'
+Range=[   1.000,   8.000]
+NMFs=0
+
+[Rules]
+3, 7, 7,    6.000, 
+3, 8, 3,    6.000, 
+2, 4, 4,    6.000, 
+5, 9, 8,    5.000, 
+1, 2, 8,    3.000, 
+2, 7, 3,    4.000, 
+3, 2, 3,    4.000, 
+2, 6, 3,    4.000, 
+4, 1, 9,    7.000, 
+2, 9, 9,    2.000, 
+4, 2, 10,    8.000, 
+3, 1, 5,    8.000, 
+1, 1, 9,    1.000, 
+
+[Exceptions]
+

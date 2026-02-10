@@ -1,0 +1,191 @@
+{
+  "dataset" : "BEER",
+  "attributes" : [ {
+    "type" : "numericAtt",
+    "id" : "Color",
+    "name" : "Color",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Pale",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 3.0
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Straw",
+      "id" : 1,
+      "interval" : {
+        "left" : 3.0,
+        "right" : 7.5
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Amber",
+      "id" : 2,
+      "interval" : {
+        "left" : 7.5,
+        "right" : 19.0
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Brown",
+      "id" : 3,
+      "interval" : {
+        "left" : 19.0,
+        "right" : 29.0
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Black",
+      "id" : 4,
+      "interval" : {
+        "left" : 29.0,
+        "right" : 45.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.0,
+      "right" : 45.0
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 45.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Bitterness",
+    "name" : "Bitterness",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 8.0,
+        "right" : 21.0
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Low-medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 21.0,
+        "right" : 32.5
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium-high",
+      "id" : 2,
+      "interval" : {
+        "left" : 32.5,
+        "right" : 47.5
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 3,
+      "interval" : {
+        "left" : 47.5,
+        "right" : 250.0
+      }
+    } ],
+    "interval" : {
+      "left" : 8.0,
+      "right" : 250.0
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Strength",
+    "name" : "Strength",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Session",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.039,
+        "right" : 0.0525
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Standard",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.0525,
+        "right" : 0.0675
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.0675,
+        "right" : 0.09
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Very-high",
+      "id" : 3,
+      "interval" : {
+        "left" : 0.09,
+        "right" : 0.136
+      }
+    } ],
+    "interval" : {
+      "left" : 0.039,
+      "right" : 0.136
+    },
+    "intervalNormalized" : {
+      "left" : 0.039,
+      "right" : 0.136
+    },
+    "value" : 0.0
+  } ],
+  "consequents" : [ {
+    "matrixPosition" : 1,
+    "id" : "1.0",
+    "name" : "Blanche",
+    "percentageNode" : 0.0
+  }, {
+    "matrixPosition" : 2,
+    "id" : "2.0",
+    "name" : "Lager",
+    "percentageNode" : 0.0
+  }, {
+    "matrixPosition" : 3,
+    "id" : "3.0",
+    "name" : "Pilsner",
+    "percentageNode" : 0.0
+  }, {
+    "matrixPosition" : 4,
+    "id" : "4.0",
+    "name" : "IPA",
+    "percentageNode" : 0.0
+  }, {
+    "matrixPosition" : 5,
+    "id" : "5.0",
+    "name" : "Stout",
+    "percentageNode" : 0.0
+  }, {
+    "matrixPosition" : 6,
+    "id" : "6.0",
+    "name" : "Barleywine",
+    "percentageNode" : 0.0
+  }, {
+    "matrixPosition" : 7,
+    "id" : "7.0",
+    "name" : "Porter",
+    "percentageNode" : 0.0
+  }, {
+    "matrixPosition" : 8,
+    "id" : "8.0",
+    "name" : "Belgian-Strong-Ale",
+    "percentageNode" : 0.0
+  } ]
+}

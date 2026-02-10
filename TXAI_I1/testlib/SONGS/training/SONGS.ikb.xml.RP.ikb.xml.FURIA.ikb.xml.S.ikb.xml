@@ -1,0 +1,54 @@
+<ConfigurationFile>
+<Expert>
+<ExpertFile value="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\SONGS.txt.kb.xml.RP.kb.xml.FURIA.kb.xml.S.kb.xml">
+</ExpertFile>
+<Conjunction value="min">
+</Conjunction>
+<Outputs>
+<Output1 Disjunction="max" Defuzzification="area">
+</Output1>
+</Outputs>
+</Expert>
+<Data>
+<OrigDataFile value="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\SONGS.txt.aux.S.txt">
+</OrigDataFile>
+<VariableNames value="no">
+</VariableNames>
+<SelectedVariables value="0, 1">
+</SelectedVariables>
+<DataFile value="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\SONGS.txt.aux.S.txt">
+</DataFile>
+<DataVariableCount value="2">
+</DataVariableCount>
+<Variable1 Name="Variable1" Type="numerical" LowerRange="0.000" UpperRange="0.995" Labels="3" Output="false">
+</Variable1>
+<Variable2 Name="Variable14" Type="logical" LowerRange="1.000" UpperRange="2.000" Labels="2" Output="true">
+</Variable2>
+</Data>
+<Context Problem="New Problem" Inputs="0" Classification="yes" OutputLabels="2">
+</Context>
+<Interpretability>
+<KB1 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\KBint1.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB1>
+<KB2 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\KBint211.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB2>
+<KB3 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\KBint212.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB3>
+<KB4 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\KBint213.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB4>
+<KB5 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\KBint221.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB5>
+<KB6 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\KBint222.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB6>
+<KB7 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\KBint223.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB7>
+<KB8 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\KBint2.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB8>
+<KB9 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\KBint3.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB9>
+<KB10 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\training\KBint4.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB10>
+</Interpretability>
+<Ontology OntFile="">
+</Ontology>
+</ConfigurationFile>

@@ -1,0 +1,1152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags for IEEE Xplore immersive article -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="An interactive article on making fuzzy systems explainable. Learn how predictions of fuzzy classification systems can be explained factually and counterfactually.">
+  <meta charset="utf8">
+  <title>How to build self-explaining fuzzy systems: From interpretability to explainability
+  </title>
+
+  <!-- Stylesheet for IEEE Xplore immersive article -->
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- MathJax javascript library and implementation file/s -->
+  <script type="text/javascript" async
+    src="https://xploreqa.ieee.org/xploreAssets/MathJax-274/MathJax.js?config=default">
+    </script>
+
+  <script src="ies/plotly-2.18.2.min.js"></script>
+</head>
+
+<body>
+  <!-- Article with large top spacing -->
+  <article class="mt-lg">
+    <header>
+      <!-- Page container -->
+      <div class="container">
+        <!-- Page title -->
+        <h1>
+          How to build self-explaining fuzzy systems: From interpretability to explainability
+        </h1>
+        <!-- Subheading -->
+        <p class="subhead">
+          An interactive article on using explainable fuzzy systems to solve a leaf classification problem. Learn how careful definition of linguistic terms and selection of related parameters affect the automatic generation of meaningful factual and counterfactual explanations.
+        </p>
+        <!-- Header info general wrapper -->
+        <div class="header-info">
+          <!-- Header left info box -->
+          <div class="header-left box">
+            <!-- Header authors section -->
+            <div class="header-authors">
+              <h2>Authors</h2>
+              <ul>
+                <li>Ilia Stepin | Universidade de Santiago de Compostela, SPAIN</li>
+                <li>Muhammad Suffian | Università degli Studi di Urbino Carlo Bo, ITALY</li>
+                <li>Alejandro Catala | Universidade de Santiago de Compostela, SPAIN</li>
+                <li>Jose M. Alonso-Moral | Universidade de Santiago de Compostela, SPAIN</li>
+              </ul>
+            </div>
+            <!-- Published info section -->
+            <div class="header-published">
+              <h2>Published</h2>
+              <p>Jul. 30, 2023</p>
+            </div>
+          </div>
+          <!-- Header legend section -->
+          <div class="header-legend">
+            <svg class="click-icon" data-name="Click"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.62 122.88">
+              <title>Click</title>
+              <path
+                d="M40.59,14.63a3.36,3.36,0,0,1-1,2.39l0,0a3.39,3.39,0,0,1-4.77,0,3.42,3.42,0,0,1-1-2.4V3.39A3.4,3.4,0,0,1,37.2,0a3.34,3.34,0,0,1,2.39,1,3.39,3.39,0,0,1,1,2.4V14.63Zm25,76.65a1.89,1.89,0,0,1,3.77,0V99.9a1.89,1.89,0,1,1-3.77,0V91.28ZM54.46,87.47a1.89,1.89,0,0,1,3.77,0V99.9a1.89,1.89,0,1,1-3.77,0V87.47Zm-28-7.63a1.92,1.92,0,0,1-.35-.23q-5.24-4.24-10.44-8.53a8.36,8.36,0,0,0-3.57-1.79,3.54,3.54,0,0,0-2,.09A2,2,0,0,0,9,70.49a6.9,6.9,0,0,0-.4,3.24,12.47,12.47,0,0,0,1.11,4,26.49,26.49,0,0,0,2.92,4.94l17.68,26.74a2.37,2.37,0,0,1,.36,1,15.28,15.28,0,0,0,1.87,6.4,2.89,2.89,0,0,0,2.57,1.46c9,0,18.62-.34,27.53,0a8.33,8.33,0,0,0,4.69-1.51,15,15,0,0,0,4.29-5l.34-.57c3.4-5.87,6.71-11.57,7-18.33L78.85,85l0-.33,0-1.84c.06-5.74.16-14.54-4.62-15.4H71.14c.09,2.46,0,5-.18,7.3-.08,1.36-.15,2.63-.15,3.79a2.31,2.31,0,1,1-4.62,0c0-1.1.08-2.52.17-4,.32-5.73.75-13.38-3.24-14.14h-3a2.2,2.2,0,0,1-.58-.07,69.07,69.07,0,0,1-.13,8.29c-.07,1.36-.15,2.63-.15,3.79a2.31,2.31,0,1,1-4.61,0c0-1.1.08-2.52.16-4,.33-5.73.76-13.38-3.24-14.14h-3a2,2,0,0,1-.6-.08V66a2.31,2.31,0,1,1-4.61,0V42c0-4-1.64-6.55-3.73-7.61a5.32,5.32,0,0,0-4.71-.06l-.1.06c-2.07,1-3.69,3.59-3.69,7.7v42a2.31,2.31,0,1,1-4.62,0V79.84Zm44.14-17a2.49,2.49,0,0,1,.61-.08h3.19a2.33,2.33,0,0,1,.53.06c8.73,1.4,8.61,12.65,8.52,20,0,3.4.14,6.78.18,10.17-.39,7.91-4,14.1-7.67,20.47l-.32.55A19.49,19.49,0,0,1,70,120.55a12.88,12.88,0,0,1-7.29,2.32H35.17a7.23,7.23,0,0,1-6.44-3.5,19,19,0,0,1-2.56-7.88L8.94,85.42A31,31,0,0,1,5.5,79.58,16.88,16.88,0,0,1,4,74a11.42,11.42,0,0,1,.8-5.42,6.54,6.54,0,0,1,3.55-3.49A8.05,8.05,0,0,1,13,64.76a13.19,13.19,0,0,1,5.61,2.77L26.45,74V42.09c0-6.1,2.73-10,6.22-11.82l.15-.06a9.81,9.81,0,0,1,4.33-1,10,10,0,0,1,4.49,1.07C45.16,32.06,47.91,36,47.91,42v7.6a2.41,2.41,0,0,1,.6-.08H51.7a2.33,2.33,0,0,1,.53.06c3.82.61,5.73,3.16,6.63,6.47a2.25,2.25,0,0,1,1.23-.36h3.18a2.26,2.26,0,0,1,.53.06c4.07.65,6,3.49,6.79,7.11ZM14.63,37A3.33,3.33,0,0,1,17,38a3.39,3.39,0,0,1-2.39,5.79H3.39a3.36,3.36,0,0,1-2.39-1A3.4,3.4,0,0,1,3.39,37ZM23,20.55a3.39,3.39,0,0,1-2.4,5.79,3.4,3.4,0,0,1-2.4-1l-7.91-7.94a3.42,3.42,0,0,1-1-2.4,3.39,3.39,0,0,1,5.79-2.4L23,20.55ZM59.2,43.81a3.41,3.41,0,0,1-3.4-3.4A3.41,3.41,0,0,1,59.2,37H70.43a3.35,3.35,0,0,1,2.4,1,3.4,3.4,0,0,1-2.4,5.79ZM55.62,24.74a3.39,3.39,0,0,1-4.8-4.8l7.91-8a3.39,3.39,0,0,1,4.8,4.8l-7.91,8Z" />
+            </svg>
+            <p>Indicates interactive elements</p>
+          </div>
+        </div>
+        <!-- Box of anchored links -->
+        <div class="contents box">
+          <h2>Contents:</h2>
+          <ul>
+            <li>
+              <a href="#introduction">Introduction</a>
+              <span class="separator">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            </li>
+            <li>
+              <a href="#use_case">Use case</a>
+              <span class="separator">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            </li>
+            <li>
+              <a href="#explainable_fuzzy_systems">Explainable fuzzy systems</a>
+              <span class="separator">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            </li>
+            <li>
+              <a href="#conclusion">Conclusion</a>
+              <span class="separator">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content container with large top spacing -->
+    <div class="container mt-lg">
+      <!-- Anchor ID -->
+      <section id="introduction">
+        <!-- Section title -->
+        <h2>I. Introduction</h2>
+        <p>
+        The rapid ongoing evolution of artificial intelligence (AI) demands explainability at the levels of data, algorithms, models, systems, and predictions, as a prerequisite for Explainable and Trustworthy AI [<a href="#ref_1">1</a>, <a href="#ref_2">2</a>]. Whereas black-box classifiers can generate accurate but poorly explainable predictions, a fuzzy rule-based classification system (FRBCS) can produce not only accurate but also human-friendly and interpretable predictions [<a href="#ref_3">3</a>, <a href="#ref_4">4</a>].
+        </p>
+	<p>
+The nature of explanation has long been studied in social sciences. It turns out that explanations are desired to be contrastive (i.e., they are expected to explain why alternative outputs were not predicted), selected (i.e., they point only to a limited number of the most relevant causes of the phenomenon being explained), and social (i.e., they are produced as a result of interaction between the explainer and explainee) [<a href="#ref_5">5</a>].
+	</p>
+	<p>
+The three properties can be achieved when generating the so-called counterfactual explanations. In addition to factual explanations that aim to justify the actual prediction, counterfactual explanations rationalize why alternative predictions were not made. Conventionally, counterfactual explanations are designed to describe a set of minimal changes with respect to the given test instance's characteristics so that the algorithm's prediction would change to the desired alternative [<a href="#ref_6">6</a>]. Counterfactual explanations are contrastive, as they oppose different predictions. They can be selected if, e.g., they are limited to always including fewer features than the cardinality of the set of features that the dataset contains. Finally, counterfactual explanations can be made social if explicit user preferences are used to fine-tune the originally generated automated explanations.
+	</p>
+	<p>
+On one hand, a prediction of an FRBCS can be explained factually (e.g., answering the why-question "Why is the test instance predicted to be of class <i>P</i>?") by listing the feature-value pairs that appear in the antecedent of the rule that has the highest activation degree. On the other hand, the given prediction can be explained counterfactually (e.g., answering the why-not-question "Why is the test instance not predicted to be of class <i>Q</i>?"). Such so-called counterfactual explanations presuppose minimal changes in the test instance feature values for the prediction to change, making it maximally relevant to the test instance under consideration [<a href="#ref_6">6</a>].
+	</p>
+	<p>
+One of the major limitations of static responses to the aforementioned questions is a lack of interaction with the explainee. Instead, it is desired that the end user can customize the given explanation to further increase its utility. To do so, we devised a method for generating explanations, which incorporates user preferences to produce tailored explanations, allowing for acceptable ranges within the feature space where feasible counterfactuals can be located. As the method generates valid counterfactuals that are minimally different from the test instance, it allows the end user to draw difference between linguistic explanations for fuzzy classifiers and those for other supervised machine learning-based classifiers.
+	</p>
+	<p>
+In this immersive article, the readers will be presented with a practical, step-by-step guide on how to (1) build interpretable FRBCSs, (2) add a linguistic layer on top of approximate fuzzy classifiers (i.e., those with local semantics), (3) generate factual and counterfactual explanations for the resulting systems, and (4) yield user-preferred counterfactuals. The rest of the article is structured as follows. <a href="#section_use_case">Section II</a> introduces the use case that we consider exemplifying the challenges and the solutions proposed. <a href="#section_efs">Section III</a> illustrates basic notions of fuzzy logic, introduces a method for linguistic approximation of non-semantically grounded fuzzy linguistic terms, outlines technicalities of the specific FRBCS whose output is aimed to be explained, and presents an approach to fuzzy logic-based factual and counterfactual explanation generation. In addition, we describe how user preferences can be handled to generate single-point counterfactual explanations and briefly describe how user preferences can be tackled in these settings. Finally, <a href="#section_conclusion">Section IV</a> discusses the results and concludes the paper.
+	</p>
+      </section>
+
+      <section id="section_use_case">
+      <h2>II. Use case</h2>
+        <p>
+The classifiers are trained on the reduced version of the so-called FLAVIA dataset [<a href="#ref_7">7</a>]. The original dataset contains a collection of nearly 1800 images of leaves of 33 different classes found in the region of Yangtze Delta, China. For illustrative purposes, let us consider a subset of only 310 leaves of five classes taken from the original dataset. Thus, the leaf under consideration is said to belong to one of the following classes in accordance with their scientific names: Aesculus chinensis, Berberis anhweiensis, Cercis chinensis, Phoebe zhennan, or Lagerstroemia indica (see <a href="#figure_1_static">Fig. 1</a> for reference). The scientific leaf class names are paired with equivalent common names as follows: Aesculus chinensis is Chinese horse chestnut, Berberis anhweiensis is Anhui Barberry, Cercis chinensis is Chinese redbud, Phoebe zhennan is Nanmu, and Lagerstroemia indica is Crape myrtle. For the sake of simplicity, we follow the common names of the leaf classes in the remainder of this article.
+        </p>
+
+	<br>
+        <div class="static">
+          <img id="figure_1_static" src="img/five_leaves.jpg" alt="Alternative text in case the image cannot be loaded." style="margin: auto auto; width: max-content; display: block"/>
+          <div class="caption"><b>Figure 1:</b> Images of leaves corresponding to all five considered classes. (All images of leaves in this immersive article belong to the FLAVIA dataset [<a href="#ref_7">7</a>].)</div>
+        </div>
+
+        <p>
+In the reduced dataset, each leaf is only characterized by its <i>Area</i> and <i>Perimeter</i>, which are defined numerically and linguistically (by means of the so-called linguistic terms — textual labels, like "small" or "large", that cover subsets of all the data points considered) in accordance with [<a href="#ref_8">8</a>]. Both Area and Perimeter are measured in pixels and cover the corresponding parts of the image (all the leaf pixels for Area and those on the edges of the leaf for Perimeter). <a href="#table_leaves_names">Table 1</a> shows the mapping between the numerical intervals for both Area and Perimeter and the corresponding linguistic terms.
+        </p>
+
+      <div class="formula-wrapper">
+        <table id="table_leaves_names" class="formula" style="margin: auto auto">
+          <tbody>
+          <tr>
+            <th style="text-align:center">Feature</th>
+            <th style="text-align:center">Linguistic term</th>
+            <th style="text-align:center">Range of values (in pixels)</th>
+          </tr>
+          <tr>
+            <td style="text-align:center" rowspan="2">Area</td>
+            <td style="text-align:center">Very small</td>
+            <td style="text-align:center">[112823, 618221]</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">Not very small</td>
+            <td style="text-align:center">[618221, 1123619]</td>
+          </tr>
+          <tr>
+            <td style="text-align:center" rowspan="5">Perimeter</td>
+            <td style="text-align:center">Very small</td>
+            <td style="text-align:center">[1882.34, 3438.31]</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">Small</td>
+            <td style="text-align:center">[3438.31, 4994.28]</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">Medium</td>
+            <td style="text-align:center">[4994.28, 6550.26]</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">Large</td>
+            <td style="text-align:center">[6550.26, 8106.23]</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">Very large</td>
+            <td style="text-align:center">[8106.23, 9662.20]</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="caption">
+          <b>Table 1:</b> Numerical intervals associated with each linguistic term.
+        </div>
+      </div>
+
+	<br>
+
+      <div id="figure_ie1" class="framed">
+        <div class="inside">
+          <div class="eyebrow">
+            Fig. 2 depicts all instances of leaves from the considered dataset. This plot welcomes you to familiarize yourself with the data that we use for training the leaf classifiers. Each point in this plot is an instance of a leaf characterized by Area (the vertical axis) and Perimeter (the horizontal axis), calculated as the number of pixels that form the leaf and its edges, respectively.<br><br>All the data points are enhanced with hovers that show exact values of Area and Perimeter for the given leaf. You can select a region of your preference to zoom in to inspect the input space. You can zoom back out by double-clicking the plot. In addition, you can hide data points of a specific leaf class by clicking the corresponding label in the legend of the plot. You can restore them back by clicking the same label again.
+          </div>
+
+	  <div id="InteractiveElement1"></div>
+          <script src="ies/ie1.js"></script>       
+          <div class="caption"><b>Figure 2:</b><br>The distribution of the data points of the reduced FLAVIA dataset.</div>
+        </div>
+      </div>
+
+      </section>
+
+      <section id="section_efs">
+      <h2>III. Explainable fuzzy systems</h2>
+
+	<p>
+    This section presents our approach to factual and counterfactual explanation generation for explaining predictions of an FRBCS and applies it to the use case introduced in <a href="#section_use_case">Section II</a>. We first introduce the concepts of fuzzy sets and linguistic variables that are essential for understanding the reasoning of an FRBCS. Second, the mechanism of linguistic interpretation is demonstrated for non-semantically grounded fuzzy linguistic terms. Third, a description of how explanations can be structured in natural language is offered. Fourth, all the previous notions are merged, as our methods for factual and counterfactual explanation generation for FRBCSs are described. Finally, we demonstrate how the end user can be involved in the process of explanation generation.
+ 	</p>
+
+	<h3>Essential fuzzy logic notions</h3>
+
+	<p>
+    The central notion of fuzzy logic is that of a fuzzy set. Unlike in binary Boolean logic where a variable can take on either of two values (i.e., true or false), fuzzy logic enhances estimation of any given prediction with a degree of certainty (e.g., "The leaf is likely to be of class Chinese horse chestnut"). The degree of certainty for each fuzzy set is determined by the value of the so-called membership function (MF), i.e., the function that maps the given numerical value from the input space (or the so-called universe of discourse) to the interval $[0, 1]$. The closer to 1, the more likely the given feature relates to the corresponding fuzzy set.
+    </p>
+	
+	<p>
+    Numerical features of a test instance can be characterized in terms of fuzzy sets linked to a linguistic variable (e.g., Perimeter). Thus, all the values over which the feature is defined can be partitioned into several (e.g., triangular or trapezoidal) fuzzy sets in such a manner that it is always possible to measure the MF value for each fuzzy set that characterizes the given feature. In case of considering Strong Fuzzy Partitions [<a href="#ref_9">9</a>], MF values for all fuzzy sets in the given universe of discourse are always said to sum to 1. Hence, if two fuzzy sets are found to overlap for the given feature value, they always provide complementary information with respect to the degree of certainty for that feature. Noteworthy, in this article, trapezoidal MFs are operated on in all cases.	
+	</p>
+
+	<p>
+    The number of fuzzy sets and the corresponding linguistic terms can be set arbitrarily. An expert may categorize the given feature (e.g., Perimeter) to fall into either of two groups (e.g., small or large) or any of three (e.g., small, medium, large) or even more. It is then up to the expert which feature values should make up the regions corresponding to each linguistic term. If expert knowledge is unavailable, all feature values can be divided into an arbitrary number of equal-size buckets (i.e., a uniform partition), each of which is assigned to a predefined linguistic term.
+    </p>
+
+      <div id="figure_ie2" class="framed">
+        <div class="inside">
+          <div class="eyebrow">
+            Now you can play the role of an expert annotating a specific feature. Consider such a feature of a leaf as Perimeter. In this example, Perimeter is defined in the range from 1882.34 to 9662.20 pixels. Feel free to select the number of fuzzy sets that you believe the best define perimeter (from 2 to 5, in this example). To do so, move the slider under the MF plot.<br><br>Recall that MFs (in this example) are defined to be trapezoids. Hence, you can define the corners of any trapezoid (A is the bottom-left corner, B is the top-left corner, C is the top-right corner, D is the bottom-right corner). Accordingly, the interval [A, D] defines the support of the selected fuzzy set while [B, C] characterizes its core. Note that for each couple of overlapping fuzzy sets I and J, the corresponding pairs of corners I[C]-J[A] and I[D]-J[B] must have the same values for preserving the strong fuzzy partition (feel free to consult with plot hovers in case of having difficulties.)<br><br>Every time you change any of the trapezoidal values (by clicking "Enter" after you input the value or once you click anywhere outside the corresponding textbox after inputting the value), the plot is updated immediately. Similarly to <a href="#figure_ie1">Fig. 2</a>, you can (un)hide any fuzzy set by clicking the corresponding label in the legend of the plot. You can restore the initial settings of the plot by clicking the button "Reset the plot" at any time. In addition, you can name the fuzzy sets with linguistic terms of your choice (max. 20 characters each).
+          </div>
+
+	  <div id="InteractiveElement2"></div>
+          <script src="ies/ie2.js"></script> 
+          
+          <table style="width: 100%">
+	    <tr>
+            <th>Fuzzy sets (from left to right)</th>
+            <th>Linguistic terms</th>
+            </tr>
+
+            <tr>
+            <th><form id="frm1" action="/action_page.php">
+	          <p id="trapezoid1_label">Trapezoid 1:</p>
+                  <div style="float:left;margin-right:20px;">
+                    <label id="trapezoid1a_label">A:</label>
+                    <input type="text" id="trapezoid1_a" size="5" value="1882.34" onfocusout="update_fig1()" disabled> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label id="trapezoid1b_label">B:</label>
+                    <input type="text" id="trapezoid1_b" size="5" value="1882.34" onfocusout="update_fig1()" disabled> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label id="trapezoid1c_label">C:</label>
+                    <input type="text" id="trapezoid1_c" size="5" value="5577.78" onfocus="this.oldvalue = this.value;" onchange="trapezoid1c_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid1c_enter(event)"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label id="trapezoid1d_label">D:</label>
+                    <input type="text" id="trapezoid1_d" size="5" value="5966.77" onfocus="this.oldvalue = this.value;" onchange="trapezoid1d_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid1d_enter(event)"> 
+                  </div>  
+                  <br>         
+	          <p id="trapezoid2_label">Trapezoid 2:</p>
+                  <div style="float:left;margin-right:20px;">
+                    <label id="trapezoid2a_label">A:</label>
+                    <input type="text" id="trapezoid2_a" size="5" value="5577.78" onfocus="this.oldvalue = this.value;" onchange="trapezoid2a_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid2a_enter(event)"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label id="trapezoid2b_label">B:</label>
+                    <input type="text" id="trapezoid2_b" size="5" value="5966.77" onfocus="this.oldvalue = this.value;" onchange="trapezoid2b_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid2b_enter(event)"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label id="trapezoid2c_label">C:</label>
+                    <input type="text" id="trapezoid2_c" size="5" value="9662.20" onfocus="this.oldvalue = this.value;" onchange="trapezoid2c_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()"  onkeypress="trapezoid2c_enter(event)" disabled> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label id="trapezoid2d_label">D:</label>
+                    <input type="text" id="trapezoid2_d" size="5" value="9662.20" onfocus="this.oldvalue = this.value;" onchange="trapezoid2d_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()"  onkeypress="trapezoid2d_enter(event)" disabled> 
+                  </div>    
+                  <br>
+	          <p style="visibility: hidden" id="trapezoid3_label">Trapezoid 3:</p>
+                  <div style="float:left;margin-right:20px;">
+                    <label id="trapezoid3a_label" style="visibility: hidden">A:</label>
+                    <input type="text" id="trapezoid3_a" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid3a_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid3a_enter(event)"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label style="visibility: hidden" id="trapezoid3b_label">B:</label>
+                    <input type="text" id="trapezoid3_b" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid3b_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid3b_enter(event)"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label style="visibility: hidden" id="trapezoid3c_label">C:</label>
+                    <input type="text" id="trapezoid3_c" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid3c_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid3c_enter(event)"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label style="visibility: hidden" id="trapezoid3d_label">D:</label>
+                    <input type="text" id="trapezoid3_d" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid3d_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid3d_enter(event)"> 
+                  </div>   
+                  <br>       
+	          <p id="trapezoid4_label" style="visibility: hidden">Trapezoid 4:</p>
+                  <div style="float:left;margin-right:20px;">
+                    <label style="visibility: hidden" id="trapezoid4a_label">A:</label>
+                    <input type="text" id="trapezoid4_a" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid4a_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid4a_enter(event)"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label style="visibility: hidden" id="trapezoid4b_label">B:</label>
+                    <input type="text" id="trapezoid4_b" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid4b_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid4b_enter(event)"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label style="visibility: hidden" id="trapezoid4c_label">C:</label>
+                    <input type="text" id="trapezoid4_c" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid4c_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid4c_enter(event)"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label style="visibility: hidden" id="trapezoid4d_label">D:</label>
+                    <input type="text" id="trapezoid4_d" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid4d_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid4d_enter(event)"> 
+                  </div>   
+                  <br>       
+	          <p id="trapezoid5_label" style="visibility: hidden">Trapezoid 5:</p>
+                  <div style="float:left;margin-right:20px;">
+                    <label style="visibility: hidden" id="trapezoid5a_label">A:</label>
+                    <input type="text" id="trapezoid5_a" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid5a_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid5a_enter(event)"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label style="visibility: hidden" id="trapezoid5b_label">B:</label>
+                    <input type="text" id="trapezoid5_b" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid5b_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()" onkeypress="trapezoid5b_enter(event)"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label style="visibility: hidden" id="trapezoid5c_label">C:</label>
+                    <input type="text" id="trapezoid5_c" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid5c_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()"> 
+                  </div>
+                  <div style="float:left;margin-right:20px;">
+                    <label style="visibility: hidden" id="trapezoid5d_label">D:</label>
+                    <input type="text" id="trapezoid5_d" size="5" value="" style="visibility: hidden" onfocus="this.oldvalue = this.value;" onchange="trapezoid5d_onchange(this); this.oldvalue = this.value;" onfocusout="update_fig1()"> 
+                  </div>   
+	          <!-- <input type="button" onclick="myFunction()" value="Submit"> -->
+	        </form>  
+            </th>
+
+	    <th><form id="frm2" action="/action_page.php">
+                  <p id="term1_label">Term 1:</p><input type="text" id="term1" value="small" maxlength="20" onfocus="this.oldvalue = this.value;" onfocusout="update_fig1()" onchange="term1_onchange(this); this.oldvalue = this.value;" onkeypress="term1_enter(event)">
+	          <p id="term2_label">Term 2:</p><input type="text" id="term2" value="large" maxlength="20" onfocus="this.oldvalue = this.value;" onfocusout="update_fig1()" onchange="term2_onchange(this); this.oldvalue = this.value;" onkeypress="term2_enter(event)">
+	          <p id="term3_label" style="visibility: hidden">Term 3:</p><input style="visibility: hidden" type="text" id="term3" value="" maxlength="20" onfocus="this.oldvalue = this.value;" onfocusout="update_fig1()" onchange="term3_onchange(this); this.oldvalue = this.value;" onkeypress="term3_enter(event)">
+	          <p id="term4_label" style="visibility: hidden">Term 4:</p><input style="visibility: hidden" type="text" id="term4" value="" maxlength="20" onfocus="this.oldvalue = this.value;" onfocusout="update_fig1()" onchange="term4_onchange(this); this.oldvalue = this.value;" onkeypress="term4_enter(event)">
+	          <p id="term5_label" style="visibility: hidden">Term 5:</p><input style="visibility: hidden" type="text" id="term5" value="" maxlength="20" onfocus="this.oldvalue = this.value;" onfocusout="update_fig1()" onchange="term5_onchange(this); this.oldvalue = this.value;" onkeypress="term5_enter(event)">
+	          <!-- <input type="button" onclick="myFunction()" value="Submit"> -->
+	        </form>  
+            </th>
+            </tr>
+  	            <div id="button1space" class="center" style="text-align:center"><br><input style="width:100%" type="button" onclick="reset_the_plot()" value="Reset the plot"><br></div><br> 
+          </table>
+        </div>
+        <div class="caption"><b>Figure 3:</b><br> Example of fuzzy sets for the feature "Perimeter".</div>
+      </div>
+ 
+	<h3>Linguistic approximation</h3>
+
+      <p>
+        It was presupposed above that the linguistic terms assigned to fuzzy sets are linguistically meaningful. However, this may not necessarily be the case: some fuzzy classification algorithms (e.g., FURIA [<a href="#ref_10">10</a>]) are trained to learn rules whose linguistic terms may not be semantically grounded. In this case, an extra-linguistic layer is necessary to be added to transform non-semantically grounded linguistic terms (e.g., Perimeter is MF0) into meaningful semantically-grounded linguistic terms (e.g., Perimeter is small). To do so, the mechanism of the so-called linguistic approximation is applied.
+      </p>
+
+	<p>
+	To illustrate our approach to linguistic approximation and explanation generation, an FRBCS is trained using the FURIA algorithm. <a href="#table_trapezoids">Table 2</a> shows that the rule learning algorithm has automatically identified ten fuzzy sets for Area and nine fuzzy sets for Perimeter. All of them are defined as trapezoidal functions. 
+	</p>
+
+      <div class="formula-wrapper">
+        <table id="table_trapezoids" class="formula" style="margin: auto auto">
+          <tbody>
+          <tr>
+            <th style="text-align:center">Feature</th>
+            <th style="text-align:center">MF</th>
+            <th style="text-align:center">Trapezoid corner points</th>
+          </tr>
+          <tr>
+            <td style="text-align:center" rowspan="10">Area</td>
+            <td style="text-align:center">MF0</td>
+            <td style="text-align:center">A: (775853, 0), B: (784168, 1), C: (918774, 1), D: (920207, 0)</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">MF1</td>
+            <td style="text-align:center">A: (643460, 0), B: (656104, 1), C: (1123619, 1), D: (1123619, 0)</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">MF2</td>
+            <td style="text-align:center">A: (491096, 0), B: (583371, 1), C: (1123619, 1), D: (1123619, 0)</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">MF3</td>
+            <td style="text-align:center">A: (112823, 0), B: (112823, 1), C: (325474, 1), D: (326683, 0)</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">MF4</td>
+            <td style="text-align:center">A: (918774, 0), B: (920207, 1), C: (1006143, 1), D: (1091964, 0)</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">MF5</td>
+            <td style="text-align:center">A: (325474, 0), B: (326683, 1), C: (1123619, 1), D: (1123619, 0)</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">MF6</td>
+            <td style="text-align:center">A: (277540, 0), B: (313713, 1), C: (601679, 1), D: (607463, 0)</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">MF7</td>
+            <td style="text-align:center">A: (112823, 0), B: (112823, 1), C: (694774, 1), D: (819972, 0)</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">MF8</td>
+            <td style="text-align:center">A: (265287, 0), B: (267091, 1), C: (396652, 1), D: (447403, 0)</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">MF9</td>
+            <td style="text-align:center">A: (112823, 0), B: (112823, 1), C: (277540, 1), D: (284048, 0)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center" rowspan="9">Perimeter</td>
+            <td style="text-align:center">MF0</td>
+            <td style="text-align:center">A: (1882.34, 0), B: (1882.34, 1), C: (3692.05, 1), D: (3802.42, 0)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">MF1</td>
+            <td style="text-align:center">A: (1882.34, 0), B: (1882.34, 1), C: (3222.01, 1), D: (3248.46, 0)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">MF2</td>
+            <td style="text-align:center">A: (1882.34, 0), B: (1882.34, 1), C: (2382.52, 1), D: (2477.29, 0)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">MF3</td>
+            <td style="text-align:center">A: (6140.83, 0), B: (6156.22, 1), C: (9662.20, 1), D: (9662.20, 0)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">MF4</td>
+            <td style="text-align:center">A: (1882.34, 0), B: (1882.34, 1), C: (2964.30, 1), D: (3056.77, 0)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">MF5</td>
+            <td style="text-align:center">A: (3155.19, 0), B: (3162.88, 1), C: (4036.42, 1), D: (4528.17, 0)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">MF6</td>
+            <td style="text-align:center">A: (4528.17, 0), B: (4647.78, 1), C: (6054.30, 1), D: (6156.22, 0)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">MF7</td>
+            <td style="text-align:center">A: (2806.66, 0), B: (2818.30, 1), C: (3134.33, 1), D: (3555.42, 0)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">MF8</td>
+            <td style="text-align:center">A: (2844.79, 0), B: (2867.46, 1), C: (9662.20, 1), D: (9662.20, 0)</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="caption">
+          <b>Table 2:</b> Trapezoidal MFs for Area and Perimeter (A is the bottom-left corner of the trapezoid, B is the top-left corner, C is the top-right corner, and D is the bottom-right corner). The first coordinate of each point refers to the actual value of the corresponding feature, the second — to the activation degree.
+        </div>
+      </div>
+
+	<p>
+	<a href="#table_rulebase">Table 3</a> presents all 11 rules where all the features found in the antecedents are defined in terms of linguistically meaningless values of trapezoidal MFs. Once a test instance is passed to the FRBCS, all the rules fire to a certain extent (from 0 to 1). The resulting value is often referred to as an activation degree. The rule with the highest activation degree is responsible for the classifier's prediction.
+	</p>
+
+      <div class="formula-wrapper">
+        <table id="table_rulebase" class="formula" style="margin: auto auto">
+          <tbody>
+          <tr>
+            <th style="text-align:center">Rule ID</th>
+            <th style="text-align:center">Rule</th>
+          </tr>
+          <tr>
+            <td style="text-align:center">R1</td>
+            <td style="text-align:center">IF Area IS MF0 THEN Leaf IS Chinese horse chestnut</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">R2</td>
+            <td style="text-align:center">IF Perimeter IS MF0 AND Area IS MF1 THEN Leaf IS Chinese horse chestnut</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">R3</td>
+            <td style="text-align:center">IF Perimeter IS MF1 AND Area IS MF2 THEN Leaf IS Chinese horse chestnut</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">R4</td>
+            <td style="text-align:center">IF Perimeter IS MF2 AND Area IS MF3 THEN Leaf IS Anhui Barberry</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">R5</td>
+            <td style="text-align:center">IF Area IS MF4 THEN Leaf IS Anhui Barberry</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">R6</td>
+            <td style="text-align:center">IF Perimeter IS MF3 THEN Leaf IS Chinese redbud</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">R7</td>
+            <td style="text-align:center">IF Perimeter IS MF4 AND Area IS MF5 THEN Leaf IS Chinese redbud</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">R8</td>
+            <td style="text-align:center">IF Perimeter IS MF5 AND Area IS MF6 THEN Leaf IS Nanmu</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">R9</td>
+            <td style="text-align:center">IF Perimeter IS MF6 AND Area IS MF7 THEN Leaf IS Nanmu</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">R10</td>
+            <td style="text-align:center">IF Perimeter IS MF7 AND Area IS MF8 THEN Leaf IS Nanmu</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">R11</td>
+            <td style="text-align:center">IF Perimeter IS MF8 AND Area IS MF9 THEN Leaf IS Crape myrtle</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="caption">
+          <b>Table 3:</b> The FURIA rulebase.
+        </div>
+      </div>
+
+	<p>
+	Despite having a well-formed prediction for any test instance, it is difficult to motivate it due to a lack of meaningful information encoded in the linguistic terms. Hence, it is necessary to apply linguistic approximation prior to generating a (factual or counterfactual) explanation. The linguistic meaning of a fuzzy set can be approximated in a series of the following steps:
+	<ol>
+	  <li>First, it is needed to reduce the dimensionality of the MF, i.e., a two-dimensional trapezoid is projected onto a one-dimensional line (also known as "alpha-cut") to subsequently be able to compare it to the known intervals of linguistic terms for the given feature. Note that the alpha-cut can be applied with an arbitrary value ranging from 0 to 1 for a given MF. It is nevertheless a common practice to set the value of alpha to 0.5. For trapezoidal MFs, this corresponds to finding the midline (or midsegment) of the trapezoid.<br></li>
+	  <li>Given the projection of the MF onto a line, one can inspect how similar it is to the intervals corresponding to all the linguistic terms for the given feature. To do so, a measure of interval similarity can be computed, e.g., the Jaccard similarity coefficient defined as follows: $$sim = \frac{a \cap b}{a \cup b}$$ where $sim \in [0, 1]$ is the similarity coefficient, $a$ and $b$ are the intervals being compared, respectively. In this case, $a$ is the MF's projection onto a line and $b$ is the interval of a linguistic term of the given feature.</li>
+	  <li>Once similarity coefficients are calculated for all the linguistic terms of the given feature, they can be ranked. The linguistic term having the highest similarity coefficient is assumed to most adequately approximate the MF linguistically and is therefore selected to replace the non-semantically grounded term in the rule. This procedure is repeated for all the features that the antecedent of the given rule contains.</li>
+	</ol>
+	</p>
+
+      <div id="figure_ie3" class="framed">
+        <div class="inside">
+          <div class="eyebrow">
+            For illustrative purposes, let us consider an arbitrary trapezoidal fuzzy set for characterizing Perimeter. Assume we define Perimeter to belong to any of the following five categories: Very small, Small, Medium, Large, or Very large (as in the default example for five fuzzy partitions from <a href="#figure_ie2">Fig. 3</a>). These five categories exhaustively cover all possible perimeter values as they form a strong fuzzy partition.<br><br>Depending on the alpha-cut value applied to the trapezoidal MF, the term interval in this example will be approximated as either <i>Small</i> or <i>Medium</i>. As we project the trapezoidal MF interval to the intervals of each available linguistic term (see the dashed lines in the plot), we can calculate how similar the corresponding intervals are. Feel free to move the slider to see the effect of the alpha-cut (from 0 to 1 with the step of 0.1) on the approximation of the resulting linguistic term. Similarly to <a href="#figure_ie2">Fig. 3</a>, you can (un)hide selected fuzzy sets by clicking the corresponding labels in the legend of the plot.
+          </div>
+
+	  <div id="InteractiveElement3"></div>
+          <script src="ies/ie3.js"></script>       
+          <div class="caption"><b>Figure 4:</b><br> Example of linguistic approximation.</div>
+        </div>
+      </div>
+
+	<h3>Surface realization</h3>
+
+      <p>
+         Explanations are often best perceived when they are communicated in natural language. However, methods that generate explanations in natural language are still scarce [<a href="#ref_11">11</a>]. As shown above, FRBCSs operate on conditional statements (i.e., IF-THEN rules) which can be transformed into natural language explanations and therefore serve as a communication interface between the classifier and the end user. Let us consider the typical structure of such explanations.
+      </p>
+
+      <p>
+         As we consider two types of explanations for the classifier's output in this article (factual and counterfactual), they can be framed in natural language as answers to why- and why-not-questions, respectively. Examples of such questions may, in general, include "Why is the given test instance of class <i>P</i>?" for requesting a factual explanation and "Why is the given test instance not of class <i>Q</i>, instead?" for requesting a counterfactual explanation. Typical answers to these questions could contain two clauses: main and subordinate. In case of factual explanations, the main clause would then claim the test instance to be of class <i>P</i> whereas the subordinate clause would indicate (possibly, several) causes for such an argument (e.g., "The leaf is <i>Nanmu</i> because area is not very small and perimeter is large"). As for counterfactual explanations, an explanation would present a conditional statement where the main clause (which is associated with the rule consequent) refers to a counterfactual class (e.g., "The leaf would be <i>Crape myrtle</i> ...") and the subordinate conditional clause (which is associated with the rule antecedent) would list the (most relevant) features to be minimally changed for the consequent to hold (e.g., "... if area were very small and perimeter were small").
+      </p>
+
+      <p>
+         Let us consider the linguistic structure of any general rule-based explanation. Following the examples above, one can single out three components that every main clause may have: the subject, the predicate (i.e., the verb), and an optional complement (e.g., a prepositional phrase). Thus, the test instance is said to always serve as the subject of the main clause while the verb (possibly, followed by an optional complement) communicates the action that the system claims to be the case. In the case of the subordinate clause, the subject may refer to the same test instance or a specific feature that characterizes it. In the former case, the verb may link the subject to a specific cause. In the latter case, the verb points to a (set of) value(-s) that the feature takes on.
+      </p>
+
+      <div id="figure_ie4" class="framed">
+        <div class="inside">
+          <div class="eyebrow">
+            Let us illustrate the linguistic composition of a factual explanation with several toy examples.<br><br>In <a href="#figure_ie4">Fig. 5</a>, you can select one of the three subjects, verbs, complements, and causal (i.e., subordinate) clauses. As you switch between the given options, you will observe changes in the subject-verb agreement of the factual explanation, referring expressions (e.g., the subject of the subordinate clause). Noteworthy, some combinations of the components below are not necessarily meaningful; instead, they merely aim to show how different building blocks of an explanation affect others. To facilitate the implementation of surface realization, such libraries as SimpleNLG [<a href="#ref_12">12</a>] are normally used.
+          </div>
+
+          <p id="ie4explanation">Explanation: <b>Anna goes to school because she is 15-year-old.</b></p> 
+          
+          <div>Subject:
+          <button type="button" id="subj1button" onclick="subj1(this)" value="Anna" disabled>Anna</button>
+          <button type="button" id="subj2button" onclick="subj2(this)" value="Peter">Peter</button>
+          <button type="button" id="subj3button" onclick="subj3(this)" value="Anna and Peter">Anna and Peter</button>
+          </div><br>
+
+          <div>Verb:
+          <button type="button" id="verb1button" onclick="verb1(this)" value="to go" disabled>to go</button>
+          <button type="button" id="verb2button" onclick="verb2(this)" value="to hang out">to hang out</button>
+          <button type="button" id="verb3button" onclick="verb3(this)" value="to swim">to swim</button>
+          </div><br>
+
+          <div>Complement:
+          <button type="button" id="comp1button" onclick="complement1(this)" value="to school" disabled>to school</button>
+          <button type="button" id="comp2button" onclick="complement2(this)" value="together">together</button>
+          <button type="button" id="comp3button" onclick="complement3(this)" value="to the beach">to the beach</button>
+          </div><br>
+
+          <div>Causal clause (cause):
+          <button type="button" id="cause1button" onclick="cause1(this)" value="15-year-old" disabled>15-year-old</button>
+          <button type="button" id="cause2button" onclick="cause2(this)" value="hang out together">hang out together</button>
+          <button type="button" id="cause3button" onclick="cause3(this)" value="hate each other">hate each other</button>
+          </div>
+
+          <script src="ies/ie4.js"></script>
+          <!-- <script src="ies/simplenlg/src/index.js"></script>  -->
+          <div class="caption"><b>Figure 5:</b><br> Example of surface realization.</div>
+        </div>
+      </div>
+
+	<h3>Factual explanation generation</h3>
+
+      <p>
+         Previously, we introduced some of the core concepts underlying our explanation generation method (i.e., fuzzy sets and linguistic variables, linguistic approximation, and building blocks of natural language rule-based explanations). Based on this knowledge, the method for generating explanations for predictions of FRBCSs can now be introduced.
+      </p>
+
+      <p>
+          Let us start with the mechanism of factual explanation generation. Given the test instance $x$ that serves as input to an FRBCS, the classifier (i.e., the given FRBCS) is first run to obtain its prediction with respect to the given test instance. Then, we aim to factually explain why the given prediction is the case. As the internals of the FRBCS are accessible, its rule base can be inspected to collect all the rules that lead to the given predicted class. Then, the rules are ranked by their activation degree and the most activated one is selected to form the basis of the factual explanation. Subsequently, the linguistic terms of each feature from that rule are linguistically approximated if necessary.
+      </p>
+
+      <div id="figure_ie5" class="framed">
+        <div class="inside">
+          <div class="eyebrow">
+            To illustrate the mechanism of factual explanation generation, let us consider five illustrative test instances taken from the dataset. All the test instances represent different classes and are correctly classified by the given FRBCS.<br><br>You can select a test instance of your choice from the dropdown menu, as you click on the green button below. The corresponding image of a leaf on the right-hand side illustrates the features of leaves of that class. The table below will show you all the rules that have the predicted class as the consequent, the corresponding activation degrees, and the resulting factual explanations with approximated linguistic terms (the rule used for generating a factual explanation will be highlighted in bold). In addition, the fuzzy sets for each feature that makes part of the factual explanation are depicted below the table. The dashed lines correspond to the values of the features for the selected test instance.
+          </div>
+
+       <table width="100%" class="center">
+	  <tr>
+	  <td style="text-align: center">
+	  <div class="dropdown">
+	    <button onclick="dropdown_show()" class="dropbtn">Test instance <span class="caret"></span></button>
+	    <div id="dropdown_factual" class="dropdown-content-factual">
+	      <button type="button" id="testinstance1button" onclick="testinstance1(this)" value="Area=656104; Perimeter=3326.436001">Test instance 1 (area=656104; perimeter=3326.436001)</button>
+	      <button type="button" id="testinstance2button" onclick="testinstance2(this)" value="Area=293411; Perimeter=2332.469263">Test instance 2 (area=293411; perimeter=2332.469263)</button>
+	      <button type="button" id="testinstance3button" onclick="testinstance3(this)" value="Area=432550; Perimeter=2793.547473">Test instance 3 (area=432550; perimeter=2793.547473)</button>
+              <button type="button" id="testinstance4button" onclick="testinstance4(this)" value="Area=358769; Perimeter=3414.833837">Test instance 4 (area=358769; perimeter=3414.833837)</button>
+              <button type="button" id="testinstance5button" onclick="testinstance5(this)" value="Area=209532; Perimeter=3757.557067">Test instance 5 (area=209532; perimeter=3757.557067)</button>
+	    </div>
+	  </div> 
+	  </td>
+	  <td>
+	      <img id="image_test_instance" src="img/chinese_horse_chestnut.jpg" width="300" height="225">
+      </td>
+	  </tr>
+	  </table>
+	  
+	      <div id="InteractiveElement5"></div>
+          <script src="ies/ie5.js"></script>       
+          <div class="caption"><b>Figure 6:</b><br> Example of factual explanation generation.</div><br>
+       </div>
+      </div>
+
+	<h3>Counterfactual explanation generation</h3>
+
+	<p>
+	As stated previously, classifier's predictions can be explained factually or counterfactually. The rule base can be counted on as a reliable mechanism to generate counterfactual explanations. In particular, the rules leading to counterfactual classes may enable us to reach the desired outcome [<a href="#ref_13">13</a>].
+	</p>
+
+	<p>
+	Importantly, a counterfactual explanation is, by convention, supposed to represent the minimally different (set of) data point(-s) covered by the rule. This requirement to a counterfactual explanation is claimed to guarantee maximal relevance to the test instance under consideration. As there is typically more than one rule for each class, it becomes essential to design a strategy to find the most relevant counterfactual rule.
+	</p>
+
+	<p>
+	Taking into account the desideratum to explain the FRBCS reasoning applied to a specific test instance, one should look for the test instance-specific information that the FRBCS can provide us with. For this purpose, MF values for each feature-value pair (e.g., "Perimeter = MF0") can be retrieved from the FRBCS for the given prediction. Hence, it is possible to form a vector with all MF values that would describe the system's behavior with respect to the test instance (see <a href="#test_instance_vector_1">Table 4</a>).
+	</p>
+
+      <div class="formula-wrapper">
+        <table id="test_instance_vector_1" class="formula" style="margin: auto auto">
+          <tbody>
+          <tr>
+            <th style="text-align:center" colspan="10">Area</th>
+            <th style="text-align:center" colspan="9">Perimeter</th>
+          </tr>
+          <tr>
+            <td style="text-align:center">MF0</td>
+            <td style="text-align:center">MF1</td>
+            <td style="text-align:center">MF2</td>
+            <td style="text-align:center">MF3</td>
+            <td style="text-align:center">MF4</td>
+            <td style="text-align:center">MF5</td>
+            <td style="text-align:center">MF6</td>
+            <td style="text-align:center">MF7</td>
+            <td style="text-align:center">MF8</td>
+            <td style="text-align:center">MF9</td>
+            <td style="text-align:center">MF0</td>
+            <td style="text-align:center">MF1</td>
+            <td style="text-align:center">MF2</td>
+            <td style="text-align:center">MF3</td>
+            <td style="text-align:center">MF4</td>
+            <td style="text-align:center">MF5</td>
+            <td style="text-align:center">MF6</td>
+            <td style="text-align:center">MF7</td>
+            <td style="text-align:center">MF8</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0.544</td>
+            <td style="text-align:center">1</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="caption">
+          <b>Table 4:</b> The test instance vector for test instance 1.
+        </div>
+      </div>
+
+	<p>
+	For the test instance to be compatible with counterfactual rules from the rule base, they must be represented in the same format. One can, therefore, create vector representations of all counterfactual rules in terms of the same feature-value pairs that are used to vectorize the test instance. To illustrate rule vectorization, let us consider the test instance of class "Chinese horse chestnut" and the counterfactual class "Anhui Barberry". There exist two counterfactual rules (R4 and R5) that cover distinct counterfactual sets. In rule R4, there appear to be two linguistic terms: one for area (MF3) and one for perimeter (MF2). Hence, the corresponding values ("Area=MF3" and "Perimeter=MF2") can be set to 1, leaving all the others nullified, to describe the reasoning behind this rule (see <a href="#cf_rule_4_vector">Table 5</a> for details). In the case of rule R5, however, only one feature appears in the antecedent ("Area=MF4"). In this case, all the counterfactual rule vector values for Perimeter can be set to 1, as this feature does not happen to be relevant when following this rule (see <a href="#cf_rule_5_vector">Table 6</a> for details).
+	</p>
+
+      <div class="formula-wrapper">
+        <table id="cf_rule_4_vector" class="formula" style="margin: auto auto">
+          <tbody>
+          <tr>
+            <th style="text-align:center" colspan="10">Area</th>
+            <th style="text-align:center" colspan="9">Perimeter</th>
+          </tr>
+          <tr>
+            <td style="text-align:center">MF0</td>
+            <td style="text-align:center">MF1</td>
+            <td style="text-align:center">MF2</td>
+            <td style="text-align:center">MF3</td>
+            <td style="text-align:center">MF4</td>
+            <td style="text-align:center">MF5</td>
+            <td style="text-align:center">MF6</td>
+            <td style="text-align:center">MF7</td>
+            <td style="text-align:center">MF8</td>
+            <td style="text-align:center">MF9</td>
+            <td style="text-align:center">MF0</td>
+            <td style="text-align:center">MF1</td>
+            <td style="text-align:center">MF2</td>
+            <td style="text-align:center">MF3</td>
+            <td style="text-align:center">MF4</td>
+            <td style="text-align:center">MF5</td>
+            <td style="text-align:center">MF6</td>
+            <td style="text-align:center">MF7</td>
+            <td style="text-align:center">MF8</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="caption">
+          <b>Table 5:</b> The counterfactual rule 4 (R4) vector.
+        </div>
+      </div>
+
+      <div class="formula-wrapper">
+        <table id="cf_rule_5_vector" class="formula" style="margin: auto auto">
+          <tbody>
+          <tr>
+            <th style="text-align:center" colspan="10">Area</th>
+            <th style="text-align:center" colspan="9">Perimeter</th>
+          </tr>
+          <tr>
+            <td style="text-align:center">MF0</td>
+            <td style="text-align:center">MF1</td>
+            <td style="text-align:center">MF2</td>
+            <td style="text-align:center">MF3</td>
+            <td style="text-align:center">MF4</td>
+            <td style="text-align:center">MF5</td>
+            <td style="text-align:center">MF6</td>
+            <td style="text-align:center">MF7</td>
+            <td style="text-align:center">MF8</td>
+            <td style="text-align:center">MF9</td>
+            <td style="text-align:center">MF0</td>
+            <td style="text-align:center">MF1</td>
+            <td style="text-align:center">MF2</td>
+            <td style="text-align:center">MF3</td>
+            <td style="text-align:center">MF4</td>
+            <td style="text-align:center">MF5</td>
+            <td style="text-align:center">MF6</td>
+            <td style="text-align:center">MF7</td>
+            <td style="text-align:center">MF8</td>
+          </tr>
+          <tr>            
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">0</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">1</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="caption">
+          <b>Table 6:</b> The counterfactual rule 5 (R5) vector.
+        </div>
+      </div>
+
+	<p>
+	Once all the rules of the counterfactual class are vectorized, their relevance to the test instance can be estimated. As both the test instance and the counterfactual rules are now represented as vectors, one can compute the distance between the test instance vector and each counterfactual rule vector. Whereas it is, in principle, possible to select any vector distance (or, alternatively, similarity) metric, it turns out the Euclidean distance best captures differences between the MF values and those present in counterfactual rule vector representations. The Euclidean distance is defined as follows: $$d(x, r_{cf}) = \sqrt{\sum\limits_{i} (x_i - r_i^{cf})^2} \in [0, \infty)$$ where $x$ is the test instance vector, $r^{cf}$ is a counterfactual rule vector, $x_i$ and $r_i^{cf}$ are the $i$-th elements in $x$ and $r^{cf}$, respectively.
+	</p>
+
+	<p>
+	Despite the fact that the resulting Euclidean distances between the test instance and each counterfactual rule are not normalized, they can still be used as an estimate of relevance of the counterfactual rules, as we are only interested in their ranking. Once they are ranked, it becomes possible to select the most relevant counterfactual rule (the one that has the lowest Euclidean distance to the test instance vector) for further processing.
+	</p>
+
+	<p>
+	If the linguistic terms of the features making part of the counterfactual rules are not semantically grounded, the selected rule undergoes the process of linguistic approximation. Finally, the most relevant (and, if necessary, linguistically approximated) counterfactual rule is passed on to the natural language generation module that transforms the rule into a well-formed natural language sentence.
+	</p>
+
+      <div id="figure_ie6" class="framed">
+        <div class="inside">
+          <div class="eyebrow">
+            Let us illustrate the process of counterfactual explanation generation for the test instance selected in <a href="#figure_ie5">Fig. 6</a>. You can select a counterfactual class for the previously selected test instance from the dropdown menu, as you click on the green button below. The corresponding image of a leaf on the right-hand side illustrates how leaves of that counterfactual class look.<br><br>The table below will show you all the counterfactual rules ranked in accordance with the Euclidean distances, and the resulting counterfactual explanations with approximated linguistic terms (the counterfactual explanation rule that is claimed to be the most relevant to the test instance will be highlighted in bold). In addition, the fuzzy sets for each feature that makes part of the counterfactual explanation are depicted below the table. Note that you can inspect differences in counterfactual explanation generation for any test instance that you select in <a href="#figure_ie5">Fig. 6</a>.
+          </div>
+
+      <table width="100%" class="center">
+	  <tr>
+	  <td style="text-align: center">
+	  <div class="dropdown">
+	    <button onclick="dropdown_show()" class="dropbtn">Counterfactual class <span class="caret"></span></button>
+	    <div id="dropdown_cf" class="dropdown-content-cf">
+              <button type="button" id="cfclass1button" onclick="cfclass1(this)" value="Anhui Barberry" disabled>Anhui Barberry</button>
+              <button type="button" id="cfclass2button" onclick="cfclass2(this)" value="Chinese redbud">Chinese redbud</button>
+              <button type="button" id="cfclass3button" onclick="cfclass3(this)" value="Nanmu">Nanmu</button>
+              <button type="button" id="cfclass4button" onclick="cfclass4(this)" value="Crape myrtle">Crape myrtle</button>
+	    </div>
+	  </div> 
+      </td>
+      <td>
+	      <img id="image_cf" src="img/anhui.jpg" width="300" height="225">
+      </td>
+	  </tr>
+	  </table>
+	  
+	      <div id="InteractiveElement6"></div>
+          <script src="ies/ie6.js"></script>       
+          <div class="caption"><b>Figure 7:</b><br> Example of CF explanation generation.</div><br>
+        </div>
+      </div>
+
+        <h3>User preferences and nearest neighborhood for counterfactual explanation generation</h3>
+
+	<p>
+	Although counterfactual explanations are known for their human-friendly nature and ability to aid in understanding machine learning models, they present several challenges. For example, counterfactual explanations usually lack user involvement, what hinders understanding. Therefore, it is crucial for users to provide feedback to define feasible ranges of counterfactual feature values, resulting in understandable and actionable explanations [<a href="#ref_14">14</a>]. Accordingly, we have developed a counterfactual explanation approach that includes user feedback in the explanation generation process. By incorporating user feedback, automated explanations are more aligned with user expectations. Our approach utilizes feedback to personalize the explanations by providing acceptable ranges in the feature space where feasible counterfactuals can be found. The concept of neighborhood subspace that surrounds the test instance is an extended version of that proposed in the LIME method [<a href="#ref_15">15</a>]. LIME utilizes local regression within the vicinity of the test instance to elucidate the rationale behind a model's prediction. This notion of the neighborhood subspace is leveraged; however, in our method, it is defined and adhered by user-preferred ranges to identify possible counterfactuals (i.e., perturbed instances). After finding the counterfactual instances, the distances between the original test instance and the counterfactual instances are computed to come up with counterfactual explanations.
+	</p>
+
+	<p>
+	In general, for the user-preferred approach, the user feedback is mainly divided into two parts: (i) a list of the features that the user selects to modify and (ii) feedback indicating the ranges of the selected features. As this approach handles mixed feature tabular datasets, the test instance may contain numerical and categorical features (in general). As a result, feedback about the numerical and categorical features is recorded separately. For numerical features, the user specifies a feasible range for the selected features, while for categorical features, feedback is recorded as to whether the feature value should be flipped with a value of $1$ or $0$ (binary categories). This approach focuses on feature-dependence and intrinsic aspects of counterfactual explanations. Accordingly, we look for an initial perturbation of features based on strong positive correlations, followed by an exhaustive search to identify counterfactual instances across all possible feature perturbation combinations guided by heuristics. For further details regarding heuristics, the interested readers are kindly referred to [<a href="#ref_16">16</a>]. For each feature, uniform or marginal distribution-based synthetic data are generated within the predefined ranges (distribution depends on the features). In addition, to incorporate categorical features, they are kept the same or flipped as per user-preference.
+	</p>
+
+	<p>
+	Here, for illustrative purposes, the user feedback mechanism is simplified by providing a slider control to select the value ranges for Area and Perimeter (see <a href="#figure_ie7">Fig. 8</a>). Both features are numerical. To discover the most suitable counterfactual explanation based on the smallest distance from the test instance assuring to provide desired outcome, an optimization algorithm proposed by Wachter <i>et al.</i> [<a href="#ref_17">17</a>] is used and its loss function is presented mathematically as follows: $$L(m, x, x^{cf}, y') = (m(x^{cf}) - y')^2 + d(x^{cf}, x)$$ where $L$ is a loss function, $x$ is the test instance, $x^{cf}$ is a counterfactual instance, $y'$ is the desired outcome, $m$ is the machine learning model, and $d$ is the distance function. $L$ tries to minimize $d$ in such a way that the desired outcome $y'$ and the prediction of $m(x^{cf})$ are the same. The distance function $d(.,.)$ is customized as follows: $$d(x^{cf}, x) =\sum_{f=1}^{n}|x_f - x^{cf}_f|/MAD_f$$
+	</p>
+
+	<p>
+	The Manhattan distance weighted with median absolute deviation (MAD) is employed for each feature $f$ whereas $n$ is the total number of features (i.e., n=2 in our use case). MAD computes an absolute value which helps in sorting the counterfactuals.
+	</p>
+
+        <div id="figure_ie7" class="framed">
+          <div class="inside">
+            <div class="eyebrow">
+              Let us demonstrate how to generate a counterfactual explanation using the user-preferred (UP) approach for the test instance shown in <a href="#figure_ie5">Fig. 6</a>. By adjusting the sliders for Area and Perimeter in <a href="#figure_ie7">Fig. 8</a>, you can select a range of values for the counterfactual class you are looking for. Once you have made your selections, the table will show the corresponding counterfactual values for Area and Perimeter, along with a textual explanation using the linguistic terms introduced in <a href="#table_leaves_names">Table 1</a>. Additionally, the counterfactual explanation will be displayed as a blue point in <a href="#figure_ie8">Fig. 9</a>, with the label "CF Class (UP)" denoting the best counterfactual generated with the user-preferred approach.<br><br>Notice that the previous interactive elements are cross-linked. Accordingly, the user-preferred approach will show a consistent behavior only if you explicitly selected previously the counterfactual class from the dropdown menu by clicking on the green button in <a href="#figure_ie5">Fig. 6</a>, and in agreement with the counterfactual values of Area and Perimeter associated with <a href="#figure_ie6">Fig. 7</a>. Similarly, you have to provide the feature ranges by moving the sliders of Area and Perimeter in <a href="#figure_ie7">Fig. 8</a> to see the best found counterfactual point plotted in <a href="#figure_ie8">Fig. 9</a> colored blue and labeled "CF class (UP)".
+            </div>
+
+            <div id="InteractiveElement7"></div>
+            <script defer src="ies/ie7.js"></script>
+            <div class="caption"><b>Figure 8:</b><br> Example of user feedback-based counterfactual explanations.</div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="section_conclusion">
+      <h2>IV. Discussion and concluding remarks</h2>
+        <p>
+        Fuzzy sets and systems are well known because of their ability to deal with approximate reasoning, mainly in control applications. Even though great effort has been made in the research community to establish the basis for ensuring interpretability of fuzzy systems, more work is still required for ensuring explainability. In this work, we have sketched how to make fuzzy classifiers not only interpretable by careful design but also explainable. Explainable Fuzzy Systems can provide users with both factual and counterfactual explanations in natural language.
+        </p>
+
+	<p>
+	In the previous sections, several interactive components were presented with the aim of illustrating two complementary approaches to factual and counterfactual explanation generation that can be applied to distinct classifiers. The presented explanation generation algorithms differ in nature and output representation. On the one hand, the fuzzy logic-based explanation generation method is model-specific, i.e., it operates on the internals of the given FRBCS and primarily aims to explain the output of the FRBCS itself. On the other hand, the described feedback-based counterfactual explanation generation method is model-agnostic, i.e., it does not require access to the internals of the model and inspects the data region around the test instance in the search of a minimally different potential counterfactual data point. Notwithstanding the foregoing, the fuzzy logic-based method can be used as part of a model-agnostic explanation generation method if the FRBCS under consideration is, e.g., trained on a local neighborhood around the test instance. In this regard, both methods may as well be applied to explain the output of other classifiers.
+	</p>
+
+	<p>
+	As for the output representation, both methods produce textual explanations. However, the fuzzy logic-based method generates explanations that cover a set of counterfactual points whereas the feedback-based algorithm generates a single data point and forms the explanation based on the features of that data point. 
+	</p>
+
+      <div id="figure_ie8" class="framed">
+        <div class="inside">
+          <div class="eyebrow">
+            You can visually inspect the differences between the output of the two explanation generation methods in the plot below. The images of the leaves illustrate instances of the factual and counterfactual classes (according to your choice of the test instance in <a href="#figure_ie5">Fig. 6</a> and that of the counterfactual class in <a href="#figure_ie6">Fig. 7</a>, respectively). The plot below depicts the selected test instance (in red), the counterfactual data points covered by the counterfactual rule selected by the fuzzy logic (FL)-based method (in green), and the counterfactual data point output by the user preference (UP)-based method (in blue). The distribution of the data points will change as you select a different test instance in <a href="#figure_ie5">Fig. 6</a> and/or a different counterfactual class in <a href="#figure_ie6">Fig. 7</a>. Shaded areas (R1-R11) correspond to the regions of the data space that are covered by the rules that the FRBCS uses to predict the leaf class of the selected test instance. You may want to select a region of your preference to zoom in to better inspect specific parts of the data space. You can zoom back out by double-clicking the plot. Similarly to <a href="#figure_ie1">Fig. 2</a>, you can (un)hide any (set of) data points by clicking the corresponding label in the legend of the plot.
+          </div>
+
+      <table width="100%" class="center">
+	  <tr>
+	  <td style="text-align: center">
+	    <img id="final_plot_image_test_instance" src="img/chinese_horse_chestnut.jpg" width="300" height="225">
+      </td>
+	  <td style="text-align: center">
+	    <img id="final_plot_image_cf" src="img/anhui.jpg" width="300" height="225">
+      </td>
+	  <br>
+	  <tr>
+	    <td style="text-align: center">
+	      Factual class example
+	    </td>
+	    <td style="text-align: center">
+	      Counterfactual class example
+	    </td>
+	  </tr>
+	  </table>
+	  <div id="InteractiveElement8"></div>
+          <script src="ies/ie8.js"></script>       
+          <div class="caption"><b>Figure 9:</b><br>Visual representation of the generated counterfactuals.</div>
+        </div>
+      </div>
+
+	<p>	
+	The presented methods have some limitations. As stated previously, the explanation generation method for FRBCSs is model-specific. Therefore, its applicability is limited to the family of interpretable rule-based classifiers whose internals are available and can be transformed into rules (if necessary). In addition, the feature space is assumed to always be known and interpretable. As for the user preference-based method, overly restrictive user feedback can lead to sub-optimal solutions to the optimization problem when generating counterfactuals.
+	</p>
+
+	<p>	
+	Importantly, the end user is assumed to understand the generated explanations. However, the understandability of the explanations can be undermined if the user has little domain knowledge (if any). Whereas the user preference-based method allows the end user to fine-tune the initially generated explanation, it does not enable him or her to learn facts about the application domain. In this regard, the social aspect of explanation can be enhanced if the user is engaged in an explanatory dialogue with the explainer [<a href="#ref_18">18</a>]. Interacting with the system via dialogue, the user can gain further domain knowledge and, if found necessary, inspect explanations alternative to those offered initially.
+	</p>
+
+    <p>
+	It is worth noting that the development of Explainable and Trustworthy AI has made fuzzy sets and systems regain attention. Thus, model-specific methods have, e.g., been applied to address causality in the context of counterfactual explanation generation for fuzzy rule-based classification systems [<a href="#ref_19">19</a>]. Alternative methods have been used for generating factual and counterfactual explanations for fuzzy classification trees [<a href="#ref_20">20</a>], [<a href="#ref_21">21</a>]. All in all, these fuzzy-based approaches deal naturally with imprecision and uncertainty in the generation of explanations. Moreover, the ability to produce natural linguistic explanations is what makes special the approach presented in this work, which highlights the relevance of explainable fuzzy systems [<a href="#ref_4">4</a>]. For an overview of factual and counterfactual explanation generation algorithms (including those targeting other supervised machine learning classifiers), the interested readers are kindly referred to recent surveys, e.g., [<a href="#ref_22">22</a>] or [<a href="#ref_23">23</a>].
+	</p>
+
+	<p>
+	The work presented in this immersive article points to several lines of future work. First, further experiments with other classifiers are required to ensure the generalizability of the described algorithms. In addition, these methods may have to be improved to incorporate such properties of counterfactuals as causality, actionability, or discriminative power. Third, the impact of alternative explanations on the end user needs to be investigated further, as user-preferred explanations can differ (sometimes, largely) from the initially offered ones.
+	</p>
+
+	<p>
+	In conclusion, the presented methods for factual and counterfactual textual explanation generation provide complementary means for explaining classification systems. As they employ different strategies for explanation generation and differ in output representation, they can be used complementarily to each other. The choice of the algorithm to use may depend on the available domain knowledge, target audience, or specific properties of explanations favored in the given settings. 
+	</p>
+
+      </section>
+
+      <section id="section_acknowledgment">
+      <h2>Acknowledgment</h2>
+        <p>
+I. Stepin is an <i>FPI</i> researcher (Grant PRE2019-090153). M. Suffian is a PhD Researcher (Matricola N.309445, funded by University of Urbino, Italy). This work is also supported by Grant PID2021-123152OB-C21 funded by MCIN/AEI/10.13039/501100011033 and by "ESF Investing in your future", Grant TED2021-130295B-C33 funded by MCIN/AEI/10.13039/501100011033 and by the "European Union NextGenerationEU/PRTR", and the Galician Ministry of Culture, Education, Professional Training and University (grants ED431G2019/04 and ED431C2022/19 co-funded by the European Regional Development Fund, ERDF/FEDER program).
+        </p>
+      </section>	
+
+      <section class="references">
+        <h2>References</h2>
+        <ol>
+          <li id="ref_1">
+            Peeking inside the black-box: A survey on explainable artificial intelligence (XAI)
+            <br>
+            <span>
+              A. Adadi and M. Berrada. IEEE Access, vol. 6, pp. 52138-52160, 2018. DOI: <a href="https://ieeexplore.ieee.org/document/8466590" target="_blank">10.1109/ACCESS.2018.287005</a>
+            </span>
+          </li>
+          <li id="ref_2">
+            Explainable and Trustworthy Artificial Intelligence [Guest Editorial]
+            <br>
+            <span>
+              J. M. Alonso-Moral, C. Mencar and H. Ishibuchi. IEEE Computational Intelligence Magazine, vol. 17, pp. 14–15, 2022. DOI: <a href="https://ieeexplore.ieee.org/document/9679740" target="_blank">10.1109/MCI.2021.3129953</a>
+            </span>
+          </li>
+          <li id="ref_3">
+            Type-1 and Interval Type-2 Fuzzy Systems [AI-eXplained]
+            <br>
+            <span>
+              D. Wu, R. Peng and J. M. Mendel. IEEE Computational Intelligence Magazine, vol. 18, no. 1, pp. 81–83, 2023. DOI: <a href="https://ieeexplore.ieee.org/document/10026157" target="_blank">10.1109/MCI.2022.3223496</a>
+            </span>
+          </li>
+          <li id="ref_4">
+            Explainable fuzzy systems - paving the way from interpretable fuzzy systems to explainable AI systems
+            <br>
+            <span>
+              J. M. Alonso, C. Castiello, L. Magdalena and C. Mencar. Studies in Computational Intelligence, vol. 970. Springer International Publishing, 2021. DOI: <a href="http://dx.doi.org/10.1007/978-3-030-71098-9" target="_blank">10.1007/978-3-030-71098-9</a>
+            </span>
+          </li>
+          <li id="ref_5">
+            Explanation in artificial intelligence: Insights from the social sciences
+            <br>
+            <span>
+              T. Miller. Artificial Intelligence, vol. 267, pp. 1-38, 2019. DOI: <a href="https://doi.org/10.1016/j.artint.2018.07.007" target="_blank">10.1016/j.artint.2018.07.007</a>
+            </span>
+          </li>
+          <li id="ref_6">
+            A survey of contrastive and counterfactual explanation generation methods for explainable artificial intelligence
+            <br>
+            <span>
+              I. Stepin, J. M. Alonso, A. Catala and M. Pereira-Fariña. IEEE Access, vol. 9, pp. 11974-12001, 2021. DOI: <a href="https://ieeexplore.ieee.org/abstract/document/9321372" target="_blank">10.1109/ACCESS.2021.3051315</a>
+            </span>
+          </li>
+          <li id="ref_7">
+            A leaf recognition algorithm for plant classification using probabilistic neural network
+            <br>
+            <span>
+              S. Gang Wu, F. Sheng Bao, E. You Xu, Y.-X. Wang, Y.-F. Chang and Q.-L. Xiang. IEEE International Symposium on Signal Processing and Information Technology, 2007, pp. 1–6. DOI: <a href="https://ieeexplore.ieee.org/document/4458016" target="_blank">10.1109/ISSPIT.2007.4458016</a>
+            </span>
+          </li>
+          <li id="ref_8">
+            An exploratory study on the benefits of using natural language for explaining fuzzy rule-based systems
+            <br>
+            <span>
+              J. M. Alonso, A. Ramos-Soto, E. Reiter and K. van Deemter. IEEE International Conference on Fuzzy Systems (FUZZ-IEEE), Naples, Italy, 2017, pp. 1-6. DOI: <a href="https://ieeexplore.ieee.org/document/8015489" target="_blank">10.1109/FUZZ-IEEE.2017.8015489</a>
+            </span>
+          </li>
+          <li id="ref_9">
+            A new approach to clustering
+            <br>
+            <span>
+              E. H. Ruspini. Information and Control, vol. 15(1), pp. 22-32, 1969.DOI: <a href="https://doi.org/10.1016/S0019-9958(69)90591-9" target="_blank">10.1016/S0019-9958(69)90591-9</a>
+            </span>
+          </li>
+          <li id="ref_10">
+            FURIA: An algorithm for unordered fuzzy rule induction
+            <br>
+            <span>
+              J. Hühn and E. Hüllermeier. Data Mining and Knowledge Discovery, vol. 19, no. 3, pp. 293-319, 2009. DOI: <a href="https://doi.org/10.1007/s10618-009-0131-8" target="_blank">10.1007/s10618-009-0131-8</a>
+            </span>
+          </li>
+          <li id="ref_11">
+            A survey on XAI and natural language explanations
+            <br>
+            <span>
+              E. Cambria, L. Malandri, F. Mercorio, M. Mezzanzanica and N. Nobani. Information Processing & Management, vol. 60, issue 1, pp. 103111:1-16, 2023. DOI: <a href="https://doi.org/10.1016/j.ipm.2022.103111" target="_blank">10.1016/j.ipm.2022.103111</a>
+            </span>
+	  <li id="ref_12">
+	      SimpleNLG: A realisation engine for practical applications
+	      <br>
+	      <span>
+		A. Gatt and E. Reiter. In Proceedings of the 12th European Workshop on Natural Language Generation (ENLG), pp. 90–93, Athens, Greece. Association for Computational Linguistics (ACL). 2009, <a href="https://aclanthology.org/W09-0613/" target="_blank">https://aclanthology.org/W09-0613/</a>
+              </span> 
+          </li>
+	  <li id="ref_13">
+	      An empirical study on how humans appreciate automated counterfactual explanations which embrace imprecise information
+	  <br>
+	  <span>
+		I. Stepin, J. M. Alonso-Moral, A. Catala and M. Pereira-Fariña. Information Sciences, vol. 618, pp. 379–399, 2022. DOI: <a href="https://doi.org/10.1016/j.ins.2022.10.098" target="_blank">10.1016/j.ins.2022.10.098</a>
+           </span>
+           </li>
+          <li id="ref_14">
+            FCE: Feedback based counterfactual explanations for explainable AI
+            <br>
+            <span>
+              M. Suffian, P. Graziani, J. M. Alonso and A. Bogliolo. IEEE Access, vol. 10, pp. 72363-72372, 2022. DOI: <a href="https://ieeexplore.ieee.org/document/9819899" target="_blank">10.1109/ACCESS.2022.3189432</a>
+            </span>
+          </li>
+           <li id="ref_15">
+            "Why should I trust you?": explaining the predictions of any classifier
+            <br>
+            <span>
+              M. T. Ribeiro, S. Singh and C. Guestrin. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '16), pp. 1135–1144, 2016. DOI: <a href="https://doi.org/10.1145/2939672.2939778" target="_blank">10.1145/2939672.2939778</a>
+            </span>
+          </li>
+          <li id="ref_16">
+            Handbook of Heuristics
+            <br>
+            <span>
+              R. Martí, P. M. Pardalos and M. G. C. Resende. Springer Cham, 2018. DOI: <a href="https://doi.org/10.1007/978-3-319-07124-4" target="_blank">10.1007/978-3-319-07124-4</a>
+            </span>
+          </li>
+          <li id="ref_17">
+            Counterfactual explanations without opening the black box: Automated decisions and the GDPR
+            <br>
+            <span>
+              S. Wachter, B. Mittelstadt and C. Russell. Harvard Journal of Law & Technology, vol. 31, pp. 841-887, 2018. DOI: <a href="https://doi.org/10.2139/ssrn.3063289" target="_blank">10.2139/ssrn.3063289</a>
+            </span>
+          </li>
+          <li id="ref_18">
+            Information-seeking dialogue for explainable artificial intelligence: Modelling and analytics
+            <br>
+            <span>
+              I. Stepin, K. Budzynska, A. Catala, M. Pereira-Fariña and J. M. Alonso-Moral. Argument & Computation, in press. DOI: <a href="https://doi.org/10.3233/AAC-220011" target="_blank">10.3233/AAC-220011</a>
+            </span>
+          </li>
+          <li id="ref_19">
+            Counterfactual rule generation for fuzzy rule-based classification systems
+            <br>
+            <span>
+              T. Zhang, C. Wagner and J. M. Garibaldi. In Proceedings of the 2022 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE), pp. 1–8, Padua, Italy, 2022. DOI: <a href="https://doi.org/10.1109/FUZZ-IEEE55066.2022.9882705" target="_blank">10.1109/FUZZ-IEEE55066.2022.9882705</a>
+            </span>
+          </li>
+          <li id="ref_20">
+            Factual and counterfactual explanations in fuzzy classification trees
+            <br>
+            <span>
+              G. Fernández, J. A. Aledo, J. A. Gamez and J. M. Puerta. IEEE Transactions on Fuzzy Systems, vol. 30, no. 12, pp. 5484-5495, 2022. DOI: <a href="https://doi.org/10.1109/TFUZZ.2022.3179582" target="_blank">10.1109/TFUZZ.2022.3179582</a>
+            </span>
+          </li>
+          <li id="ref_21">
+            Fuzzy-LORE: A method for extracting local and counterfactual explanations using fuzzy decision trees
+            <br>
+            <span>
+            N. Maaroof, A. Moreno, M. Jabreel and A. Valls. In Proceedings of the 24th International Conference of the Catalan Association for Artificial Intelligence (CCIA), vol. 356, pp. 345–354, 2022. DOI: <a href="https://doi.org/10.3233/FAIA220357" target="_blank">10.3233/FAIA220357</a>
+            </span>
+          </li>
+          <li id="ref_22">
+            Explainable artificial intelligence (XAI): What we know and what is left to attain trustworthy artificial intelligence
+            <br>
+            <span>
+              S. Ali, T. Abuhmed, S. El-Sappagh, K. Muhammad, J.M. Alonso-Moral, R. Confalonieri, R. Guidotti, J. del Ser, N. Díaz-Rodríguez and F. Herrera. Information Fusion, in press. DOI: <a href="https://doi.org/10.1016/j.inffus.2023.101805" target="_blank">10.1016/j.inffus.2023.101805</a>
+            </span>
+          </li>
+           <li id="ref_23">
+            Counterfactual explanations and how to find them: literature review and benchmarking
+            <br>
+            <span>
+              R. Guidotti. Data Mining and Knowledge Discovery, pp. 1–55, 2022. DOI: <a href="https://doi.org/10.1007/s10618-022-00831-6" target="_blank">10.1007/s10618-022-00831-6</a>
+            </span>
+          </li>
+       </ol>
+      </section>
+    </div>
+
+  </article><!-- End of aticle -->
+
+  <!-- Scroll to top button -->
+  <a class="scroll-top" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 312.36">
+      <path fill="white"
+        d="M0 276.77 253.12 0 512 282.48l-32.65 29.88-226.2-246.83L32.66 306.64z" />
+    </svg>
+  </a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let scrollTopBtn = document.querySelector(".scroll-top");
+      window.onscroll = function () { scrollFunction(scrollTopBtn) };
+
+      function scrollFunction(el) {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          el.style.display = "flex";
+        } else {
+          el.style.display = "none";
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

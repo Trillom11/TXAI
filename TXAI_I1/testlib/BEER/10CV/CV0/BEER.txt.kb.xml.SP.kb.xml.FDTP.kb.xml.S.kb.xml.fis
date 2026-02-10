@@ -1,0 +1,84 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=3
+Noutputs=1
+Nrules=15
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='Color'
+Range=[   0.000,   45.000]
+NMFs=6
+MF1='very low','SemiTrapezoidalInf',[   0.000,   3.258,   9.905]
+MF2='low','triangular',[   3.258,   9.905,   17.096]
+MF3='average low','triangular',[   9.905,   17.096,   27.571]
+MF4='average high','triangular',[   17.096,   27.571,   34.769]
+MF5='high OR very high','SemiTrapezoidalSup',[   27.571,   34.769,   45.000]
+MF6='(average low) OR (average high)','trapezoidal',[   9.905,   17.096,   27.571,   34.769]
+
+
+[Input2]
+Active='yes'
+Name='Bitterness'
+Range=[   8.000,   250.000]
+NMFs=7
+MF1='very low','SemiTrapezoidalInf',[   8.000,   22.007,   36.664]
+MF2='low','triangular',[   22.007,   36.664,   73.512]
+MF3='average low','triangular',[   36.664,   73.512,   101.976]
+MF4='average high','triangular',[   73.512,   101.976,   201.600]
+MF5='more or less (high)','SemiTrapezoidalSup',[   101.976,   201.600,   250.000]
+MF6='(low) OR (average low) OR (average high)','trapezoidal',[   22.007,   36.664,   101.976,   201.600]
+MF7='(very low) OR (low)','SemiTrapezoidalInf',[   8.000,   36.664,   73.512]
+
+
+[Input3]
+Active='yes'
+Name='Strength'
+Range=[   0.039,   0.136]
+NMFs=8
+MF1='very low OR low','SemiTrapezoidalInf',[   0.039,   0.054,   0.079]
+MF2='average low','triangular',[   0.054,   0.079,   0.092]
+MF3='average high','triangular',[   0.079,   0.092,   0.104]
+MF4='high','triangular',[   0.092,   0.104,   0.122]
+MF5='very high','SemiTrapezoidalSup',[   0.104,   0.122,   0.136]
+MF6='(average low) OR (average high)','trapezoidal',[   0.054,   0.079,   0.092,   0.104]
+MF7='(high) OR (very high)','SemiTrapezoidalSup',[   0.092,   0.104,   0.136]
+MF8='(average low) OR (average high) OR (high)','trapezoidal',[   0.054,   0.079,   0.104,   0.122]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='Class'
+Range=[   1.000,   8.000]
+NMFs=0
+
+[Rules]
+1, 1, 0,    1.000, 
+1, 2, 0,    3.000, 
+2, 0, 6,    4.000, 
+3, 0, 2,    4.000, 
+2, 0, 1,    2.000, 
+2, 0, 7,    6.000, 
+3, 0, 3,    6.000, 
+3, 6, 4,    6.000, 
+3, 0, 5,    6.000, 
+4, 3, 5,    6.000, 
+6, 0, 1,    7.000, 
+3, 1, 4,    8.000, 
+4, 0, 8,    8.000, 
+4, 7, 5,    8.000, 
+5, 0, 0,    5.000, 
+
+[Exceptions]
+

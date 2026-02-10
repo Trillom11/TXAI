@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fuzzySystem xmlns="http://www.ieee1855.org" name="New Knowledge Base - MAMDANI">
+    <knowledgeBase>
+        <fuzzyVariable name="acoustics" scale="" domainleft="0.0" domainright="0.995" type="input">
+            <fuzzyTerm name="very low OR low" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.249" param4="0.497"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="more or less (average OR high)" complement="false">
+                <trapezoidShape param1="0.249" param2="0.497" param3="0.995" param4="0.995"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="danceability" scale="" domainleft="0.122" domainright="0.984" type="input">
+            <fuzzyTerm name="very low" complement="false">
+                <trapezoidShape param1="0.122" param2="0.122" param3="0.122" param4="0.338"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.122" param2="0.338" param3="0.553"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.338" param2="0.553" param3="0.768"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="0.553" param2="0.768" param3="0.984"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very high" complement="false">
+                <trapezoidShape param1="0.768" param2="0.984" param3="0.984" param4="0.984"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="(average) OR (high)" complement="false">
+                <trapezoidShape param1="0.338" param2="0.553" param3="0.768" param4="0.984"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="(low) OR (average)" complement="false">
+                <trapezoidShape param1="0.122" param2="0.338" param3="0.553" param4="0.768"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="(low) OR (average) OR (high)" complement="false">
+                <trapezoidShape param1="0.122" param2="0.338" param3="0.768" param4="0.984"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="(very low) OR (low)" complement="false">
+                <trapezoidShape param1="0.122" param2="0.122" param3="0.338" param4="0.553"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="(high) OR (very high)" complement="false">
+                <trapezoidShape param1="0.553" param2="0.768" param3="0.984" param4="0.984"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="duration" scale="" domainleft="16042.0" domainright="1004627.0" type="input">
+            <fuzzyTerm name="very low" complement="false">
+                <trapezoidShape param1="16042.0" param2="16042.0" param3="16042.0" param4="263188.25"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="16042.0" param2="263188.25" param3="510334.5"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="more or less (average OR high)" complement="false">
+                <trapezoidShape param1="263188.25" param2="510334.5" param3="1004627.0" param4="1004627.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="energy" scale="" domainleft="0.015" domainright="0.998" type="input">
+            <fuzzyTerm name="very low OR low" complement="false">
+                <trapezoidShape param1="0.015" param2="0.015" param3="0.261" param4="0.506"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.261" param2="0.506" param3="0.752"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="0.506" param2="0.752" param3="0.998"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very high" complement="false">
+                <trapezoidShape param1="0.752" param2="0.998" param3="0.998" param4="0.998"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="(average) OR (high)" complement="false">
+                <trapezoidShape param1="0.261" param2="0.506" param3="0.752" param4="0.998"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="instrumentalness" scale="" domainleft="0.0" domainright="0.976" type="input">
+            <fuzzyTerm name="very low" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.0" param4="0.244"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.0" param2="0.244" param3="0.488"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.244" param2="0.488" param3="0.732"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high OR very high" complement="false">
+                <trapezoidShape param1="0.488" param2="0.732" param3="0.976" param4="0.976"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="NOT(very low)" complement="false">
+                <trapezoidShape param1="0.0" param2="0.244" param3="0.976" param4="0.976"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="(average) OR (high OR very high)" complement="false">
+                <trapezoidShape param1="0.244" param2="0.488" param3="0.976" param4="0.976"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="key" scale="" domainleft="0.0" domainright="11.0" type="input">
+            <fuzzyTerm name="very low" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.0" param4="2.75"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="more or less (low)" complement="false">
+                <trapezoidShape param1="0.0" param2="2.75" param3="11.0" param4="11.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="liveness" scale="" domainleft="0.019" domainright="0.969" type="input">
+            <fuzzyTerm name="very low OR low" complement="false">
+                <trapezoidShape param1="0.019" param2="0.019" param3="0.257" param4="0.494"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="more or less (average)" complement="false">
+                <trapezoidShape param1="0.257" param2="0.494" param3="0.969" param4="0.969"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="mode" scale="" domainleft="0.0" domainright="1.0" type="input">
+            <fuzzyTerm name="0.0" complement="false">
+                <singletonShape param1="0.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="1.0" complement="false">
+                <singletonShape param1="1.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="speechiness" scale="" domainleft="0.023" domainright="0.816" type="input">
+            <fuzzyTerm name="very low" complement="false">
+                <trapezoidShape param1="0.023" param2="0.023" param3="0.023" param4="0.221"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.023" param2="0.221" param3="0.419"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="more or less (average)" complement="false">
+                <trapezoidShape param1="0.221" param2="0.419" param3="0.816" param4="0.816"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="NOT(very low)" complement="false">
+                <trapezoidShape param1="0.023" param2="0.221" param3="0.816" param4="0.816"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="tempo" scale="" domainleft="47.859" domainright="219.331" type="input">
+            <fuzzyTerm name="very low OR low" complement="false">
+                <trapezoidShape param1="47.859" param2="47.859" param3="90.727" param4="133.595"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="90.727" param2="133.595" param3="176.463"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="133.595" param2="176.463" param3="219.331"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very high" complement="false">
+                <trapezoidShape param1="176.463" param2="219.331" param3="219.331" param4="219.331"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="valence" scale="" domainleft="0.035" domainright="0.992" type="input">
+            <fuzzyTerm name="very low" complement="false">
+                <trapezoidShape param1="0.035" param2="0.035" param3="0.035" param4="0.274"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.035" param2="0.274" param3="0.513"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.274" param2="0.513" param3="0.753"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="0.513" param2="0.753" param3="0.992"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very high" complement="false">
+                <trapezoidShape param1="0.753" param2="0.992" param3="0.992" param4="0.992"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="(low) OR (average)" complement="false">
+                <trapezoidShape param1="0.035" param2="0.274" param3="0.513" param4="0.753"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="(high) OR (very high)" complement="false">
+                <trapezoidShape param1="0.513" param2="0.753" param3="0.992" param4="0.992"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="like " scale="" domainleft="1.0" domainright="2.0" type="output" accumulation="MAX" defuzzifier="MOM" defaultValue="1.0">
+            <fuzzyTerm name="1.0" complement="false">
+                <singletonShape param1="1.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="2.0" complement="false">
+                <singletonShape param1="2.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+    </knowledgeBase>
+    <mamdaniRuleBase name="rulebase-New Knowledge Base" activationMethod="MIN" andMethod="MIN" orMethod="MAX">
+        <rule name="rule1" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very low OR low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule2" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>(average) OR (high)</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>very low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule3" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>key</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>mode</variable>
+                    <term>0.0</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>(low) OR (average)</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule4" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>(average) OR (high)</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule5" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>duration</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very high</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>very low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule6" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>(low) OR (average)</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very high</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule7" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>(low) OR (average) OR (high)</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule8" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>acoustics</variable>
+                    <term>very low OR low</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>(high) OR (very high)</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule9" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>duration</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>liveness</variable>
+                    <term>more or less (average)</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule10" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>NOT(very low)</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule11" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>NOT(very low)</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule12" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>tempo</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule13" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>liveness</variable>
+                    <term>more or less (average)</term>
+                </clause>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>tempo</variable>
+                    <term>high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule14" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>tempo</variable>
+                    <term>very high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule15" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>more or less (average)</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule16" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>very low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule17" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>key</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>mode</variable>
+                    <term>1.0</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule18" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>(high) OR (very high)</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule19" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>energy</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>(average) OR (high OR very high)</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule20" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>(very low) OR (low)</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule21" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>(high) OR (very high)</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very high</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule22" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>acoustics</variable>
+                    <term>more or less (average OR high)</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>very low</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>(high) OR (very high)</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule23" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>duration</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very high</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>(high) OR (very high)</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule24" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>duration</variable>
+                    <term>more or less (average OR high)</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>very high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like </variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+    </mamdaniRuleBase>
+</fuzzySystem>

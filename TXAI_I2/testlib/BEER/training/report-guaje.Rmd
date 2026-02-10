@@ -1,0 +1,48 @@
+**Decision**
+
+```{r, results='asis', echo=FALSE}
+cat(paste(properties$class,'.',sep=''))
+```
+
+***
+
+**Explanation**
+
+```{r, results='asis', echo=FALSE}
+cat(properties$exp)
+```
+
+***
+
+**Additional Details**
+
+```{r, results='asis', echo=FALSE}
+cat('<ul>')
+cat('<li><b>Color:</b>')
+cat(paste('<ul><li>',properties$color,' because color equals ',properties$dataCOLOR,sep=''))
+cat('</li><li>')
+cat(paste('Color',' can take values from ',' 0.0 ',' to ','45.0',sep=''))
+cat('</li><li>')
+cat(paste('Linguistic terms= [','Pale, Straw, Amber, Brown, Black]',sep=''))
+cat('</li>')
+cat('</li></ul>')
+cat('<li><b>Bitterness:</b>')
+cat(paste('<ul><li>',properties$bitterness,' because bitterness equals ',properties$dataBITTERNESS,sep=''))
+cat('</li><li>')
+cat(paste('Bitterness',' can take values from ',' 8.0 ',' to ','250.0',sep=''))
+cat('</li><li>')
+cat(paste('Linguistic terms= [','Low, High]',sep=''))
+cat('</li>')
+cat('</li></ul>')
+cat('<li><b>Strength:</b>')
+cat(paste('<ul><li>',properties$strength,' because strength equals ',properties$dataSTRENGTH,sep=''))
+cat('</li><li>')
+cat(paste('Strength',' can take values from ',' 0.039 ',' to ','0.136',sep=''))
+cat('</li><li>')
+cat(paste('Linguistic terms= [','Session, Standard, High, Very high]',sep=''))
+cat('</li>')
+cat('</li></ul>')
+cat('</ul>')
+```
+
+***

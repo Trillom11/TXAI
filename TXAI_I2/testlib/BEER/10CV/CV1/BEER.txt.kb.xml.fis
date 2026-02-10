@@ -1,0 +1,57 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=3
+Noutputs=1
+Nrules=0
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='Color'
+Range=[   0.000,   45.000]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   0.000,   0.000,   22.500]
+MF2='average','triangular',[   0.000,   22.500,   45.000]
+MF3='high','SemiTrapezoidalSup',[   22.500,   45.000,   45.000]
+
+
+[Input2]
+Active='yes'
+Name='Bitterness'
+Range=[   8.000,   250.000]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   8.000,   8.000,   129.000]
+MF2='average','triangular',[   8.000,   129.000,   250.000]
+MF3='high','SemiTrapezoidalSup',[   129.000,   250.000,   250.000]
+
+
+[Input3]
+Active='yes'
+Name='Strength'
+Range=[   0.039,   0.136]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   0.039,   0.039,   0.087]
+MF2='average','triangular',[   0.039,   0.087,   0.136]
+MF3='high','SemiTrapezoidalSup',[   0.088,   0.136,   0.136]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='Class'
+Range=[   1.000,   8.000]
+NMFs=0
+
+[Rules]
+
+[Exceptions]
+

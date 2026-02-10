@@ -1,0 +1,33 @@
+=== Run information ===
+
+Relation:     BEER
+Instances:    360
+Attributes:   4
+              Color
+              Bitterness
+              Strength
+              Class
+
+=== Classifier model (full training set) ===
+
+FURIA rules:
+===========
+
+(Bitterness in [-inf, -inf, 19, 30]) and (Color in [-inf, -inf, 4, 7]) => Class=1.0 (CF = 0.96)
+(Color in [-inf, -inf, 4, 7]) and (Bitterness in [-inf, -inf, 23, 30]) => Class=1.0 (CF = 0.96)
+(Bitterness in [-inf, -inf, 27, 52]) and (Color in [6, 7, inf, inf]) and (Color in [-inf, -inf, 14, 16]) => Class=2.0 (CF = 0.94)
+(Color in [-inf, -inf, 6, 8]) and (Bitterness in [29, 30, inf, inf]) and (Bitterness in [-inf, -inf, 50, 63]) => Class=3.0 (CF = 0.96)
+(Bitterness in [50, 53, inf, inf]) and (Strength in [-inf, -inf, 0.091, 0.096]) and (Color in [-inf, -inf, 13, 14]) => Class=4.0 (CF = 0.96)
+(Bitterness in [48, 50, inf, inf]) and (Strength in [-inf, -inf, 0.095, 0.096]) and (Color in [-inf, -inf, 14, 15]) and (Strength in [0.088, 0.092, inf, inf]) => Class=4.0 (CF = 0.73)
+(Bitterness in [38, 50, inf, inf]) and (Strength in [-inf, -inf, 0.087, 0.088]) and (Strength in [0.083, 0.085, inf, inf]) => Class=4.0 (CF = 0.82)
+(Color in [29, 30, inf, inf]) => Class=5.0 (CF = 0.92)
+(Bitterness in [47, 50, inf, inf]) and (Strength in [0.087, 0.092, inf, inf]) and (Color in [11, 12, inf, inf]) => Class=6.0 (CF = 0.96)
+(Bitterness in [62, 77, inf, inf]) and (Color in [13, 14, inf, inf]) and (Bitterness in [-inf, -inf, 85, 98]) => Class=6.0 (CF = 0.89)
+(Bitterness in [38, 77, inf, inf]) and (Strength in [0.106, 0.111, inf, inf]) => Class=6.0 (CF = 0.87)
+(Color in [12, 20, inf, inf]) and (Strength in [-inf, -inf, 0.051, 0.053]) and (Color in [-inf, -inf, 30, 34]) => Class=7.0 (CF = 0.96)
+(Color in [8, 20, inf, inf]) and (Strength in [-inf, -inf, 0.054, 0.071]) and (Color in [-inf, -inf, 28, 30]) and (Bitterness in [27, 28, inf, inf]) => Class=7.0 (CF = 0.92)
+(Strength in [0.07, 0.087, inf, inf]) and (Bitterness in [-inf, -inf, 47, 50]) => Class=8.0 (CF = 0.96)
+
+Number of Rules : 14
+
+

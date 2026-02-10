@@ -1,0 +1,321 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=13
+Noutputs=1
+Nrules=80
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='acoustics'
+Range=[   0.000,   0.995]
+NMFs=13
+MF1='very low','SemiTrapezoidalInf',[   0.000,   0.000,   0.166]
+MF2='low','triangular',[   0.000,   0.166,   0.332]
+MF3='average low','triangular',[   0.166,   0.332,   0.497]
+MF4='average','triangular',[   0.332,   0.497,   0.663]
+MF5='average high','triangular',[   0.497,   0.663,   0.829]
+MF6='high','triangular',[   0.663,   0.829,   0.995]
+MF7='very high','SemiTrapezoidalSup',[   0.829,   0.995,   0.995]
+MF8='NOT(very low)','SemiTrapezoidalSup',[   0.000,   0.166,   0.995]
+MF9='NOT(very high)','SemiTrapezoidalInf',[   0.000,   0.829,   0.995]
+MF10='(very low) OR (low) OR (average low) OR (average) OR (average high)','SemiTrapezoidalInf',[   0.000,   0.663,   0.829]
+MF11='(very low) OR (low) OR (average low)','SemiTrapezoidalInf',[   0.000,   0.332,   0.497]
+MF12='(average high) OR (high)','trapezoidal',[   0.497,   0.663,   0.829,   0.995]
+MF13='(low) OR (average low) OR (average)','trapezoidal',[   0.000,   0.166,   0.497,   0.663]
+
+
+[Input2]
+Active='yes'
+Name='danceability'
+Range=[   0.122,   0.984]
+NMFs=13
+MF1='very low','SemiTrapezoidalInf',[   0.122,   0.122,   0.266]
+MF2='low','triangular',[   0.122,   0.266,   0.409]
+MF3='average low','triangular',[   0.266,   0.409,   0.553]
+MF4='average','triangular',[   0.409,   0.553,   0.697]
+MF5='average high','triangular',[   0.553,   0.697,   0.840]
+MF6='high','triangular',[   0.697,   0.840,   0.984]
+MF7='very high','SemiTrapezoidalSup',[   0.840,   0.984,   0.984]
+MF8='(average) OR (average high)','trapezoidal',[   0.409,   0.553,   0.697,   0.840]
+MF9='(very low) OR (low) OR (average low)','SemiTrapezoidalInf',[   0.122,   0.409,   0.553]
+MF10='(low) OR (average low)','trapezoidal',[   0.122,   0.266,   0.409,   0.553]
+MF11='(very low) OR (low)','SemiTrapezoidalInf',[   0.122,   0.266,   0.409]
+MF12='(average high) OR (high) OR (very high)','SemiTrapezoidalSup',[   0.553,   0.697,   0.984]
+MF13='(average) OR (average high) OR (high) OR (very high)','SemiTrapezoidalSup',[   0.409,   0.553,   0.984]
+
+
+[Input3]
+Active='yes'
+Name='duration'
+Range=[   16042.000,   1004627.000]
+NMFs=8
+MF1='very low','SemiTrapezoidalInf',[   16042.000,   16042.000,   180806.167]
+MF2='low','triangular',[   16042.000,   180806.167,   345570.333]
+MF3='average low','triangular',[   180806.167,   345570.333,   510334.500]
+MF4='average','triangular',[   345570.333,   510334.500,   675098.667]
+MF5='average high','triangular',[   510334.500,   675098.667,   839862.833]
+MF6='high','triangular',[   675098.667,   839862.833,   1004627.000]
+MF7='very high','SemiTrapezoidalSup',[   839862.833,   1004627.000,   1004627.000]
+MF8='(average) OR (average high) OR (high)','trapezoidal',[   345570.333,   510334.500,   839862.833,   1004627.000]
+
+
+[Input4]
+Active='yes'
+Name='energy'
+Range=[   0.015,   0.998]
+NMFs=11
+MF1='very low','SemiTrapezoidalInf',[   0.015,   0.015,   0.179]
+MF2='low','triangular',[   0.015,   0.179,   0.343]
+MF3='average low','triangular',[   0.179,   0.343,   0.506]
+MF4='average','triangular',[   0.343,   0.506,   0.670]
+MF5='average high','triangular',[   0.506,   0.670,   0.834]
+MF6='high','triangular',[   0.670,   0.834,   0.998]
+MF7='very high','SemiTrapezoidalSup',[   0.834,   0.998,   0.998]
+MF8='(very low) OR (low)','SemiTrapezoidalInf',[   0.015,   0.179,   0.343]
+MF9='(average high) OR (high) OR (very high)','SemiTrapezoidalSup',[   0.506,   0.670,   0.998]
+MF10='(average) OR (average high) OR (high) OR (very high)','SemiTrapezoidalSup',[   0.343,   0.506,   0.998]
+MF11='(average high) OR (high)','trapezoidal',[   0.506,   0.670,   0.834,   0.998]
+
+
+[Input5]
+Active='yes'
+Name='instrumentalness'
+Range=[   0.000,   0.976]
+NMFs=8
+MF1='very low','SemiTrapezoidalInf',[   0.000,   0.000,   0.163]
+MF2='low','triangular',[   0.000,   0.163,   0.325]
+MF3='average low','triangular',[   0.163,   0.325,   0.488]
+MF4='average','triangular',[   0.325,   0.488,   0.651]
+MF5='average high','triangular',[   0.488,   0.651,   0.813]
+MF6='high','triangular',[   0.651,   0.813,   0.976]
+MF7='very high','SemiTrapezoidalSup',[   0.813,   0.976,   0.976]
+MF8='(average high) OR (high)','trapezoidal',[   0.488,   0.651,   0.813,   0.976]
+
+
+[Input6]
+Active='yes'
+Name='key'
+Range=[   0.000,   11.000]
+NMFs=13
+MF1='very low','SemiTrapezoidalInf',[   0.000,   0.000,   1.833]
+MF2='low','triangular',[   0.000,   1.833,   3.667]
+MF3='average low','triangular',[   1.833,   3.667,   5.500]
+MF4='average','triangular',[   3.667,   5.500,   7.333]
+MF5='average high','triangular',[   5.500,   7.333,   9.167]
+MF6='high','triangular',[   7.333,   9.167,   11.000]
+MF7='very high','SemiTrapezoidalSup',[   9.167,   11.000,   11.000]
+MF8='(low) OR (average low)','trapezoidal',[   0.000,   1.833,   3.667,   5.500]
+MF9='(average low) OR (average) OR (average high) OR (high) OR (very high)','SemiTrapezoidalSup',[   1.833,   3.667,   11.000]
+MF10='(high) OR (very high)','SemiTrapezoidalSup',[   7.333,   9.167,   11.000]
+MF11='(very low) OR (low) OR (average low) OR (average)','SemiTrapezoidalInf',[   0.000,   5.500,   7.333]
+MF12='NOT(very high)','SemiTrapezoidalInf',[   0.000,   9.167,   11.000]
+MF13='(average) OR (average high)','trapezoidal',[   3.667,   5.500,   7.333,   9.167]
+
+
+[Input7]
+Active='yes'
+Name='liveness'
+Range=[   0.019,   0.969]
+NMFs=12
+MF1='very low','SemiTrapezoidalInf',[   0.019,   0.019,   0.177]
+MF2='low','triangular',[   0.019,   0.177,   0.336]
+MF3='average low','triangular',[   0.177,   0.336,   0.494]
+MF4='average','triangular',[   0.336,   0.494,   0.652]
+MF5='average high','triangular',[   0.494,   0.652,   0.811]
+MF6='high','triangular',[   0.652,   0.811,   0.969]
+MF7='very high','SemiTrapezoidalSup',[   0.811,   0.969,   0.969]
+MF8='(average low) OR (average) OR (average high) OR (high)','trapezoidal',[   0.177,   0.336,   0.811,   0.969]
+MF9='(very low) OR (low) OR (average low) OR (average)','SemiTrapezoidalInf',[   0.019,   0.494,   0.652]
+MF10='(very low) OR (low)','SemiTrapezoidalInf',[   0.019,   0.177,   0.336]
+MF11='(very low) OR (low) OR (average low)','SemiTrapezoidalInf',[   0.019,   0.336,   0.494]
+MF12='(high) OR (very high)','SemiTrapezoidalSup',[   0.652,   0.811,   0.969]
+
+
+[Input8]
+Active='yes'
+Name='loudness'
+Range=[   -33.097,   -0.307]
+NMFs=8
+MF1='very low','SemiTrapezoidalInf',[   -33.097,   -33.097,   -27.632]
+MF2='low','triangular',[   -33.097,   -27.632,   -22.167]
+MF3='average low','triangular',[   -27.632,   -22.167,   -16.702]
+MF4='average','triangular',[   -22.167,   -16.702,   -11.237]
+MF5='average high','triangular',[   -16.702,   -11.237,   -5.772]
+MF6='high','triangular',[   -11.237,   -5.772,   -0.307]
+MF7='very high','SemiTrapezoidalSup',[   -5.772,   -0.307,   -0.307]
+MF8='(very low) OR (low) OR (average low) OR (average)','SemiTrapezoidalInf',[   -33.097,   -16.702,   -11.237]
+
+
+[Input9]
+Active='yes'
+Name='mode'
+Range=[   0.000,   1.000]
+NMFs=2
+MF1='0.0','discrete',[   0.000]
+MF2='1.0','discrete',[   1.000]
+
+
+[Input10]
+Active='yes'
+Name='speechiness'
+Range=[   0.023,   0.816]
+NMFs=8
+MF1='very low','SemiTrapezoidalInf',[   0.023,   0.023,   0.155]
+MF2='low','triangular',[   0.023,   0.155,   0.287]
+MF3='average low','triangular',[   0.155,   0.287,   0.419]
+MF4='average','triangular',[   0.287,   0.419,   0.552]
+MF5='average high','triangular',[   0.419,   0.552,   0.684]
+MF6='high','triangular',[   0.552,   0.684,   0.816]
+MF7='very high','SemiTrapezoidalSup',[   0.684,   0.816,   0.816]
+MF8='(low) OR (average low) OR (average)','trapezoidal',[   0.023,   0.155,   0.419,   0.552]
+
+
+[Input11]
+Active='yes'
+Name='tempo'
+Range=[   47.859,   219.331]
+NMFs=8
+MF1='very low','SemiTrapezoidalInf',[   47.859,   47.859,   76.438]
+MF2='low','triangular',[   47.859,   76.438,   105.016]
+MF3='average low','triangular',[   76.438,   105.016,   133.595]
+MF4='average','triangular',[   105.016,   133.595,   162.174]
+MF5='average high','triangular',[   133.595,   162.174,   190.752]
+MF6='more or less (high)','SemiTrapezoidalSup',[   162.174,   190.752,   219.331]
+MF7='(low) OR (average low)','trapezoidal',[   47.859,   76.438,   105.016,   133.595]
+MF8='(average) OR (average high)','trapezoidal',[   105.016,   133.595,   162.174,   190.752]
+
+
+[Input12]
+Active='yes'
+Name='timeSignature'
+Range=[   1.000,   5.000]
+NMFs=4
+MF1='1.0','discrete',[   1.000]
+MF2='3.0','discrete',[   3.000]
+MF3='4.0','discrete',[   4.000]
+MF4='5.0','discrete',[   5.000]
+
+
+[Input13]
+Active='yes'
+Name='valence'
+Range=[   0.035,   0.992]
+NMFs=15
+MF1='very low','SemiTrapezoidalInf',[   0.035,   0.035,   0.195]
+MF2='low','triangular',[   0.035,   0.195,   0.354]
+MF3='average low','triangular',[   0.195,   0.354,   0.513]
+MF4='average','triangular',[   0.354,   0.513,   0.673]
+MF5='average high','triangular',[   0.513,   0.673,   0.833]
+MF6='high','triangular',[   0.673,   0.833,   0.992]
+MF7='very high','SemiTrapezoidalSup',[   0.833,   0.992,   0.992]
+MF8='(very low) OR (low)','SemiTrapezoidalInf',[   0.035,   0.195,   0.354]
+MF9='(low) OR (average low) OR (average) OR (average high) OR (high)','trapezoidal',[   0.035,   0.195,   0.833,   0.992]
+MF10='(average low) OR (average) OR (average high) OR (high) OR (very high)','SemiTrapezoidalSup',[   0.195,   0.354,   0.992]
+MF11='(average low) OR (average)','trapezoidal',[   0.195,   0.354,   0.513,   0.673]
+MF12='(high) OR (very high)','SemiTrapezoidalSup',[   0.673,   0.833,   0.992]
+MF13='(low) OR (average low)','trapezoidal',[   0.035,   0.195,   0.354,   0.513]
+MF14='(average high) OR (high) OR (very high)','SemiTrapezoidalSup',[   0.513,   0.673,   0.992]
+MF15='(average high) OR (high)','trapezoidal',[   0.513,   0.673,   0.833,   0.992]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='like '
+Range=[   1.000,   2.000]
+NMFs=0
+
+[Rules]
+0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0,    1.000, 
+0, 0, 0, 8, 1, 0, 0, 5, 0, 0, 0, 0, 0,    1.000, 
+0, 0, 0, 3, 1, 0, 0, 5, 0, 0, 0, 0, 0,    1.000, 
+0, 0, 0, 0, 2, 0, 0, 5, 0, 0, 0, 2, 0,    1.000, 
+7, 0, 0, 0, 8, 0, 0, 5, 0, 0, 0, 0, 0,    1.000, 
+0, 3, 2, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0,    1.000, 
+0, 8, 2, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0,    1.000, 
+0, 6, 2, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0,    1.000, 
+8, 0, 3, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0,    1.000, 
+0, 2, 0, 0, 1, 0, 8, 6, 0, 2, 0, 0, 0,    1.000, 
+0, 3, 0, 9, 1, 0, 0, 6, 0, 2, 0, 0, 0,    1.000, 
+0, 4, 0, 0, 1, 0, 0, 6, 0, 2, 0, 0, 0,    1.000, 
+0, 4, 0, 0, 1, 0, 0, 6, 0, 3, 2, 0, 0,    1.000, 
+0, 3, 0, 0, 1, 0, 0, 6, 0, 4, 0, 0, 0,    1.000, 
+0, 0, 0, 0, 1, 0, 0, 6, 0, 6, 0, 0, 0,    1.000, 
+0, 0, 0, 0, 2, 0, 0, 6, 0, 0, 0, 0, 8,    1.000, 
+0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 0, 2,    1.000, 
+0, 0, 0, 0, 3, 7, 0, 6, 0, 0, 0, 0, 5,    1.000, 
+1, 0, 0, 0, 4, 7, 3, 6, 0, 0, 0, 0, 0,    1.000, 
+0, 0, 0, 0, 5, 8, 0, 6, 0, 0, 0, 0, 2,    1.000, 
+1, 0, 0, 0, 5, 0, 4, 6, 0, 0, 0, 0, 4,    1.000, 
+0, 0, 0, 0, 6, 0, 0, 6, 0, 0, 0, 0, 1,    1.000, 
+0, 9, 0, 0, 6, 0, 0, 6, 0, 0, 0, 0, 2,    1.000, 
+0, 0, 0, 0, 6, 2, 3, 6, 0, 0, 0, 0, 4,    1.000, 
+4, 0, 0, 0, 6, 0, 0, 6, 0, 0, 0, 0, 5,    1.000, 
+0, 1, 0, 0, 7, 0, 0, 6, 0, 0, 0, 0, 0,    1.000, 
+0, 4, 0, 0, 7, 2, 0, 6, 0, 0, 0, 0, 8,    1.000, 
+0, 5, 0, 0, 7, 0, 4, 6, 0, 0, 0, 0, 3,    1.000, 
+0, 10, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 8,    1.000, 
+0, 3, 0, 0, 0, 9, 0, 7, 0, 0, 0, 0, 3,    1.000, 
+0, 4, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0,    1.000, 
+0, 5, 0, 0, 1, 0, 9, 7, 0, 0, 0, 0, 0,    1.000, 
+0, 5, 0, 0, 1, 10, 5, 7, 0, 0, 0, 0, 0,    1.000, 
+0, 5, 0, 0, 2, 0, 0, 7, 0, 0, 0, 0, 0,    1.000, 
+0, 6, 0, 0, 0, 0, 0, 7, 0, 0, 7, 0, 0,    1.000, 
+0, 7, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0,    1.000, 
+0, 0, 0, 10, 1, 0, 0, 5, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 0, 0, 2, 0, 0, 5, 0, 0, 0, 3, 0,    2.000, 
+0, 0, 0, 0, 2, 0, 0, 5, 0, 0, 0, 4, 0,    2.000, 
+0, 0, 0, 0, 3, 0, 0, 5, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 0, 0, 4, 0, 0, 5, 0, 0, 0, 0, 9,    2.000, 
+0, 0, 0, 0, 4, 10, 0, 5, 0, 0, 0, 0, 7,    2.000, 
+9, 0, 0, 0, 5, 0, 0, 5, 0, 0, 0, 0, 0,    2.000, 
+10, 0, 0, 0, 6, 0, 0, 5, 0, 0, 0, 0, 0,    2.000, 
+6, 0, 0, 0, 6, 11, 0, 5, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 0, 10, 7, 0, 0, 5, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 1, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0,    2.000, 
+0, 11, 2, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0,    2.000, 
+0, 7, 2, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0,    2.000, 
+1, 0, 3, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0,    2.000, 
+0, 0, 8, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0,    2.000, 
+0, 1, 0, 0, 1, 0, 0, 6, 0, 2, 0, 0, 0,    2.000, 
+0, 12, 0, 0, 1, 0, 0, 6, 0, 8, 0, 0, 0,    2.000, 
+0, 3, 0, 0, 1, 0, 0, 6, 0, 3, 0, 0, 0,    2.000, 
+0, 4, 0, 0, 1, 0, 0, 6, 0, 4, 0, 0, 0,    2.000, 
+0, 0, 0, 0, 2, 0, 0, 6, 0, 0, 0, 0, 10,    2.000, 
+0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 0, 1,    2.000, 
+0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 0, 11,    2.000, 
+0, 0, 0, 0, 3, 12, 0, 6, 0, 0, 0, 0, 5,    2.000, 
+0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 0, 12,    2.000, 
+1, 0, 0, 0, 4, 0, 10, 6, 0, 0, 0, 0, 0,    2.000, 
+8, 0, 0, 0, 4, 0, 0, 6, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 0, 0, 5, 0, 0, 6, 0, 0, 0, 0, 1,    2.000, 
+0, 0, 0, 0, 5, 10, 0, 6, 0, 0, 0, 0, 13,    2.000, 
+1, 0, 0, 0, 5, 0, 11, 6, 0, 0, 0, 0, 4,    2.000, 
+0, 0, 0, 0, 5, 0, 0, 6, 0, 0, 0, 0, 14,    2.000, 
+0, 13, 0, 0, 6, 0, 0, 6, 0, 0, 0, 0, 2,    2.000, 
+0, 0, 0, 0, 6, 0, 0, 6, 0, 0, 0, 0, 3,    2.000, 
+0, 0, 0, 0, 6, 9, 0, 6, 0, 0, 0, 0, 4,    2.000, 
+11, 0, 0, 0, 6, 0, 0, 6, 0, 0, 0, 0, 5,    2.000, 
+12, 0, 0, 0, 6, 0, 0, 6, 0, 0, 0, 0, 5,    2.000, 
+0, 0, 0, 0, 6, 0, 0, 6, 0, 0, 0, 0, 12,    2.000, 
+0, 3, 0, 11, 7, 0, 0, 6, 0, 0, 0, 0, 0,    2.000, 
+0, 5, 0, 0, 7, 0, 0, 6, 0, 0, 0, 0, 8,    2.000, 
+0, 2, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 15,    2.000, 
+13, 3, 0, 0, 0, 2, 0, 7, 0, 0, 0, 0, 3,    2.000, 
+0, 3, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 6,    2.000, 
+0, 5, 0, 0, 1, 13, 5, 7, 0, 0, 0, 0, 0,    2.000, 
+0, 5, 0, 0, 1, 0, 12, 7, 0, 0, 0, 0, 0,    2.000, 
+0, 6, 0, 0, 0, 0, 0, 7, 0, 0, 8, 0, 0,    2.000, 
+
+[Exceptions]
+

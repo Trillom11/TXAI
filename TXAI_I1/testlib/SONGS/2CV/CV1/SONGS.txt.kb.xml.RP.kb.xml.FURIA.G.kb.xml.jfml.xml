@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fuzzySystem xmlns="http://www.ieee1855.org" name="SONGS">
+    <knowledgeBase>
+        <fuzzyVariable name="acoustics" scale="" domainleft="0.0" domainright="0.99" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.165" param4="0.495"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="0.165" param2="0.495" param3="0.495" param4="0.825"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="0.495" param2="0.825" param3="0.99" param4="0.99"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="danceability" scale="" domainleft="0.12" domainright="0.98" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="0.12" param2="0.12" param3="0.265" param4="0.555"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="0.265" param2="0.555" param3="0.555" param4="0.84"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="0.555" param2="0.84" param3="0.98" param4="0.98"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="duration" scale="" domainleft="16042.0" domainright="1004627.0" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="16042.0" param2="16042.0" param3="180806.17" param4="510334.5"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="180806.17" param2="510334.5" param3="510334.5" param4="839862.8"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="510334.5" param2="839862.8" param3="1004627.0" param4="1004627.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="energy" scale="" domainleft="0.01" domainright="1.0" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="0.01" param2="0.01" param3="0.175" param4="0.505"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="0.175" param2="0.505" param3="0.505" param4="0.835"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="0.505" param2="0.835" param3="1.0" param4="1.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="instrumentalness" scale="" domainleft="0.0" domainright="0.98" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.165" param4="0.49"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="0.165" param2="0.49" param3="0.49" param4="0.815"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="0.49" param2="0.815" param3="0.98" param4="0.98"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="key" scale="" domainleft="0.0" domainright="11.0" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="1.835" param4="5.5"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="1.835" param2="5.5" param3="5.5" param4="9.165"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="5.5" param2="9.165" param3="11.0" param4="11.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="liveness" scale="" domainleft="0.02" domainright="0.97" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="0.02" param2="0.02" param3="0.18" param4="0.495"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="0.18" param2="0.495" param3="0.495" param4="0.81"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="0.495" param2="0.81" param3="0.97" param4="0.97"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="loudness" scale="" domainleft="-33.1" domainright="-0.31" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="-33.1" param2="-33.1" param3="-27.635" param4="-16.705"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="-27.635" param2="-16.705" param3="-16.705" param4="-5.775"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="-16.705" param2="-5.775" param3="-0.31" param4="-0.31"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="mode" scale="" domainleft="0.0" domainright="1.0" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.165" param4="0.5"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="0.165" param2="0.5" param3="0.5" param4="0.835"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="0.5" param2="0.835" param3="1.0" param4="1.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="speechiness" scale="" domainleft="0.02" domainright="0.82" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="0.02" param2="0.02" param3="0.155" param4="0.42"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="0.155" param2="0.42" param3="0.42" param4="0.685"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="0.42" param2="0.685" param3="0.82" param4="0.82"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="tempo" scale="" domainleft="47.86" domainright="219.33" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="47.86" param2="47.86" param3="76.44" param4="133.595"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="76.44" param2="133.595" param3="133.595" param4="190.75"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="133.595" param2="190.75" param3="219.33" param4="219.33"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="timeSignature" scale="" domainleft="1.0" domainright="5.0" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="1.0" param2="1.0" param3="1.665" param4="3.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="1.665" param2="3.0" param3="3.0" param4="4.335"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="3.0" param2="4.335" param3="5.0" param4="5.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="valence" scale="" domainleft="0.03" domainright="0.99" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="0.03" param2="0.03" param3="0.19" param4="0.51"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="0.19" param2="0.51" param3="0.51" param4="0.83"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="0.51" param2="0.83" param3="0.99" param4="0.99"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="like" scale="" domainleft="1.0" domainright="2.0" type="output" accumulation="MAX" defuzzifier="MOM" defaultValue="1.0">
+            <fuzzyTerm name="1.0" complement="false">
+                <trapezoidShape param1="1.0" param2="1.0" param3="1.0" param4="2.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="2.0" complement="false">
+                <trapezoidShape param1="1.0" param2="2.0" param3="2.0" param4="2.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+    </knowledgeBase>
+    <mamdaniRuleBase name="rulebase-SONGS" activationMethod="MIN" andMethod="MIN" orMethod="MAX">
+        <rule name="rule1" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>acoustics</variable>
+                    <term>Medium</term>
+                </clause>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>Low</term>
+                </clause>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>Low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule2" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>loudness</variable>
+                    <term>High</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule3" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>Low</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>Low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule4" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>acoustics</variable>
+                    <term>High</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>Low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule5" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>Low</term>
+                </clause>
+                <clause>
+                    <variable>energy</variable>
+                    <term>High</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>High</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>Medium</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule6" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>loudness</variable>
+                    <term>Medium</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>Low</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>Medium</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule7" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>speechiness</variable>
+                    <term>High</term>
+                </clause>
+                <clause>
+                    <variable>loudness</variable>
+                    <term>Medium</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule8" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>acoustics</variable>
+                    <term>Low</term>
+                </clause>
+                <clause>
+                    <variable>loudness</variable>
+                    <term>Medium</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>Medium</term>
+                </clause>
+                <clause>
+                    <variable>instrumentalness</variable>
+                    <term>Low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule9" andMethod="MIN" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>danceability</variable>
+                    <term>High</term>
+                </clause>
+                <clause>
+                    <variable>duration</variable>
+                    <term>Medium</term>
+                </clause>
+                <clause>
+                    <variable>valence</variable>
+                    <term>Low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+    </mamdaniRuleBase>
+</fuzzySystem>

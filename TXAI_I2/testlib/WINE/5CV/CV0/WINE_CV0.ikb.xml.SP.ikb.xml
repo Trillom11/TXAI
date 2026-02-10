@@ -1,0 +1,78 @@
+<ConfigurationFile>
+<Expert>
+<ExpertFile value="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\WINE.txt.kb.xml.SP.kb.xml">
+</ExpertFile>
+<Conjunction value="min">
+</Conjunction>
+<Outputs>
+<Output1 Disjunction="max" Defuzzification="MaxCrisp">
+</Output1>
+</Outputs>
+</Expert>
+<Data>
+<OrigDataFile value="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\WINE.txt.aux.train.0">
+</OrigDataFile>
+<VariableNames value="no">
+</VariableNames>
+<SelectedVariables value="0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13">
+</SelectedVariables>
+<DataFile value="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\WINE.txt.aux.train.0">
+</DataFile>
+<DataVariableCount value="14">
+</DataVariableCount>
+<Variable1 Name="Variable1" Type="numerical" LowerRange="11.030" UpperRange="14.830" Labels="3" Output="false">
+</Variable1>
+<Variable2 Name="Variable2" Type="numerical" LowerRange="0.740" UpperRange="5.800" Labels="3" Output="false">
+</Variable2>
+<Variable3 Name="Variable3" Type="numerical" LowerRange="1.360" UpperRange="3.230" Labels="3" Output="false">
+</Variable3>
+<Variable4 Name="Variable4" Type="numerical" LowerRange="10.600" UpperRange="28.500" Labels="3" Output="false">
+</Variable4>
+<Variable5 Name="Variable5" Type="numerical" LowerRange="70.000" UpperRange="151.000" Labels="3" Output="false">
+</Variable5>
+<Variable6 Name="Variable6" Type="numerical" LowerRange="0.980" UpperRange="3.880" Labels="3" Output="false">
+</Variable6>
+<Variable7 Name="Variable7" Type="numerical" LowerRange="0.340" UpperRange="5.080" Labels="3" Output="false">
+</Variable7>
+<Variable8 Name="Variable8" Type="numerical" LowerRange="0.140" UpperRange="0.660" Labels="3" Output="false">
+</Variable8>
+<Variable9 Name="Variable9" Type="numerical" LowerRange="0.420" UpperRange="3.580" Labels="3" Output="false">
+</Variable9>
+<Variable10 Name="Variable10" Type="numerical" LowerRange="1.280" UpperRange="11.750" Labels="3" Output="false">
+</Variable10>
+<Variable11 Name="Variable11" Type="numerical" LowerRange="0.480" UpperRange="1.710" Labels="3" Output="false">
+</Variable11>
+<Variable12 Name="Variable12" Type="numerical" LowerRange="1.270" UpperRange="4.000" Labels="3" Output="false">
+</Variable12>
+<Variable13 Name="Variable13" Type="numerical" LowerRange="278.000" UpperRange="1680.000" Labels="3" Output="false">
+</Variable13>
+<Variable14 Name="Variable14" Type="categorical" LowerRange="1.000" UpperRange="3.000" Labels="3" Output="true">
+</Variable14>
+</Data>
+<Context Problem="New Problem" Inputs="0" Classification="yes" OutputLabels="2">
+</Context>
+<Interpretability>
+<KB1 path="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\KBint1.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB1>
+<KB2 path="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\KBint211.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB2>
+<KB3 path="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\KBint212.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB3>
+<KB4 path="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\KBint213.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB4>
+<KB5 path="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\KBint221.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB5>
+<KB6 path="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\KBint222.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB6>
+<KB7 path="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\KBint223.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB7>
+<KB8 path="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\KBint2.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB8>
+<KB9 path="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\KBint3.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB9>
+<KB10 path="C:\GUAJE-vb4.0\users\josealonso\WINE\5CV\CV0\KBint4.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB10>
+</Interpretability>
+<Ontology OntFile="">
+</Ontology>
+</ConfigurationFile>

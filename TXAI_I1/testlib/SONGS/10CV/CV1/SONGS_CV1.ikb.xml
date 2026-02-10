@@ -1,0 +1,78 @@
+<ConfigurationFile>
+<Expert>
+<ExpertFile value="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\CV1\SONGS.txt.kb.xml">
+</ExpertFile>
+<Conjunction value="min">
+</Conjunction>
+<Outputs>
+<Output1 Disjunction="max" Defuzzification="MaxCrisp">
+</Output1>
+</Outputs>
+</Expert>
+<Data>
+<OrigDataFile value="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\CV1\SONGS.txt.aux.train.1">
+</OrigDataFile>
+<VariableNames value="yes">
+</VariableNames>
+<SelectedVariables value="0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13">
+</SelectedVariables>
+<DataFile value="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\CV1\SONGS.txt.aux.train.1">
+</DataFile>
+<DataVariableCount value="14">
+</DataVariableCount>
+<Variable1 Name="acoustics" Type="numerical" LowerRange="0.000" UpperRange="0.995" Labels="3" Output="false">
+</Variable1>
+<Variable2 Name="danceability" Type="numerical" LowerRange="0.122" UpperRange="0.984" Labels="3" Output="false">
+</Variable2>
+<Variable3 Name="duration" Type="numerical" LowerRange="16042.000" UpperRange="1004627.000" Labels="3" Output="false">
+</Variable3>
+<Variable4 Name="energy" Type="numerical" LowerRange="0.015" UpperRange="0.998" Labels="3" Output="false">
+</Variable4>
+<Variable5 Name="instrumentalness" Type="numerical" LowerRange="0.000" UpperRange="0.976" Labels="3" Output="false">
+</Variable5>
+<Variable6 Name="key" Type="numerical" LowerRange="0.000" UpperRange="11.000" Labels="3" Output="false">
+</Variable6>
+<Variable7 Name="liveness" Type="numerical" LowerRange="0.019" UpperRange="0.969" Labels="3" Output="false">
+</Variable7>
+<Variable8 Name="loudness" Type="numerical" LowerRange="-33.097" UpperRange="-0.307" Labels="3" Output="false">
+</Variable8>
+<Variable9 Name="mode" Type="logical" LowerRange="0.000" UpperRange="1.000" Labels="2" Output="false">
+</Variable9>
+<Variable10 Name="speechiness" Type="numerical" LowerRange="0.023" UpperRange="0.816" Labels="3" Output="false">
+</Variable10>
+<Variable11 Name="tempo" Type="numerical" LowerRange="47.859" UpperRange="219.331" Labels="3" Output="false">
+</Variable11>
+<Variable12 Name="timeSignature" Type="categorical" LowerRange="1.000" UpperRange="5.000" Labels="4" Output="false">
+</Variable12>
+<Variable13 Name="valence" Type="numerical" LowerRange="0.035" UpperRange="0.992" Labels="3" Output="false">
+</Variable13>
+<Variable14 Name="like " Type="logical" LowerRange="1.000" UpperRange="2.000" Labels="2" Output="true">
+</Variable14>
+</Data>
+<Context Problem="New Problem" Inputs="0" Classification="yes" OutputLabels="2">
+</Context>
+<Interpretability>
+<KB1 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\KBint1.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB1>
+<KB2 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\KBint211.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB2>
+<KB3 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\KBint212.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB3>
+<KB4 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\KBint213.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB4>
+<KB5 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\KBint221.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB5>
+<KB6 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\KBint222.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB6>
+<KB7 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\KBint223.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB7>
+<KB8 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\KBint2.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB8>
+<KB9 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\KBint3.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB9>
+<KB10 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\10CV\KBint4.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB10>
+</Interpretability>
+<Ontology OntFile="">
+</Ontology>
+</ConfigurationFile>

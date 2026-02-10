@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fuzzySystem xmlns="http://www.ieee1855.org" name="IRIS.txt_CV4 - MAMDANI">
+    <knowledgeBase>
+        <fuzzyVariable name="Sepal Width" scale="" domainleft="2.0" domainright="4.4" type="input">
+            <fuzzyTerm name="low" complement="false">
+                <trapezoidShape param1="2.0" param2="2.0" param3="2.497" param4="3.064"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="more or less (average)" complement="false">
+                <trapezoidShape param1="2.497" param2="3.064" param3="4.4" param4="4.4"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Petal Length" scale="" domainleft="1.0" domainright="6.9" type="input">
+            <fuzzyTerm name="more or less (average)" complement="false">
+                <trapezoidShape param1="1.0" param2="1.0" param3="4.446" param4="5.828"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <trapezoidShape param1="4.446" param2="5.828" param3="6.9" param4="6.9"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Petal Width" scale="" domainleft="0.1" domainright="2.5" type="input">
+            <fuzzyTerm name="low" complement="false">
+                <trapezoidShape param1="0.1" param2="0.1" param3="0.244" param4="1.323"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.244" param2="1.323" param3="2.044"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <trapezoidShape param1="1.323" param2="2.044" param3="2.5" param4="2.5"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Class" scale="" domainleft="1.0" domainright="3.0" type="output" accumulation="MAX" defuzzifier="MOM" defaultValue="1.0">
+            <fuzzyTerm name="1.0" complement="false">
+                <singletonShape param1="1.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="2.0" complement="false">
+                <singletonShape param1="2.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="3.0" complement="false">
+                <singletonShape param1="3.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+    </knowledgeBase>
+    <mamdaniRuleBase name="rulebase-IRIS.txt_CV4" activationMethod="MIN" andMethod="MIN" orMethod="MAX">
+        <rule name="rule1" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Sepal Width</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>Petal Width</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule2" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Petal Length</variable>
+                    <term>more or less (average)</term>
+                </clause>
+                <clause>
+                    <variable>Petal Width</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule3" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Sepal Width</variable>
+                    <term>more or less (average)</term>
+                </clause>
+                <clause>
+                    <variable>Petal Width</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule4" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Petal Length</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>Petal Width</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>3.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule5" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Petal Width</variable>
+                    <term>high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>3.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+    </mamdaniRuleBase>
+</fuzzySystem>

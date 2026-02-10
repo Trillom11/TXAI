@@ -1,0 +1,50 @@
+<ConfigurationFile>
+<Expert>
+<ExpertFile value="C:\GUAJE-vb4.0\users\josealonso\SONGS\2CV\CV0\SONGS.txt.kb.xml.RP.kb.xml.FURIA.kb.xml">
+</ExpertFile>
+<Conjunction value="min">
+</Conjunction>
+<Outputs>
+<Output1 Disjunction="max" Defuzzification="MeanMax">
+</Output1>
+</Outputs>
+</Expert>
+<Data>
+<OrigDataFile value="">
+</OrigDataFile>
+<VariableNames value="no">
+</VariableNames>
+<SelectedVariables value="">
+</SelectedVariables>
+<DataFile value="">
+</DataFile>
+<DataVariableCount value="0">
+</DataVariableCount>
+</Data>
+<Context Problem="SONGS" Inputs="13" Classification="no" OutputLabels="2">
+</Context>
+<Interpretability>
+<KB1 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\2CV\CV0\KBint1.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB1>
+<KB2 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\2CV\CV0\KBint211.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB2>
+<KB3 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\2CV\CV0\KBint212.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB3>
+<KB4 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\2CV\CV0\KBint213.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB4>
+<KB5 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\2CV\CV0\KBint221.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB5>
+<KB6 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\2CV\CV0\KBint222.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB6>
+<KB7 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\2CV\CV0\KBint223.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB7>
+<KB8 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\2CV\CV0\KBint2.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB8>
+<KB9 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\2CV\CV0\KBint3.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB9>
+<KB10 path="C:\GUAJE-vb4.0\users\josealonso\SONGS\2CV\CV0\KBint4.kb.xml" conjunction="prod" disjunction="sum" defuzzification="sugeno">
+</KB10>
+</Interpretability>
+<Ontology OntFile="">
+</Ontology>
+</ConfigurationFile>

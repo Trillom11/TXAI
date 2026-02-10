@@ -1,0 +1,41 @@
+=== Run information ===
+
+Relation:     SONGS
+Instances:    2017
+Attributes:   14
+              acoustics
+              danceability
+              duration
+              energy
+              instrumentalness
+              key
+              liveness
+              loudness
+              mode
+              speechiness
+              tempo
+              timeSignature
+              valence
+              like 
+
+=== Classifier model (full training set) ===
+
+FURIA rules:
+===========
+
+(instrumentalness in [-inf, -inf, 0.000051, 0.000053]) and (speechiness in [-inf, -inf, 0.1, 0.101]) and (danceability in [-inf, -inf, 0.713, 0.714]) => like =1.0 (CF = 0.8)
+(instrumentalness in [-inf, -inf, 0.000051, 0.000053]) and (speechiness in [-inf, -inf, 0.1, 0.101]) and (valence in [0.369, 0.371, inf, inf]) => like =1.0 (CF = 0.79)
+(loudness in [-4.897, -4.893, inf, inf]) => like =1.0 (CF = 0.69)
+(energy in [-inf, -inf, 0.242, 0.247]) => like =1.0 (CF = 0.88)
+(instrumentalness in [0.000002, 0.000093, inf, inf]) and (valence in [0.296, 0.332, inf, inf]) and (duration in [307987, 308527, inf, inf]) => like =2.0 (CF = 0.95)
+(instrumentalness in [0.0107, 0.011, inf, inf]) and (loudness in [-inf, -inf, -4.903, -4.798]) and (acoustics in [-inf, -inf, 0.615, 0.623]) => like =2.0 (CF = 0.86)
+(danceability in [0.64, 0.645, inf, inf]) and (speechiness in [0.1, 0.101, inf, inf]) and (tempo in [119.882, 119.941, inf, inf]) => like =2.0 (CF = 0.78)
+(instrumentalness in [0.000012, 0.000014, inf, inf]) and (valence in [0.263, 0.264, inf, inf]) and (danceability in [-inf, -inf, 0.545, 0.546]) => like =2.0 (CF = 0.71)
+(speechiness in [0.133, 0.153, inf, inf]) and (loudness in [-inf, -inf, -4.897, -4.791]) and (danceability in [0.737, 0.739, inf, inf]) => like =2.0 (CF = 0.85)
+(instrumentalness in [0.000046, 0.000053, inf, inf]) and (energy in [0.249, 0.252, inf, inf]) and (loudness in [-inf, -inf, -7.71, -7.691]) => like =2.0 (CF = 0.85)
+(danceability in [0.747, 0.748, inf, inf]) and (acoustics in [-inf, -inf, 0.0516, 0.0565]) and (valence in [-inf, -inf, 0.496, 0.524]) => like =2.0 (CF = 0.9)
+(speechiness in [0.147, 0.156, inf, inf]) and (loudness in [-inf, -inf, -4.816, -4.802]) => like =2.0 (CF = 0.77)
+
+Number of Rules : 12
+
+

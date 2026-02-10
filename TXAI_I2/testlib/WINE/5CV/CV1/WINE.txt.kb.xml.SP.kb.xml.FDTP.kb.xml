@@ -1,0 +1,282 @@
+<KnowledgeBase>
+<System Name="New Knowledge Base" Inputs="13" Outputs="1" Rules="40">
+</System>
+<Inputs>
+<Input1 Active="true" Name="Alcohol" Type="numerical" Trust="llow" PhysicalLowerRange="11.030" PhysicalUpperRange="14.830" InterestLowerRange="11.030" InterestUpperRange="14.830" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input1>
+<Labels>
+<Input1-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="11.030" P2="11.657" P3="12.330" ModalPoint="No MP">
+</Input1-Label1>
+<Input1-Label2 Name="low" MF="triangular" P1="11.657" P2="12.330" P3="13.003" ModalPoint="No MP">
+</Input1-Label2>
+<Input1-Label3 Name="average" MF="triangular" P1="12.330" P2="13.003" P3="13.647" ModalPoint="No MP">
+</Input1-Label3>
+<Input1-Label4 Name="high" MF="triangular" P1="13.003" P2="13.647" P3="14.278" ModalPoint="No MP">
+</Input1-Label4>
+<Input1-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="13.647" P2="14.278" P3="14.830" ModalPoint="No MP">
+</Input1-Label5>
+</Labels>
+<Input2 Active="true" Name="MalicAcid" Type="numerical" Trust="llow" PhysicalLowerRange="0.740" PhysicalUpperRange="5.800" InterestLowerRange="0.740" InterestUpperRange="5.800" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input2>
+<Labels>
+<Input2-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.740" P2="1.155" P3="1.778" ModalPoint="No MP">
+</Input2-Label1>
+<Input2-Label2 Name="low" MF="triangular" P1="1.155" P2="1.778" P3="2.855" ModalPoint="No MP">
+</Input2-Label2>
+<Input2-Label3 Name="average" MF="triangular" P1="1.778" P2="2.855" P3="4.076" ModalPoint="No MP">
+</Input2-Label3>
+<Input2-Label4 Name="high" MF="triangular" P1="2.855" P2="4.076" P3="5.438" ModalPoint="No MP">
+</Input2-Label4>
+<Input2-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="4.076" P2="5.438" P3="5.800" ModalPoint="No MP">
+</Input2-Label5>
+</Labels>
+<Input3 Active="true" Name="Ash" Type="numerical" Trust="llow" PhysicalLowerRange="1.360" PhysicalUpperRange="3.230" InterestLowerRange="1.360" InterestUpperRange="3.230" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input3>
+<Labels>
+<Input3-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="1.360" P2="1.360" P3="2.003" ModalPoint="No MP">
+</Input3-Label1>
+<Input3-Label2 Name="low" MF="triangular" P1="1.360" P2="2.003" P3="2.309" ModalPoint="No MP">
+</Input3-Label2>
+<Input3-Label3 Name="average" MF="triangular" P1="2.003" P2="2.309" P3="2.633" ModalPoint="No MP">
+</Input3-Label3>
+<Input3-Label4 Name="high" MF="triangular" P1="2.309" P2="2.633" P3="3.225" ModalPoint="No MP">
+</Input3-Label4>
+<Input3-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="2.633" P2="3.225" P3="3.230" ModalPoint="No MP">
+</Input3-Label5>
+</Labels>
+<Input4 Active="true" Name="AlcalinityOfAsh" Type="numerical" Trust="llow" PhysicalLowerRange="10.600" PhysicalUpperRange="30.000" InterestLowerRange="10.600" InterestUpperRange="30.000" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input4>
+<Labels>
+<Input4-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="10.600" P2="11.042" P3="17.042" ModalPoint="No MP">
+</Input4-Label1>
+<Input4-Label2 Name="low" MF="triangular" P1="11.042" P2="17.042" P3="18.968" ModalPoint="No MP">
+</Input4-Label2>
+<Input4-Label3 Name="average" MF="triangular" P1="17.042" P2="18.968" P3="21.153" ModalPoint="No MP">
+</Input4-Label3>
+<Input4-Label4 Name="high" MF="triangular" P1="18.968" P2="21.153" P3="28.373" ModalPoint="No MP">
+</Input4-Label4>
+<Input4-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="21.153" P2="28.373" P3="30.000" ModalPoint="No MP">
+</Input4-Label5>
+</Labels>
+<Input5 Active="true" Name="Magnesium" Type="numerical" Trust="llow" PhysicalLowerRange="70.000" PhysicalUpperRange="162.000" InterestLowerRange="70.000" InterestUpperRange="162.000" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input5>
+<Labels>
+<Input5-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="70.000" P2="85.583" P3="98.259" ModalPoint="No MP">
+</Input5-Label1>
+<Input5-Label2 Name="low" MF="triangular" P1="85.583" P2="98.259" P3="110.400" ModalPoint="No MP">
+</Input5-Label2>
+<Input5-Label3 Name="average" MF="triangular" P1="98.259" P2="110.400" P3="126.000" ModalPoint="No MP">
+</Input5-Label3>
+<Input5-Label4 Name="high" MF="triangular" P1="110.400" P2="126.000" P3="162.000" ModalPoint="No MP">
+</Input5-Label4>
+<Input5-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="126.000" P2="162.000" P3="162.000" ModalPoint="No MP">
+</Input5-Label5>
+</Labels>
+<Input6 Active="true" Name="TotalPhenols" Type="numerical" Trust="llow" PhysicalLowerRange="0.980" PhysicalUpperRange="3.880" InterestLowerRange="0.980" InterestUpperRange="3.880" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input6>
+<Labels>
+<Input6-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.980" P2="1.431" P3="1.860" ModalPoint="No MP">
+</Input6-Label1>
+<Input6-Label2 Name="low" MF="triangular" P1="1.431" P2="1.860" P3="2.476" ModalPoint="No MP">
+</Input6-Label2>
+<Input6-Label3 Name="average" MF="triangular" P1="1.860" P2="2.476" P3="2.983" ModalPoint="No MP">
+</Input6-Label3>
+<Input6-Label4 Name="high" MF="triangular" P1="2.476" P2="2.983" P3="3.626" ModalPoint="No MP">
+</Input6-Label4>
+<Input6-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="2.983" P2="3.626" P3="3.880" ModalPoint="No MP">
+</Input6-Label5>
+</Labels>
+<Input7 Active="true" Name="flavanoids" Type="numerical" Trust="llow" PhysicalLowerRange="0.340" PhysicalUpperRange="5.080" InterestLowerRange="0.340" InterestUpperRange="5.080" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input7>
+<Labels>
+<Input7-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.340" P2="0.684" P3="1.715" ModalPoint="No MP">
+</Input7-Label1>
+<Input7-Label2 Name="low" MF="triangular" P1="0.684" P2="1.715" P3="2.641" ModalPoint="No MP">
+</Input7-Label2>
+<Input7-Label3 Name="average" MF="triangular" P1="1.715" P2="2.641" P3="3.374" ModalPoint="No MP">
+</Input7-Label3>
+<Input7-Label4 Name="high" MF="triangular" P1="2.641" P2="3.374" P3="5.080" ModalPoint="No MP">
+</Input7-Label4>
+<Input7-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="3.374" P2="5.080" P3="5.080" ModalPoint="No MP">
+</Input7-Label5>
+</Labels>
+<Input8 Active="true" Name="NonflavanoidsPhenols" Type="numerical" Trust="llow" PhysicalLowerRange="0.130" PhysicalUpperRange="0.660" InterestLowerRange="0.130" InterestUpperRange="0.660" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input8>
+<Labels>
+<Input8-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.130" P2="0.194" P3="0.280" ModalPoint="No MP">
+</Input8-Label1>
+<Input8-Label2 Name="low" MF="triangular" P1="0.194" P2="0.280" P3="0.400" ModalPoint="No MP">
+</Input8-Label2>
+<Input8-Label3 Name="average" MF="triangular" P1="0.280" P2="0.400" P3="0.510" ModalPoint="No MP">
+</Input8-Label3>
+<Input8-Label4 Name="high" MF="triangular" P1="0.400" P2="0.510" P3="0.611" ModalPoint="No MP">
+</Input8-Label4>
+<Input8-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="0.510" P2="0.611" P3="0.660" ModalPoint="No MP">
+</Input8-Label5>
+</Labels>
+<Input9 Active="true" Name="Proanthocyanins" Type="numerical" Trust="llow" PhysicalLowerRange="0.410" PhysicalUpperRange="3.580" InterestLowerRange="0.410" InterestUpperRange="3.580" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input9>
+<Labels>
+<Input9-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.410" P2="0.887" P3="1.360" ModalPoint="No MP">
+</Input9-Label1>
+<Input9-Label2 Name="low" MF="triangular" P1="0.887" P2="1.360" P3="1.534" ModalPoint="No MP">
+</Input9-Label2>
+<Input9-Label3 Name="average" MF="triangular" P1="1.360" P2="1.534" P3="1.992" ModalPoint="No MP">
+</Input9-Label3>
+<Input9-Label4 Name="high" MF="triangular" P1="1.534" P2="1.992" P3="3.580" ModalPoint="No MP">
+</Input9-Label4>
+<Input9-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="1.992" P2="3.580" P3="3.580" ModalPoint="No MP">
+</Input9-Label5>
+</Labels>
+<Input10 Active="true" Name="ColorIntensity" Type="numerical" Trust="llow" PhysicalLowerRange="1.280" PhysicalUpperRange="13.000" InterestLowerRange="1.280" InterestUpperRange="13.000" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input10>
+<Labels>
+<Input10-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="1.280" P2="2.728" P3="4.659" ModalPoint="No MP">
+</Input10-Label1>
+<Input10-Label2 Name="low" MF="triangular" P1="2.728" P2="4.659" P3="6.498" ModalPoint="No MP">
+</Input10-Label2>
+<Input10-Label3 Name="average" MF="triangular" P1="4.659" P2="6.498" P3="9.355" ModalPoint="No MP">
+</Input10-Label3>
+<Input10-Label4 Name="high" MF="triangular" P1="6.498" P2="9.355" P3="12.375" ModalPoint="No MP">
+</Input10-Label4>
+<Input10-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="9.355" P2="12.375" P3="13.000" ModalPoint="No MP">
+</Input10-Label5>
+</Labels>
+<Input11 Active="true" Name="Hue" Type="numerical" Trust="llow" PhysicalLowerRange="0.480" PhysicalUpperRange="1.710" InterestLowerRange="0.480" InterestUpperRange="1.710" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input11>
+<Labels>
+<Input11-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.480" P2="0.612" P3="0.836" ModalPoint="No MP">
+</Input11-Label1>
+<Input11-Label2 Name="low" MF="triangular" P1="0.612" P2="0.836" P3="1.057" ModalPoint="No MP">
+</Input11-Label2>
+<Input11-Label3 Name="average" MF="triangular" P1="0.836" P2="1.057" P3="1.264" ModalPoint="No MP">
+</Input11-Label3>
+<Input11-Label4 Name="high" MF="triangular" P1="1.057" P2="1.264" P3="1.710" ModalPoint="No MP">
+</Input11-Label4>
+<Input11-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="1.264" P2="1.710" P3="1.710" ModalPoint="No MP">
+</Input11-Label5>
+</Labels>
+<Input12 Active="true" Name="OD280/OD315" Type="numerical" Trust="llow" PhysicalLowerRange="1.270" PhysicalUpperRange="4.000" InterestLowerRange="1.270" InterestUpperRange="4.000" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input12>
+<Labels>
+<Input12-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="1.270" P2="1.598" P3="2.114" ModalPoint="No MP">
+</Input12-Label1>
+<Input12-Label2 Name="low" MF="triangular" P1="1.598" P2="2.114" P3="2.752" ModalPoint="No MP">
+</Input12-Label2>
+<Input12-Label3 Name="average" MF="triangular" P1="2.114" P2="2.752" P3="3.195" ModalPoint="No MP">
+</Input12-Label3>
+<Input12-Label4 Name="high" MF="triangular" P1="2.752" P2="3.195" P3="3.607" ModalPoint="No MP">
+</Input12-Label4>
+<Input12-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="3.195" P2="3.607" P3="4.000" ModalPoint="No MP">
+</Input12-Label5>
+</Labels>
+<Input13 Active="true" Name="Proline" Type="numerical" Trust="llow" PhysicalLowerRange="278.000" PhysicalUpperRange="1680.000" InterestLowerRange="278.000" InterestUpperRange="1680.000" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input13>
+<Labels>
+<Input13-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="278.000" P2="436.152" P3="661.370" ModalPoint="No MP">
+</Input13-Label1>
+<Input13-Label2 Name="low" MF="triangular" P1="436.152" P2="661.370" P3="950.692" ModalPoint="No MP">
+</Input13-Label2>
+<Input13-Label3 Name="average" MF="triangular" P1="661.370" P2="950.692" P3="1242.250" ModalPoint="No MP">
+</Input13-Label3>
+<Input13-Label4 Name="high" MF="triangular" P1="950.692" P2="1242.250" P3="1555.500" ModalPoint="No MP">
+</Input13-Label4>
+<Input13-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="1242.250" P2="1555.500" P3="1680.000" ModalPoint="No MP">
+</Input13-Label5>
+</Labels>
+</Inputs>
+<Outputs>
+<Output1 Active="true" Name="Class" Type="categorical" Trust="llow" Classif="yes" PhysicalLowerRange="1.000" PhysicalUpperRange="3.000" InterestLowerRange="1.000" InterestUpperRange="3.000" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Output1>
+<Labels>
+<Output1-Label1 Name="1.0" MF="discrete" P1="1.000" ModalPoint="1.0">
+</Output1-Label1>
+<Output1-Label2 Name="2.0" MF="discrete" P1="2.000" ModalPoint="2.0">
+</Output1-Label2>
+<Output1-Label3 Name="3.0" MF="discrete" P1="3.000" ModalPoint="3.0">
+</Output1-Label3>
+</Labels>
+</Outputs>
+<Rules>
+<Rule1 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="1" I8="0" I9="0" I10="1" I11="0" I12="0" I13="0" O1="2" Nature="I" Active="true">
+</Rule1>
+<Rule2 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="1" I8="0" I9="0" I10="2" I11="0" I12="0" I13="0" O1="3" Nature="I" Active="true">
+</Rule2>
+<Rule3 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="1" I8="0" I9="0" I10="3" I11="0" I12="0" I13="0" O1="3" Nature="I" Active="true">
+</Rule3>
+<Rule4 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="1" I8="0" I9="0" I10="4" I11="0" I12="0" I13="0" O1="3" Nature="I" Active="true">
+</Rule4>
+<Rule5 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="1" I8="0" I9="0" I10="5" I11="0" I12="0" I13="0" O1="3" Nature="I" Active="true">
+</Rule5>
+<Rule6 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="1" I11="1" I12="0" I13="0" O1="2" Nature="I" Active="true">
+</Rule6>
+<Rule7 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="2" I11="1" I12="0" I13="0" O1="3" Nature="I" Active="true">
+</Rule7>
+<Rule8 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="3" I11="1" I12="0" I13="0" O1="3" Nature="I" Active="true">
+</Rule8>
+<Rule9 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="4" I11="1" I12="0" I13="0" O1="3" Nature="I" Active="true">
+</Rule9>
+<Rule10 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="5" I11="1" I12="0" I13="0" O1="3" Nature="I" Active="true">
+</Rule10>
+<Rule11 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="0" I11="2" I12="1" I13="0" O1="3" Nature="I" Active="true">
+</Rule11>
+<Rule12 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="0" I11="2" I12="2" I13="0" O1="2" Nature="I" Active="true">
+</Rule12>
+<Rule13 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="0" I11="2" I12="3" I13="0" O1="2" Nature="I" Active="true">
+</Rule13>
+<Rule14 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="0" I11="2" I12="4" I13="0" O1="2" Nature="I" Active="true">
+</Rule14>
+<Rule15 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="0" I11="2" I12="5" I13="0" O1="2" Nature="I" Active="true">
+</Rule15>
+<Rule16 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="0" I11="3" I12="0" I13="0" O1="2" Nature="I" Active="true">
+</Rule16>
+<Rule17 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="0" I11="4" I12="0" I13="0" O1="2" Nature="I" Active="true">
+</Rule17>
+<Rule18 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="2" I8="0" I9="0" I10="0" I11="5" I12="0" I13="0" O1="2" Nature="I" Active="true">
+</Rule18>
+<Rule19 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="1" O1="2" Nature="I" Active="true">
+</Rule19>
+<Rule20 I1="1" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="2" O1="2" Nature="I" Active="true">
+</Rule20>
+<Rule21 I1="2" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="2" O1="2" Nature="I" Active="true">
+</Rule21>
+<Rule22 I1="3" I2="0" I3="0" I4="0" I5="1" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="2" O1="2" Nature="I" Active="true">
+</Rule22>
+<Rule23 I1="3" I2="0" I3="0" I4="0" I5="2" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="2" O1="1" Nature="I" Active="true">
+</Rule23>
+<Rule24 I1="3" I2="0" I3="0" I4="0" I5="3" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="2" O1="1" Nature="I" Active="true">
+</Rule24>
+<Rule25 I1="3" I2="0" I3="0" I4="0" I5="4" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="2" O1="1" Nature="I" Active="true">
+</Rule25>
+<Rule26 I1="4" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="2" O1="1" Nature="I" Active="true">
+</Rule26>
+<Rule27 I1="5" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="2" O1="1" Nature="I" Active="true">
+</Rule27>
+<Rule28 I1="1" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="3" O1="2" Nature="I" Active="true">
+</Rule28>
+<Rule29 I1="2" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="3" O1="2" Nature="I" Active="true">
+</Rule29>
+<Rule30 I1="3" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="3" O1="1" Nature="I" Active="true">
+</Rule30>
+<Rule31 I1="4" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="3" O1="1" Nature="I" Active="true">
+</Rule31>
+<Rule32 I1="5" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="3" O1="1" Nature="I" Active="true">
+</Rule32>
+<Rule33 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="4" O1="1" Nature="I" Active="true">
+</Rule33>
+<Rule34 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="3" I8="0" I9="0" I10="0" I11="0" I12="0" I13="5" O1="1" Nature="I" Active="true">
+</Rule34>
+<Rule35 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="4" I8="0" I9="0" I10="0" I11="0" I12="0" I13="1" O1="2" Nature="I" Active="true">
+</Rule35>
+<Rule36 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="4" I8="0" I9="0" I10="0" I11="0" I12="0" I13="2" O1="1" Nature="I" Active="true">
+</Rule36>
+<Rule37 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="4" I8="0" I9="0" I10="0" I11="0" I12="0" I13="3" O1="1" Nature="I" Active="true">
+</Rule37>
+<Rule38 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="4" I8="0" I9="0" I10="0" I11="0" I12="0" I13="4" O1="1" Nature="I" Active="true">
+</Rule38>
+<Rule39 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="4" I8="0" I9="0" I10="0" I11="0" I12="0" I13="5" O1="1" Nature="I" Active="true">
+</Rule39>
+<Rule40 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="5" I8="0" I9="0" I10="0" I11="0" I12="0" I13="0" O1="2" Nature="I" Active="true">
+</Rule40>
+</Rules>
+</KnowledgeBase>

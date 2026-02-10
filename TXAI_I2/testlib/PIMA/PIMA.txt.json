@@ -1,0 +1,287 @@
+{
+  "dataset" : "PIMA",
+  "attributes" : [ {
+    "type" : "numericAtt",
+    "id" : "Number of times pregnant",
+    "name" : "Number of times pregnant",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 5.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 5.67,
+        "right" : 11.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 11.33,
+        "right" : 17.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.0,
+      "right" : 17.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Plasma glucose concentration",
+    "name" : "Plasma glucose concentration",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 66.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 66.33,
+        "right" : 132.66
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 132.66,
+        "right" : 199.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.0,
+      "right" : 199.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Diastolic blood pressure",
+    "name" : "Diastolic blood pressure",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 40.66
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 40.66,
+        "right" : 81.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 81.33,
+        "right" : 122.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.0,
+      "right" : 122.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Triceps skin fold thickness",
+    "name" : "Triceps skin fold thickness",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 33.0
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 33.0,
+        "right" : 66.0
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 66.0,
+        "right" : 99.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.0,
+      "right" : 99.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Two hour serum insulin",
+    "name" : "Two hour serum insulin",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 282.0
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 282.0,
+        "right" : 564.0
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 564.0,
+        "right" : 846.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.0,
+      "right" : 846.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Body mass index",
+    "name" : "Body mass index",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 22.36
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 22.36,
+        "right" : 44.73
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 44.73,
+        "right" : 67.1
+      }
+    } ],
+    "interval" : {
+      "left" : 0.0,
+      "right" : 67.1
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Diabetes pedigree function",
+    "name" : "Diabetes pedigree function",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.078,
+        "right" : 0.85867
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.85867,
+        "right" : 1.63935
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 1.63935,
+        "right" : 2.42
+      }
+    } ],
+    "interval" : {
+      "left" : 0.078,
+      "right" : 2.42
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Age",
+    "name" : "Age",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Young",
+      "id" : 0,
+      "interval" : {
+        "left" : 21.0,
+        "right" : 41.0
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Middle-aged",
+      "id" : 1,
+      "interval" : {
+        "left" : 41.0,
+        "right" : 61.0
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Old",
+      "id" : 2,
+      "interval" : {
+        "left" : 61.0,
+        "right" : 81.0
+      }
+    } ],
+    "interval" : {
+      "left" : 21.0,
+      "right" : 81.0
+    },
+    "value" : 0.0
+  } ],
+  "consequents" : [ {
+    "matrixPosition" : 1,
+    "id" : "1.0",
+    "name" : "tested negative",
+    "percentageNode" : 0.0
+  }, {
+    "matrixPosition" : 2,
+    "id" : "2.0",
+    "name" : "tested positive",
+    "percentageNode" : 0.0
+  } ]
+}

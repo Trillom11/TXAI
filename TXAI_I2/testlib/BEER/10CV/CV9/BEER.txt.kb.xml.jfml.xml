@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fuzzySystem xmlns="http://www.ieee1855.org" name="New Knowledge Base - MAMDANI">
+    <knowledgeBase>
+        <fuzzyVariable name="Color" scale="" domainleft="0.0" domainright="45.0" type="input">
+            <fuzzyTerm name="low" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.0" param4="22.5"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.0" param2="22.5" param3="45.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <trapezoidShape param1="22.5" param2="45.0" param3="45.0" param4="45.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Bitterness" scale="" domainleft="8.0" domainright="250.0" type="input">
+            <fuzzyTerm name="low" complement="false">
+                <trapezoidShape param1="8.0" param2="8.0" param3="8.0" param4="129.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="8.0" param2="129.0" param3="250.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <trapezoidShape param1="129.0" param2="250.0" param3="250.0" param4="250.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Strength" scale="" domainleft="0.039" domainright="0.136" type="input">
+            <fuzzyTerm name="low" complement="false">
+                <trapezoidShape param1="0.039" param2="0.039" param3="0.039" param4="0.087"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.039" param2="0.087" param3="0.136"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <trapezoidShape param1="0.088" param2="0.136" param3="0.136" param4="0.136"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Class" scale="" domainleft="1.0" domainright="8.0" type="output" accumulation="MAX" defuzzifier="MOM" defaultValue="1.0">
+            <fuzzyTerm name="1.0" complement="false">
+                <singletonShape param1="1.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="2.0" complement="false">
+                <singletonShape param1="2.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="3.0" complement="false">
+                <singletonShape param1="3.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="4.0" complement="false">
+                <singletonShape param1="4.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="5.0" complement="false">
+                <singletonShape param1="5.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="6.0" complement="false">
+                <singletonShape param1="6.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="7.0" complement="false">
+                <singletonShape param1="7.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="8.0" complement="false">
+                <singletonShape param1="8.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+    </knowledgeBase>
+    <mamdaniRuleBase name="rulebase-New Knowledge Base" activationMethod="MIN" andMethod="MIN" orMethod="MAX"/>
+</fuzzySystem>

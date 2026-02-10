@@ -1,0 +1,9 @@
+graph "" {
+	name=FINGRAM; ratio=auto; size="10,10"; overlap="scale"; nodesep=0.3; center=true; truecolor=true;
+
+	Rule1 [shape=circle,height=3.750,width=3.750,fixedsize=true,peripheries=2,color="#d3d3d3ff",fillcolor="#d3d3d3;0.6669999957084656:white",fontsize=15.399999618530273,fontcolor=black,style=wedged,label="R1\n (cov=0.275) \n (G= 0.280) \n (CBlanche=1.000)",tooltip="Rule1:  IF Color is Pale AND Bitterness is Low THEN Class is Blanche (cov=0.275 ; G= 0.280 ; CBlanche=1.000)"];
+	Rule2 [shape=circle,height=3.875,width=3.875,fixedsize=true,peripheries=2,color="#008000ff",fillcolor="#008000;0.10300000011920929:white",fontsize=15.399999618530273,fontcolor=black,style=wedged,label="R2\n (cov=0.287) \n (G= 0.249) \n (CPilsner=1.000)",tooltip="Rule2:  IF Color is Pale AND Bitterness is High THEN Class is Pilsner (cov=0.287 ; G= 0.249 ; CPilsner=1.000)"];
+	Rule4 [shape=circle,height=4.600,width=4.600,fixedsize=true,peripheries=3,color="#ffff00ff",fillcolor="#ffff00;0.3160000145435333:white",fontsize=17.200000762939453,fontcolor=black,style=wedged,label="R4\n (cov=0.360) \n (G= -0.022) \n (CLager=0.980)",tooltip="Rule4:  IF Color is Straw AND Bitterness is Low AND Strength is Standard THEN Class is Lager (cov=0.360 ; G= -0.022 ; CLager=0.980)"];
+	  
+	Rule1 -- Rule2 [penwidth=9.713,weight=12.867,color=red,fontsize=15,labelfontcolor=red,label="0.871",tooltip="R1 -- R2 (0.871)",title="R1 -- R2 (0.871)"];  
+	Rule1 -- Rule4 [penwidth=9.422,weight=15.777,color=red,fontsize=15,labelfontcolor=red,label="0.842",tooltip="R1 -- R4 (0.842)",title="R1 -- R4 (0.842)"];}

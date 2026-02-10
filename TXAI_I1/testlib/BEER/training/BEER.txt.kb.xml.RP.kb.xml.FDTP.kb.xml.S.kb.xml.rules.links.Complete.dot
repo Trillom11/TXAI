@@ -1,0 +1,27 @@
+graph "" {
+	name=FINGRAM; ratio=auto; size="10,10"; overlap="scale"; nodesep=0.3; center=true; truecolor=true;
+
+	Rule1 [shape=circle,height=3.750,width=3.750,fixedsize=true,peripheries=2,color="#d3d3d3",fillcolor="#d3d3d3",fontsize=15.399999618530273,fontcolor=black,style=filled,label="R1\n (cov=0.275) \n (G= 0.280) \n (CBlanche=1.000)",tooltip="Rule1:  IF Color is Pale AND Bitterness is Low THEN Class is Blanche (cov=0.275 ; G= 0.280 ; CBlanche=1.000)"];
+	Rule2 [shape=circle,height=3.875,width=3.875,fixedsize=true,peripheries=2,color="#008000",fillcolor="#008000",fontsize=15.399999618530273,fontcolor=black,style=filled,label="R2\n (cov=0.287) \n (G= 0.249) \n (CPilsner=1.000)",tooltip="Rule2:  IF Color is Pale AND Bitterness is High THEN Class is Pilsner (cov=0.287 ; G= 0.249 ; CPilsner=1.000)"];
+	Rule3 [shape=circle,height=2.525,width=2.525,fixedsize=true,peripheries=2,color="#87cefa",fillcolor="#87cefa",fontsize=13.600000381469727,fontcolor=black,style=filled,label="R3\n (cov=0.152) \n (G= 0.708) \n (CIPA=0.980)",tooltip="Rule3:  IF Color is Straw OR Amber AND Strength is High THEN Class is IPA (cov=0.152 ; G= 0.708 ; CIPA=0.980)"];
+	Rule4 [shape=circle,height=4.600,width=4.600,fixedsize=true,peripheries=3,color="#ffff00",fillcolor="#ffff00",fontsize=17.200000762939453,fontcolor=black,style=filled,label="R4\n (cov=0.360) \n (G= -0.022) \n (CLager=0.980)",tooltip="Rule4:  IF Color is Straw AND Bitterness is Low AND Strength is Standard THEN Class is Lager (cov=0.360 ; G= -0.022 ; CLager=0.980)"];
+	Rule5 [shape=circle,height=3.050,width=3.050,fixedsize=true,peripheries=2,color="#ff8c00",fillcolor="#ff8c00",fontsize=15.399999618530273,fontcolor=black,style=filled,label="R5\n (cov=0.205) \n (G= 0.554) \n (CBarleywine=1.000)",tooltip="Rule5:  IF Color is Straw OR Amber AND Strength is Very high THEN Class is Barleywine (cov=0.205 ; G= 0.554 ; CBarleywine=1.000)"];
+	Rule6 [shape=circle,height=3.725,width=3.725,fixedsize=true,peripheries=2,color="#d2691e",fillcolor="#d2691e",fontsize=15.399999618530273,fontcolor=black,style=filled,label="R6\n (cov=0.273) \n (G= 0.485) \n (CPorter=1.000)",tooltip="Rule6:  IF Color is Amber OR Brown AND Strength is Session OR Standard THEN Class is Porter (cov=0.273 ; G= 0.485 ; CPorter=1.000)"];
+	Rule7 [shape=circle,height=2.425,width=2.425,fixedsize=true,peripheries=2,color="#ffa07a",fillcolor="#ffa07a",fontsize=13.600000381469727,fontcolor=black,style=filled,label="R7\n (cov=0.142) \n (G= 0.937) \n (CBelgian-Strong-Ale=1.000)",tooltip="Rule7:  IF Color is Brown AND Strength is High OR Very high THEN Class is Belgian-Strong-Ale (cov=0.142 ; G= 0.937 ; CBelgian-Strong-Ale=1.000)"];
+	Rule8 [shape=circle,height=3.550,width=3.550,fixedsize=true,peripheries=1,color="#a020f0",fillcolor="#a020f0",fontsize=15.399999618530273,fontcolor=black,style=filled,label="R8\n (cov=0.255) \n (G= 0.595) \n (CStout=1.000)",tooltip="Rule8:  IF Color is Black THEN Class is Stout (cov=0.255 ; G= 0.595 ; CStout=1.000)"];
+	  
+	Rule1 -- Rule2 [penwidth=9.713,weight=12.867,color=red,fontsize=15,labelfontcolor=red,label="0.871",tooltip="R1 -- R2 (0.871)",title="R1 -- R2 (0.871)"];  
+	Rule1 -- Rule3 [penwidth=1.122,weight=98.779,color=red,fontsize=15,labelfontcolor=red,label="0.012",tooltip="R1 -- R3 (0.012)",title="R1 -- R3 (0.012)"];  
+	Rule1 -- Rule4 [penwidth=9.422,weight=15.777,color=red,fontsize=15,labelfontcolor=red,label="0.842",tooltip="R1 -- R4 (0.842)",title="R1 -- R4 (0.842)"];  
+	Rule2 -- Rule3 [penwidth=2.910,weight=80.897,color=red,fontsize=15,labelfontcolor=red,label="0.191",tooltip="R2 -- R3 (0.191)",title="R2 -- R3 (0.191)"];  
+	Rule2 -- Rule4 [penwidth=8.305,weight=26.954,color=red,fontsize=15,labelfontcolor=red,label="0.730",tooltip="R2 -- R4 (0.730)",title="R2 -- R4 (0.730)"];  
+	Rule2 -- Rule5 [penwidth=2.030,weight=89.702,color=red,fontsize=15,labelfontcolor=red,label="0.103",tooltip="R2 -- R5 (0.103)",title="R2 -- R5 (0.103)"];  
+	Rule3 -- Rule4 [penwidth=1.107,weight=98.933,color=red,fontsize=15,labelfontcolor=red,label="0.011",tooltip="R3 -- R4 (0.011)",title="R3 -- R4 (0.011)"];  
+	Rule3 -- Rule5 [penwidth=6.939,weight=40.615,color=red,fontsize=15,labelfontcolor=red,label="0.594",tooltip="R3 -- R5 (0.594)",title="R3 -- R5 (0.594)"];  
+	Rule3 -- Rule6 [penwidth=1.613,weight=93.868,color=red,fontsize=15,labelfontcolor=red,label="0.061",tooltip="R3 -- R6 (0.061)",title="R3 -- R6 (0.061)"];  
+	Rule3 -- Rule7 [penwidth=1.170,weight=98.304,color=red,fontsize=15,labelfontcolor=red,label="0.017",tooltip="R3 -- R7 (0.017)",title="R3 -- R7 (0.017)"];  
+	Rule4 -- Rule6 [penwidth=3.315,weight=76.853,color=red,fontsize=15,labelfontcolor=red,label="0.231",tooltip="R4 -- R6 (0.231)",title="R4 -- R6 (0.231)"];  
+	Rule5 -- Rule7 [penwidth=1.878,weight=91.224,color=red,fontsize=15,labelfontcolor=red,label="0.088",tooltip="R5 -- R7 (0.088)",title="R5 -- R7 (0.088)"];  
+	Rule6 -- Rule7 [penwidth=1.254,weight=97.463,color=red,fontsize=15,labelfontcolor=red,label="0.025",tooltip="R6 -- R7 (0.025)",title="R6 -- R7 (0.025)"];  
+	Rule6 -- Rule8 [penwidth=4.699,weight=63.013,color=red,fontsize=15,labelfontcolor=red,label="0.370",tooltip="R6 -- R8 (0.370)",title="R6 -- R8 (0.370)"];  
+	Rule7 -- Rule8 [penwidth=6.115,weight=48.852,color=red,fontsize=15,labelfontcolor=red,label="0.511",tooltip="R7 -- R8 (0.511)",title="R7 -- R8 (0.511)"];}

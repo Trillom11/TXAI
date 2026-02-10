@@ -1,0 +1,84 @@
+<KnowledgeBase>
+<System Name="BEER" Inputs="3" Outputs="1" Rules="8">
+</System>
+<Inputs>
+<Input1 Active="true" Name="Color" Type="numerical" Trust="llow" PhysicalLowerRange="0.000" PhysicalUpperRange="45.000" InterestLowerRange="0.000" InterestUpperRange="45.000" Labels="5" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input1>
+<Labels>
+<Input1-Label1 Name="Pale" MF="SemiTrapezoidalInf" P1="0.000" P2="1.500" P3="5.250" ModalPoint="No MP">
+</Input1-Label1>
+<Input1-Label2 Name="Straw" MF="trapezoidal" P1="1.500" P2="5.250" P3="5.250" P4="13.250" ModalPoint="No MP" ModalPointAux="No MP">
+</Input1-Label2>
+<Input1-Label3 Name="Amber" MF="trapezoidal" P1="5.250" P2="13.250" P3="13.250" P4="24.000" ModalPoint="No MP" ModalPointAux="No MP">
+</Input1-Label3>
+<Input1-Label4 Name="Brown" MF="trapezoidal" P1="13.250" P2="24.000" P3="24.000" P4="37.000" ModalPoint="No MP" ModalPointAux="No MP">
+</Input1-Label4>
+<Input1-Label5 Name="Black" MF="SemiTrapezoidalSup" P1="24.000" P2="37.000" P3="45.000" ModalPoint="No MP">
+</Input1-Label5>
+</Labels>
+<Input2 Active="true" Name="Bitterness" Type="numerical" Trust="llow" PhysicalLowerRange="8.000" PhysicalUpperRange="250.000" InterestLowerRange="8.000" InterestUpperRange="250.000" Labels="4" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input2>
+<Labels>
+<Input2-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="8.000" P2="14.500" P3="26.750" ModalPoint="No MP">
+</Input2-Label1>
+<Input2-Label2 Name="Low-medium" MF="trapezoidal" P1="14.500" P2="26.750" P3="26.750" P4="40.000" ModalPoint="No MP" ModalPointAux="No MP">
+</Input2-Label2>
+<Input2-Label3 Name="Medium-high" MF="trapezoidal" P1="26.750" P2="40.000" P3="40.000" P4="148.750" ModalPoint="No MP" ModalPointAux="No MP">
+</Input2-Label3>
+<Input2-Label4 Name="High" MF="SemiTrapezoidalSup" P1="40.000" P2="148.750" P3="250.000" ModalPoint="No MP">
+</Input2-Label4>
+</Labels>
+<Input3 Active="true" Name="Strength" Type="numerical" Trust="llow" PhysicalLowerRange="0.039" PhysicalUpperRange="0.136" InterestLowerRange="0.039" InterestUpperRange="0.136" Labels="4" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input3>
+<Labels>
+<Input3-Label1 Name="Session" MF="SemiTrapezoidalInf" P1="0.039" P2="0.046" P3="0.060" ModalPoint="No MP">
+</Input3-Label1>
+<Input3-Label2 Name="Standard" MF="trapezoidal" P1="0.046" P2="0.060" P3="0.060" P4="0.079" ModalPoint="No MP" ModalPointAux="No MP">
+</Input3-Label2>
+<Input3-Label3 Name="High" MF="trapezoidal" P1="0.060" P2="0.079" P3="0.079" P4="0.113" ModalPoint="No MP" ModalPointAux="No MP">
+</Input3-Label3>
+<Input3-Label4 Name="Very-high" MF="SemiTrapezoidalSup" P1="0.079" P2="0.113" P3="0.136" ModalPoint="No MP">
+</Input3-Label4>
+</Labels>
+</Inputs>
+<Outputs>
+<Output1 Active="true" Name="Class" Type="numerical" Trust="llow" Classif="no" PhysicalLowerRange="1.000" PhysicalUpperRange="8.000" InterestLowerRange="1.000" InterestUpperRange="8.000" Labels="8" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Output1>
+<Labels>
+<Output1-Label1 Name="Blanche" MF="SemiTrapezoidalInf" P1="1.000" P2="1.000" P3="2.000" ModalPoint="No MP">
+</Output1-Label1>
+<Output1-Label2 Name="Lager" MF="trapezoidal" P1="1.000" P2="2.000" P3="2.000" P4="3.000" ModalPoint="No MP" ModalPointAux="No MP">
+</Output1-Label2>
+<Output1-Label3 Name="Pilsner" MF="trapezoidal" P1="2.000" P2="3.000" P3="3.000" P4="4.000" ModalPoint="No MP" ModalPointAux="No MP">
+</Output1-Label3>
+<Output1-Label4 Name="IPA" MF="trapezoidal" P1="3.000" P2="4.000" P3="4.000" P4="5.000" ModalPoint="No MP" ModalPointAux="No MP">
+</Output1-Label4>
+<Output1-Label5 Name="Stout" MF="trapezoidal" P1="4.000" P2="5.000" P3="5.000" P4="6.000" ModalPoint="No MP" ModalPointAux="No MP">
+</Output1-Label5>
+<Output1-Label6 Name="Barleywine" MF="trapezoidal" P1="5.000" P2="6.000" P3="6.000" P4="7.000" ModalPoint="No MP" ModalPointAux="No MP">
+</Output1-Label6>
+<Output1-Label7 Name="Porter" MF="trapezoidal" P1="6.000" P2="7.000" P3="7.000" P4="8.000" ModalPoint="No MP" ModalPointAux="No MP">
+</Output1-Label7>
+<Output1-Label8 Name="Belgian-Strong-Ale" MF="SemiTrapezoidalSup" P1="7.000" P2="8.000" P3="8.000" ModalPoint="No MP">
+</Output1-Label8>
+</Labels>
+</Outputs>
+<Rules>
+<Rule1 I1="1" I2="1" I3="0" O1="1" Nature="I" Active="true">
+</Rule1>
+<Rule2 I1="3" I2="1" I3="0" O1="2" Nature="I" Active="true">
+</Rule2>
+<Rule3 I1="2" I2="3" I3="0" O1="3" Nature="I" Active="true">
+</Rule3>
+<Rule4 I1="0" I2="4" I3="3" O1="4" Nature="I" Active="true">
+</Rule4>
+<Rule5 I1="5" I2="0" I3="2" O1="5" Nature="I" Active="true">
+</Rule5>
+<Rule6 I1="5" I2="4" I3="0" O1="6" Nature="I" Active="true">
+</Rule6>
+<Rule7 I1="4" I2="0" I3="1" O1="7" Nature="I" Active="true">
+</Rule7>
+<Rule8 I1="0" I2="3" I3="4" O1="8" Nature="I" Active="true">
+</Rule8>
+</Rules>
+</KnowledgeBase>

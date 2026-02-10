@@ -1,0 +1,488 @@
+<KnowledgeBase>
+<System Name="New Knowledge Base" Inputs="13" Outputs="1" Rules="143">
+</System>
+<Inputs>
+<Input1 Active="true" Name="Alcohol" Type="numerical" Trust="llow" PhysicalLowerRange="11.030" PhysicalUpperRange="14.830" InterestLowerRange="11.030" InterestUpperRange="14.830" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input1>
+<Labels>
+<Input1-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="11.030" P2="11.711" P3="12.484" ModalPoint="No MP">
+</Input1-Label1>
+<Input1-Label2 Name="low" MF="triangular" P1="11.711" P2="12.484" P3="13.163" ModalPoint="No MP">
+</Input1-Label2>
+<Input1-Label3 Name="average" MF="triangular" P1="12.484" P2="13.163" P3="13.501" ModalPoint="No MP">
+</Input1-Label3>
+<Input1-Label4 Name="high" MF="triangular" P1="13.163" P2="13.501" P3="14.004" ModalPoint="No MP">
+</Input1-Label4>
+<Input1-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="13.501" P2="14.004" P3="14.830" ModalPoint="No MP">
+</Input1-Label5>
+</Labels>
+<Input2 Active="true" Name="MalicAcid" Type="numerical" Trust="llow" PhysicalLowerRange="0.740" PhysicalUpperRange="5.800" InterestLowerRange="0.740" InterestUpperRange="5.800" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input2>
+<Labels>
+<Input2-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.740" P2="1.140" P3="1.504" ModalPoint="No MP">
+</Input2-Label1>
+<Input2-Label2 Name="low" MF="triangular" P1="1.140" P2="1.504" P3="1.660" ModalPoint="No MP">
+</Input2-Label2>
+<Input2-Label3 Name="average" MF="triangular" P1="1.504" P2="1.660" P3="2.391" ModalPoint="No MP">
+</Input2-Label3>
+<Input2-Label4 Name="high" MF="triangular" P1="1.660" P2="2.391" P3="5.800" ModalPoint="No MP">
+</Input2-Label4>
+<Input2-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="2.391" P2="5.800" P3="5.800" ModalPoint="No MP">
+</Input2-Label5>
+</Labels>
+<Input3 Active="true" Name="Ash" Type="numerical" Trust="llow" PhysicalLowerRange="1.360" PhysicalUpperRange="3.230" InterestLowerRange="1.360" InterestUpperRange="3.230" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input3>
+<Labels>
+<Input3-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="1.360" P2="1.360" P3="1.927" ModalPoint="No MP">
+</Input3-Label1>
+<Input3-Label2 Name="low" MF="triangular" P1="1.360" P2="1.927" P3="2.312" ModalPoint="No MP">
+</Input3-Label2>
+<Input3-Label3 Name="average" MF="triangular" P1="1.927" P2="2.312" P3="2.656" ModalPoint="No MP">
+</Input3-Label3>
+<Input3-Label4 Name="high" MF="triangular" P1="2.312" P2="2.656" P3="3.230" ModalPoint="No MP">
+</Input3-Label4>
+<Input3-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="2.656" P2="3.230" P3="3.230" ModalPoint="No MP">
+</Input3-Label5>
+</Labels>
+<Input4 Active="true" Name="AlcalinityOfAsh" Type="numerical" Trust="llow" PhysicalLowerRange="10.600" PhysicalUpperRange="30.000" InterestLowerRange="10.600" InterestUpperRange="30.000" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input4>
+<Labels>
+<Input4-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="10.600" P2="10.900" P3="16.673" ModalPoint="No MP">
+</Input4-Label1>
+<Input4-Label2 Name="low" MF="triangular" P1="10.900" P2="16.673" P3="20.007" ModalPoint="No MP">
+</Input4-Label2>
+<Input4-Label3 Name="average" MF="triangular" P1="16.673" P2="20.007" P3="23.432" ModalPoint="No MP">
+</Input4-Label3>
+<Input4-Label4 Name="high" MF="triangular" P1="20.007" P2="23.432" P3="27.750" ModalPoint="No MP">
+</Input4-Label4>
+<Input4-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="23.432" P2="27.750" P3="30.000" ModalPoint="No MP">
+</Input4-Label5>
+</Labels>
+<Input5 Active="true" Name="Magnesium" Type="numerical" Trust="llow" PhysicalLowerRange="70.000" PhysicalUpperRange="162.000" InterestLowerRange="70.000" InterestUpperRange="162.000" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input5>
+<Labels>
+<Input5-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="70.000" P2="85.548" P3="98.414" ModalPoint="No MP">
+</Input5-Label1>
+<Input5-Label2 Name="low" MF="triangular" P1="85.548" P2="98.414" P3="112.412" ModalPoint="No MP">
+</Input5-Label2>
+<Input5-Label3 Name="average" MF="triangular" P1="98.414" P2="112.412" P3="130.429" ModalPoint="No MP">
+</Input5-Label3>
+<Input5-Label4 Name="high" MF="triangular" P1="112.412" P2="130.429" P3="156.500" ModalPoint="No MP">
+</Input5-Label4>
+<Input5-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="130.429" P2="156.500" P3="162.000" ModalPoint="No MP">
+</Input5-Label5>
+</Labels>
+<Input6 Active="true" Name="TotalPhenols" Type="numerical" Trust="llow" PhysicalLowerRange="0.980" PhysicalUpperRange="3.880" InterestLowerRange="0.980" InterestUpperRange="3.880" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input6>
+<Labels>
+<Input6-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.980" P2="1.447" P3="1.900" ModalPoint="No MP">
+</Input6-Label1>
+<Input6-Label2 Name="low" MF="triangular" P1="1.447" P2="1.900" P3="2.444" ModalPoint="No MP">
+</Input6-Label2>
+<Input6-Label3 Name="average" MF="triangular" P1="1.900" P2="2.444" P3="2.985" ModalPoint="No MP">
+</Input6-Label3>
+<Input6-Label4 Name="high" MF="triangular" P1="2.444" P2="2.985" P3="3.865" ModalPoint="No MP">
+</Input6-Label4>
+<Input6-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="2.985" P2="3.865" P3="3.880" ModalPoint="No MP">
+</Input6-Label5>
+</Labels>
+<Input7 Active="true" Name="flavanoids" Type="numerical" Trust="llow" PhysicalLowerRange="0.340" PhysicalUpperRange="5.080" InterestLowerRange="0.340" InterestUpperRange="5.080" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input7>
+<Labels>
+<Input7-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.340" P2="0.694" P3="1.613" ModalPoint="No MP">
+</Input7-Label1>
+<Input7-Label2 Name="low" MF="triangular" P1="0.694" P2="1.613" P3="2.474" ModalPoint="No MP">
+</Input7-Label2>
+<Input7-Label3 Name="average" MF="triangular" P1="1.613" P2="2.474" P3="3.165" ModalPoint="No MP">
+</Input7-Label3>
+<Input7-Label4 Name="high" MF="triangular" P1="2.474" P2="3.165" P3="5.080" ModalPoint="No MP">
+</Input7-Label4>
+<Input7-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="3.165" P2="5.080" P3="5.080" ModalPoint="No MP">
+</Input7-Label5>
+</Labels>
+<Input8 Active="true" Name="NonflavanoidsPhenols" Type="numerical" Trust="llow" PhysicalLowerRange="0.130" PhysicalUpperRange="0.660" InterestLowerRange="0.130" InterestUpperRange="0.660" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input8>
+<Labels>
+<Input8-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.130" P2="0.198" P3="0.294" ModalPoint="No MP">
+</Input8-Label1>
+<Input8-Label2 Name="low" MF="triangular" P1="0.198" P2="0.294" P3="0.410" ModalPoint="No MP">
+</Input8-Label2>
+<Input8-Label3 Name="average" MF="triangular" P1="0.294" P2="0.410" P3="0.507" ModalPoint="No MP">
+</Input8-Label3>
+<Input8-Label4 Name="high" MF="triangular" P1="0.410" P2="0.507" P3="0.605" ModalPoint="No MP">
+</Input8-Label4>
+<Input8-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="0.507" P2="0.605" P3="0.660" ModalPoint="No MP">
+</Input8-Label5>
+</Labels>
+<Input9 Active="true" Name="Proanthocyanins" Type="numerical" Trust="llow" PhysicalLowerRange="0.410" PhysicalUpperRange="3.580" InterestLowerRange="0.410" InterestUpperRange="3.580" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input9>
+<Labels>
+<Input9-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.410" P2="0.871" P3="1.348" ModalPoint="No MP">
+</Input9-Label1>
+<Input9-Label2 Name="low" MF="triangular" P1="0.871" P2="1.348" P3="1.457" ModalPoint="No MP">
+</Input9-Label2>
+<Input9-Label3 Name="average" MF="triangular" P1="1.348" P2="1.457" P3="1.891" ModalPoint="No MP">
+</Input9-Label3>
+<Input9-Label4 Name="high" MF="triangular" P1="1.457" P2="1.891" P3="3.280" ModalPoint="No MP">
+</Input9-Label4>
+<Input9-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="1.891" P2="3.280" P3="3.580" ModalPoint="No MP">
+</Input9-Label5>
+</Labels>
+<Input10 Active="true" Name="ColorIntensity" Type="numerical" Trust="llow" PhysicalLowerRange="1.280" PhysicalUpperRange="13.000" InterestLowerRange="1.280" InterestUpperRange="13.000" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input10>
+<Labels>
+<Input10-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="1.280" P2="2.772" P3="4.509" ModalPoint="No MP">
+</Input10-Label1>
+<Input10-Label2 Name="low" MF="triangular" P1="2.772" P2="4.509" P3="6.449" ModalPoint="No MP">
+</Input10-Label2>
+<Input10-Label3 Name="average" MF="triangular" P1="4.509" P2="6.449" P3="9.372" ModalPoint="No MP">
+</Input10-Label3>
+<Input10-Label4 Name="high" MF="triangular" P1="6.449" P2="9.372" P3="13.000" ModalPoint="No MP">
+</Input10-Label4>
+<Input10-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="9.372" P2="13.000" P3="13.000" ModalPoint="No MP">
+</Input10-Label5>
+</Labels>
+<Input11 Active="true" Name="Hue" Type="numerical" Trust="llow" PhysicalLowerRange="0.480" PhysicalUpperRange="1.710" InterestLowerRange="0.480" InterestUpperRange="1.710" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input11>
+<Labels>
+<Input11-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="0.480" P2="0.628" P3="0.850" ModalPoint="No MP">
+</Input11-Label1>
+<Input11-Label2 Name="low" MF="triangular" P1="0.628" P2="0.850" P3="1.039" ModalPoint="No MP">
+</Input11-Label2>
+<Input11-Label3 Name="average" MF="triangular" P1="0.850" P2="1.039" P3="1.252" ModalPoint="No MP">
+</Input11-Label3>
+<Input11-Label4 Name="high" MF="triangular" P1="1.039" P2="1.252" P3="1.710" ModalPoint="No MP">
+</Input11-Label4>
+<Input11-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="1.252" P2="1.710" P3="1.710" ModalPoint="No MP">
+</Input11-Label5>
+</Labels>
+<Input12 Active="true" Name="OD280/OD315" Type="numerical" Trust="llow" PhysicalLowerRange="1.270" PhysicalUpperRange="4.000" InterestLowerRange="1.270" InterestUpperRange="4.000" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input12>
+<Labels>
+<Input12-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="1.270" P2="1.555" P3="2.074" ModalPoint="No MP">
+</Input12-Label1>
+<Input12-Label2 Name="low" MF="triangular" P1="1.555" P2="2.074" P3="2.740" ModalPoint="No MP">
+</Input12-Label2>
+<Input12-Label3 Name="average" MF="triangular" P1="2.074" P2="2.740" P3="3.203" ModalPoint="No MP">
+</Input12-Label3>
+<Input12-Label4 Name="high" MF="triangular" P1="2.740" P2="3.203" P3="3.614" ModalPoint="No MP">
+</Input12-Label4>
+<Input12-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="3.203" P2="3.614" P3="4.000" ModalPoint="No MP">
+</Input12-Label5>
+</Labels>
+<Input13 Active="true" Name="Proline" Type="numerical" Trust="llow" PhysicalLowerRange="278.000" PhysicalUpperRange="1680.000" InterestLowerRange="278.000" InterestUpperRange="1680.000" Labels="5" ScaleOfLabels="low-high" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input13>
+<Labels>
+<Input13-Label1 Name="very_low" MF="SemiTrapezoidalInf" P1="278.000" P2="433.543" P3="656.478" ModalPoint="No MP">
+</Input13-Label1>
+<Input13-Label2 Name="low" MF="triangular" P1="433.543" P2="656.478" P3="962.964" ModalPoint="No MP">
+</Input13-Label2>
+<Input13-Label3 Name="average" MF="triangular" P1="656.478" P2="962.964" P3="1254.167" ModalPoint="No MP">
+</Input13-Label3>
+<Input13-Label4 Name="high" MF="triangular" P1="962.964" P2="1254.167" P3="1527.000" ModalPoint="No MP">
+</Input13-Label4>
+<Input13-Label5 Name="very_high" MF="SemiTrapezoidalSup" P1="1254.167" P2="1527.000" P3="1680.000" ModalPoint="No MP">
+</Input13-Label5>
+</Labels>
+</Inputs>
+<Outputs>
+<Output1 Active="true" Name="Class" Type="categorical" Trust="llow" Classif="yes" PhysicalLowerRange="1.000" PhysicalUpperRange="3.000" InterestLowerRange="1.000" InterestUpperRange="3.000" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Output1>
+<Labels>
+<Output1-Label1 Name="1.0" MF="discrete" P1="1.000" ModalPoint="1.0">
+</Output1-Label1>
+<Output1-Label2 Name="2.0" MF="discrete" P1="2.000" ModalPoint="2.0">
+</Output1-Label2>
+<Output1-Label3 Name="3.0" MF="discrete" P1="3.000" ModalPoint="3.0">
+</Output1-Label3>
+</Labels>
+</Outputs>
+<Rules>
+<Rule1 I1="4" I2="3" I3="3" I4="2" I5="1" I6="3" I7="3" I8="2" I9="4" I10="3" I11="4" I12="3" I13="4" O1="1" Nature="I" Active="true">
+</Rule1>
+<Rule2 I1="4" I2="3" I3="3" I4="3" I5="3" I6="4" I7="4" I8="1" I9="4" I10="3" I11="3" I12="3" I13="5" O1="1" Nature="I" Active="true">
+</Rule2>
+<Rule3 I1="4" I2="3" I3="4" I4="3" I5="2" I6="3" I7="3" I8="2" I9="3" I10="1" I11="3" I12="5" I13="3" O1="1" Nature="I" Active="true">
+</Rule3>
+<Rule4 I1="5" I2="5" I3="4" I4="4" I5="2" I6="2" I7="1" I8="5" I9="2" I10="4" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule4>
+<Rule5 I1="2" I2="1" I3="1" I4="1" I5="1" I6="2" I7="1" I8="2" I9="1" I10="1" I11="3" I12="2" I13="1" O1="2" Nature="I" Active="true">
+</Rule5>
+<Rule6 I1="5" I2="3" I3="3" I4="2" I5="2" I6="3" I7="3" I8="2" I9="4" I10="2" I11="3" I12="5" I13="4" O1="1" Nature="I" Active="true">
+</Rule6>
+<Rule7 I1="3" I2="3" I3="2" I4="2" I5="3" I6="4" I7="4" I8="2" I9="4" I10="2" I11="2" I12="4" I13="3" O1="1" Nature="I" Active="true">
+</Rule7>
+<Rule8 I1="3" I2="4" I3="4" I4="3" I5="2" I6="3" I7="3" I8="2" I9="4" I10="2" I11="3" I12="5" I13="2" O1="1" Nature="I" Active="true">
+</Rule8>
+<Rule9 I1="3" I2="3" I3="4" I4="4" I5="3" I6="3" I7="2" I8="2" I9="3" I10="3" I11="1" I12="1" I13="1" O1="3" Nature="I" Active="true">
+</Rule9>
+<Rule10 I1="2" I2="1" I3="2" I4="2" I5="4" I6="2" I7="2" I8="2" I9="5" I10="1" I11="3" I12="2" I13="2" O1="2" Nature="I" Active="true">
+</Rule10>
+<Rule11 I1="2" I2="4" I3="3" I4="3" I5="1" I6="1" I7="1" I8="3" I9="1" I10="4" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule11>
+<Rule12 I1="5" I2="3" I3="3" I4="2" I5="3" I6="4" I7="4" I8="2" I9="4" I10="3" I11="2" I12="4" I13="3" O1="1" Nature="I" Active="true">
+</Rule12>
+<Rule13 I1="4" I2="5" I3="3" I4="3" I5="2" I6="2" I7="1" I8="4" I9="1" I10="3" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule13>
+<Rule14 I1="2" I2="2" I3="3" I4="3" I5="1" I6="4" I7="4" I8="3" I9="4" I10="2" I11="1" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule14>
+<Rule15 I1="1" I2="4" I3="4" I4="5" I5="2" I6="2" I7="3" I8="5" I9="4" I10="1" I11="3" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule15>
+<Rule16 I1="3" I2="4" I3="4" I4="4" I5="2" I6="3" I7="1" I8="4" I9="1" I10="2" I11="2" I12="2" I13="2" O1="3" Nature="I" Active="true">
+</Rule16>
+<Rule17 I1="5" I2="4" I3="4" I4="2" I5="3" I6="3" I7="3" I8="2" I9="2" I10="2" I11="3" I12="5" I13="4" O1="1" Nature="I" Active="true">
+</Rule17>
+<Rule18 I1="1" I2="4" I3="4" I4="3" I5="4" I6="1" I7="1" I8="1" I9="3" I10="1" I11="3" I12="2" I13="2" O1="2" Nature="I" Active="true">
+</Rule18>
+<Rule19 I1="4" I2="4" I3="3" I4="4" I5="2" I6="2" I7="1" I8="3" I9="3" I10="3" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule19>
+<Rule20 I1="4" I2="4" I3="4" I4="4" I5="4" I6="1" I7="2" I8="1" I9="2" I10="4" I11="1" I12="1" I13="1" O1="3" Nature="I" Active="true">
+</Rule20>
+<Rule21 I1="1" I2="2" I3="4" I4="4" I5="1" I6="3" I7="3" I8="3" I9="1" I10="1" I11="2" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule21>
+<Rule22 I1="4" I2="3" I3="3" I4="4" I5="1" I6="2" I7="2" I8="2" I9="1" I10="2" I11="3" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule22>
+<Rule23 I1="5" I2="2" I3="3" I4="2" I5="2" I6="4" I7="4" I8="1" I9="4" I10="3" I11="3" I12="5" I13="3" O1="1" Nature="I" Active="true">
+</Rule23>
+<Rule24 I1="2" I2="4" I3="3" I4="3" I5="1" I6="3" I7="1" I8="4" I9="1" I10="3" I11="1" I12="1" I13="1" O1="3" Nature="I" Active="true">
+</Rule24>
+<Rule25 I1="5" I2="3" I3="3" I4="2" I5="3" I6="5" I7="4" I8="2" I9="4" I10="3" I11="3" I12="4" I13="4" O1="1" Nature="I" Active="true">
+</Rule25>
+<Rule26 I1="1" I2="5" I3="3" I4="4" I5="1" I6="2" I7="2" I8="3" I9="2" I10="1" I11="2" I12="3" I13="2" O1="2" Nature="I" Active="true">
+</Rule26>
+<Rule27 I1="5" I2="3" I3="4" I4="2" I5="2" I6="3" I7="4" I8="1" I9="4" I10="3" I11="4" I12="4" I13="4" O1="1" Nature="I" Active="true">
+</Rule27>
+<Rule28 I1="2" I2="1" I3="3" I4="2" I5="2" I6="2" I7="1" I8="5" I9="1" I10="1" I11="4" I12="1" I13="2" O1="2" Nature="I" Active="true">
+</Rule28>
+<Rule29 I1="5" I2="4" I3="3" I4="3" I5="1" I6="2" I7="1" I8="3" I9="2" I10="4" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule29>
+<Rule30 I1="5" I2="5" I3="3" I4="3" I5="1" I6="2" I7="1" I8="4" I9="3" I10="4" I11="1" I12="1" I13="1" O1="3" Nature="I" Active="true">
+</Rule30>
+<Rule31 I1="5" I2="2" I3="4" I4="3" I5="4" I6="4" I7="3" I8="4" I9="2" I10="2" I11="4" I12="4" I13="4" O1="1" Nature="I" Active="true">
+</Rule31>
+<Rule32 I1="1" I2="4" I3="3" I4="3" I5="2" I6="4" I7="3" I8="2" I9="4" I10="1" I11="2" I12="4" I13="2" O1="2" Nature="I" Active="true">
+</Rule32>
+<Rule33 I1="2" I2="4" I3="2" I4="2" I5="1" I6="1" I7="2" I8="3" I9="1" I10="1" I11="1" I12="2" I13="1" O1="2" Nature="I" Active="true">
+</Rule33>
+<Rule34 I1="3" I2="4" I3="3" I4="3" I5="3" I6="1" I7="1" I8="3" I9="1" I10="2" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule34>
+<Rule35 I1="3" I2="3" I3="4" I4="2" I5="2" I6="3" I7="3" I8="2" I9="3" I10="2" I11="3" I12="3" I13="3" O1="1" Nature="I" Active="true">
+</Rule35>
+<Rule36 I1="4" I2="1" I3="2" I4="2" I5="2" I6="2" I7="2" I8="2" I9="1" I10="2" I11="4" I12="3" I13="2" O1="2" Nature="I" Active="true">
+</Rule36>
+<Rule37 I1="2" I2="3" I3="3" I4="4" I5="1" I6="3" I7="3" I8="3" I9="4" I10="1" I11="2" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule37>
+<Rule38 I1="3" I2="4" I3="3" I4="3" I5="2" I6="2" I7="1" I8="5" I9="4" I10="4" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule38>
+<Rule39 I1="5" I2="3" I3="3" I4="2" I5="3" I6="4" I7="4" I8="2" I9="4" I10="4" I11="4" I12="3" I13="5" O1="1" Nature="I" Active="true">
+</Rule39>
+<Rule40 I1="3" I2="2" I3="2" I4="2" I5="2" I6="3" I7="3" I8="2" I9="2" I10="2" I11="4" I12="3" I13="3" O1="1" Nature="I" Active="true">
+</Rule40>
+<Rule41 I1="5" I2="2" I3="3" I4="2" I5="2" I6="3" I7="3" I8="2" I9="3" I10="2" I11="4" I12="3" I13="4" O1="1" Nature="I" Active="true">
+</Rule41>
+<Rule42 I1="3" I2="3" I3="4" I4="2" I5="2" I6="4" I7="4" I8="2" I9="3" I10="3" I11="3" I12="3" I13="4" O1="1" Nature="I" Active="true">
+</Rule42>
+<Rule43 I1="5" I2="3" I3="4" I4="2" I5="3" I6="4" I7="3" I8="3" I9="4" I10="3" I11="3" I12="3" I13="4" O1="1" Nature="I" Active="true">
+</Rule43>
+<Rule44 I1="3" I2="4" I3="3" I4="3" I5="2" I6="1" I7="1" I8="3" I9="2" I10="2" I11="1" I12="1" I13="3" O1="3" Nature="I" Active="true">
+</Rule44>
+<Rule45 I1="2" I2="4" I3="3" I4="3" I5="2" I6="1" I7="1" I8="3" I9="1" I10="3" I11="1" I12="2" I13="1" O1="3" Nature="I" Active="true">
+</Rule45>
+<Rule46 I1="3" I2="3" I3="4" I4="5" I5="4" I6="4" I7="4" I8="1" I9="4" I10="1" I11="4" I12="5" I13="3" O1="2" Nature="I" Active="true">
+</Rule46>
+<Rule47 I1="2" I2="5" I3="4" I4="3" I5="1" I6="1" I7="1" I8="4" I9="1" I10="2" I11="2" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule47>
+<Rule48 I1="2" I2="3" I3="3" I4="3" I5="1" I6="3" I7="3" I8="2" I9="4" I10="2" I11="4" I12="4" I13="2" O1="2" Nature="I" Active="true">
+</Rule48>
+<Rule49 I1="5" I2="4" I3="3" I4="2" I5="2" I6="4" I7="4" I8="1" I9="4" I10="3" I11="4" I12="4" I13="5" O1="1" Nature="I" Active="true">
+</Rule49>
+<Rule50 I1="3" I2="4" I3="4" I4="3" I5="2" I6="1" I7="1" I8="4" I9="1" I10="2" I11="2" I12="2" I13="2" O1="3" Nature="I" Active="true">
+</Rule50>
+<Rule51 I1="4" I2="5" I3="3" I4="3" I5="2" I6="2" I7="1" I8="4" I9="1" I10="2" I11="2" I12="2" I13="2" O1="3" Nature="I" Active="true">
+</Rule51>
+<Rule52 I1="5" I2="4" I3="3" I4="2" I5="2" I6="4" I7="4" I8="2" I9="4" I10="2" I11="3" I12="5" I13="3" O1="1" Nature="I" Active="true">
+</Rule52>
+<Rule53 I1="3" I2="1" I3="2" I4="2" I5="1" I6="2" I7="2" I8="1" I9="3" I10="2" I11="4" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule53>
+<Rule54 I1="1" I2="3" I3="4" I4="5" I5="1" I6="2" I7="2" I8="3" I9="2" I10="1" I11="4" I12="4" I13="2" O1="2" Nature="I" Active="true">
+</Rule54>
+<Rule55 I1="3" I2="1" I3="2" I4="2" I5="1" I6="4" I7="4" I8="2" I9="4" I10="2" I11="3" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule55>
+<Rule56 I1="3" I2="4" I3="4" I4="3" I5="3" I6="4" I7="3" I8="3" I9="4" I10="2" I11="3" I12="3" I13="2" O1="1" Nature="I" Active="true">
+</Rule56>
+<Rule57 I1="1" I2="4" I3="3" I4="3" I5="1" I6="2" I7="2" I8="4" I9="2" I10="1" I11="3" I12="3" I13="2" O1="2" Nature="I" Active="true">
+</Rule57>
+<Rule58 I1="3" I2="4" I3="4" I4="4" I5="3" I6="1" I7="1" I8="5" I9="1" I10="3" I11="2" I12="2" I13="2" O1="3" Nature="I" Active="true">
+</Rule58>
+<Rule59 I1="3" I2="4" I3="3" I4="3" I5="3" I6="1" I7="2" I8="2" I9="2" I10="4" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule59>
+<Rule60 I1="3" I2="5" I3="3" I4="3" I5="1" I6="3" I7="3" I8="2" I9="4" I10="1" I11="1" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule60>
+<Rule61 I1="5" I2="2" I3="4" I4="4" I5="1" I6="4" I7="4" I8="1" I9="4" I10="1" I11="4" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule61>
+<Rule62 I1="4" I2="4" I3="4" I4="4" I5="3" I6="2" I7="1" I8="3" I9="3" I10="4" I11="2" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule62>
+<Rule63 I1="4" I2="3" I3="3" I4="3" I5="3" I6="4" I7="3" I8="1" I9="4" I10="3" I11="3" I12="4" I13="4" O1="1" Nature="I" Active="true">
+</Rule63>
+<Rule64 I1="1" I2="2" I3="4" I4="3" I5="2" I6="4" I7="4" I8="2" I9="4" I10="1" I11="3" I12="4" I13="2" O1="2" Nature="I" Active="true">
+</Rule64>
+<Rule65 I1="3" I2="3" I3="3" I4="1" I5="2" I6="3" I7="3" I8="2" I9="2" I10="2" I11="3" I12="4" I13="3" O1="1" Nature="I" Active="true">
+</Rule65>
+<Rule66 I1="1" I2="3" I3="3" I4="2" I5="2" I6="4" I7="3" I8="1" I9="2" I10="1" I11="4" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule66>
+<Rule67 I1="4" I2="3" I3="3" I4="2" I5="3" I6="3" I7="4" I8="1" I9="3" I10="3" I11="2" I12="4" I13="3" O1="1" Nature="I" Active="true">
+</Rule67>
+<Rule68 I1="5" I2="3" I3="3" I4="2" I5="2" I6="3" I7="3" I8="2" I9="4" I10="2" I11="3" I12="5" I13="3" O1="1" Nature="I" Active="true">
+</Rule68>
+<Rule69 I1="2" I2="4" I3="3" I4="3" I5="2" I6="1" I7="1" I8="5" I9="1" I10="3" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule69>
+<Rule70 I1="2" I2="3" I3="2" I4="3" I5="1" I6="3" I7="2" I8="2" I9="3" I10="1" I11="3" I12="5" I13="2" O1="2" Nature="I" Active="true">
+</Rule70>
+<Rule71 I1="1" I2="3" I3="2" I4="3" I5="1" I6="3" I7="2" I8="3" I9="3" I10="1" I11="2" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule71>
+<Rule72 I1="1" I2="4" I3="2" I4="2" I5="2" I6="3" I7="3" I8="2" I9="2" I10="1" I11="4" I12="3" I13="2" O1="2" Nature="I" Active="true">
+</Rule72>
+<Rule73 I1="2" I2="3" I3="3" I4="4" I5="1" I6="2" I7="2" I8="3" I9="3" I10="1" I11="4" I12="2" I13="1" O1="2" Nature="I" Active="true">
+</Rule73>
+<Rule74 I1="4" I2="5" I3="4" I4="4" I5="3" I6="2" I7="1" I8="2" I9="2" I10="4" I11="1" I12="2" I13="2" O1="3" Nature="I" Active="true">
+</Rule74>
+<Rule75 I1="5" I2="2" I3="4" I4="3" I5="3" I6="4" I7="4" I8="3" I9="4" I10="3" I11="3" I12="3" I13="4" O1="1" Nature="I" Active="true">
+</Rule75>
+<Rule76 I1="4" I2="2" I3="4" I4="2" I5="3" I6="4" I7="4" I8="1" I9="4" I10="3" I11="2" I12="3" I13="4" O1="1" Nature="I" Active="true">
+</Rule76>
+<Rule77 I1="2" I2="3" I3="3" I4="4" I5="1" I6="1" I7="2" I8="4" I9="3" I10="1" I11="2" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule77>
+<Rule78 I1="2" I2="2" I3="3" I4="3" I5="1" I6="1" I7="2" I8="5" I9="3" I10="1" I11="3" I12="2" I13="1" O1="2" Nature="I" Active="true">
+</Rule78>
+<Rule79 I1="1" I2="4" I3="3" I4="2" I5="3" I6="2" I7="2" I8="3" I9="1" I10="1" I11="3" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule79>
+<Rule80 I1="5" I2="3" I3="3" I4="2" I5="4" I6="4" I7="4" I8="2" I9="4" I10="3" I11="3" I12="5" I13="3" O1="1" Nature="I" Active="true">
+</Rule80>
+<Rule81 I1="2" I2="4" I3="4" I4="5" I5="2" I6="2" I7="1" I8="5" I9="2" I10="3" I11="1" I12="1" I13="3" O1="3" Nature="I" Active="true">
+</Rule81>
+<Rule82 I1="1" I2="4" I3="3" I4="3" I5="1" I6="3" I7="3" I8="3" I9="2" I10="1" I11="2" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule82>
+<Rule83 I1="2" I2="2" I3="2" I4="3" I5="1" I6="1" I7="2" I8="2" I9="2" I10="1" I11="3" I12="3" I13="2" O1="2" Nature="I" Active="true">
+</Rule83>
+<Rule84 I1="3" I2="4" I3="3" I4="3" I5="3" I6="1" I7="1" I8="4" I9="3" I10="4" I11="1" I12="1" I13="3" O1="3" Nature="I" Active="true">
+</Rule84>
+<Rule85 I1="2" I2="1" I3="4" I4="2" I5="2" I6="3" I7="3" I8="3" I9="4" I10="2" I11="4" I12="2" I13="2" O1="2" Nature="I" Active="true">
+</Rule85>
+<Rule86 I1="2" I2="2" I3="4" I4="3" I5="2" I6="2" I7="2" I8="3" I9="1" I10="1" I11="4" I12="2" I13="1" O1="2" Nature="I" Active="true">
+</Rule86>
+<Rule87 I1="3" I2="3" I3="4" I4="2" I5="2" I6="3" I7="3" I8="2" I9="3" I10="2" I11="3" I12="5" I13="3" O1="1" Nature="I" Active="true">
+</Rule87>
+<Rule88 I1="2" I2="3" I3="3" I4="4" I5="3" I6="2" I7="3" I8="2" I9="3" I10="1" I11="3" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule88>
+<Rule89 I1="2" I2="2" I3="2" I4="2" I5="2" I6="2" I7="2" I8="4" I9="1" I10="3" I11="3" I12="1" I13="1" O1="2" Nature="I" Active="true">
+</Rule89>
+<Rule90 I1="2" I2="2" I3="2" I4="2" I5="1" I6="3" I7="3" I8="2" I9="4" I10="1" I11="4" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule90>
+<Rule91 I1="2" I2="1" I3="2" I4="3" I5="2" I6="3" I7="2" I8="3" I9="4" I10="1" I11="2" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule91>
+<Rule92 I1="5" I2="3" I3="3" I4="2" I5="3" I6="4" I7="4" I8="2" I9="4" I10="4" I11="3" I12="4" I13="4" O1="1" Nature="I" Active="true">
+</Rule92>
+<Rule93 I1="4" I2="3" I3="3" I4="2" I5="2" I6="3" I7="3" I8="3" I9="4" I10="2" I11="4" I12="3" I13="3" O1="1" Nature="I" Active="true">
+</Rule93>
+<Rule94 I1="3" I2="2" I3="3" I4="2" I5="4" I6="1" I7="2" I8="1" I9="1" I10="2" I11="2" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule94>
+<Rule95 I1="2" I2="1" I3="2" I4="3" I5="2" I6="1" I7="1" I8="4" I9="2" I10="3" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule95>
+<Rule96 I1="2" I2="1" I3="3" I4="2" I5="2" I6="3" I7="2" I8="2" I9="3" I10="1" I11="4" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule96>
+<Rule97 I1="4" I2="3" I3="3" I4="2" I5="3" I6="4" I7="4" I8="2" I9="4" I10="3" I11="3" I12="4" I13="2" O1="1" Nature="I" Active="true">
+</Rule97>
+<Rule98 I1="2" I2="5" I3="4" I4="5" I5="2" I6="3" I7="3" I8="3" I9="4" I10="1" I11="2" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule98>
+<Rule99 I1="2" I2="4" I3="3" I4="3" I5="1" I6="1" I7="1" I8="4" I9="1" I10="4" I11="1" I12="1" I13="1" O1="3" Nature="I" Active="true">
+</Rule99>
+<Rule100 I1="1" I2="4" I3="5" I4="5" I5="3" I6="4" I7="5" I8="4" I9="4" I10="3" I11="2" I12="5" I13="1" O1="2" Nature="I" Active="true">
+</Rule100>
+<Rule101 I1="5" I2="3" I3="4" I4="2" I5="3" I6="5" I7="4" I8="1" I9="4" I10="3" I11="2" I12="5" I13="5" O1="1" Nature="I" Active="true">
+</Rule101>
+<Rule102 I1="3" I2="4" I3="3" I4="3" I5="2" I6="2" I7="1" I8="3" I9="2" I10="4" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule102>
+<Rule103 I1="1" I2="5" I3="3" I4="3" I5="1" I6="4" I7="4" I8="1" I9="5" I10="1" I11="2" I12="5" I13="1" O1="2" Nature="I" Active="true">
+</Rule103>
+<Rule104 I1="3" I2="4" I3="3" I4="2" I5="2" I6="3" I7="3" I8="2" I9="3" I10="2" I11="2" I12="4" I13="2" O1="1" Nature="I" Active="true">
+</Rule104>
+<Rule105 I1="2" I2="2" I3="3" I4="3" I5="5" I6="3" I7="3" I8="2" I9="5" I10="1" I11="4" I12="3" I13="3" O1="2" Nature="I" Active="true">
+</Rule105>
+<Rule106 I1="5" I2="3" I3="3" I4="3" I5="2" I6="4" I7="4" I8="2" I9="4" I10="3" I11="3" I12="3" I13="3" O1="1" Nature="I" Active="true">
+</Rule106>
+<Rule107 I1="4" I2="3" I3="4" I4="2" I5="2" I6="4" I7="4" I8="2" I9="3" I10="2" I11="2" I12="4" I13="4" O1="1" Nature="I" Active="true">
+</Rule107>
+<Rule108 I1="1" I2="3" I3="3" I4="3" I5="1" I6="1" I7="2" I8="4" I9="3" I10="1" I11="3" I12="2" I13="1" O1="2" Nature="I" Active="true">
+</Rule108>
+<Rule109 I1="2" I2="1" I3="2" I4="3" I5="1" I6="2" I7="2" I8="2" I9="1" I10="2" I11="3" I12="5" I13="1" O1="2" Nature="I" Active="true">
+</Rule109>
+<Rule110 I1="4" I2="4" I3="3" I4="3" I5="1" I6="1" I7="1" I8="5" I9="1" I10="3" I11="2" I12="2" I13="2" O1="3" Nature="I" Active="true">
+</Rule110>
+<Rule111 I1="2" I2="1" I3="2" I4="2" I5="5" I6="2" I7="2" I8="1" I9="4" I10="1" I11="4" I12="4" I13="2" O1="2" Nature="I" Active="true">
+</Rule111>
+<Rule112 I1="2" I2="3" I3="3" I4="3" I5="2" I6="1" I7="1" I8="3" I9="3" I10="1" I11="2" I12="2" I13="3" O1="2" Nature="I" Active="true">
+</Rule112>
+<Rule113 I1="1" I2="2" I3="3" I4="4" I5="1" I6="1" I7="2" I8="4" I9="3" I10="1" I11="3" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule113>
+<Rule114 I1="2" I2="4" I3="3" I4="4" I5="2" I6="1" I7="1" I8="2" I9="1" I10="3" I11="1" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule114>
+<Rule115 I1="2" I2="4" I3="3" I4="4" I5="2" I6="4" I7="3" I8="3" I9="4" I10="1" I11="4" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule115>
+<Rule116 I1="4" I2="4" I3="4" I4="3" I5="3" I6="2" I7="1" I8="4" I9="1" I10="3" I11="3" I12="2" I13="2" O1="3" Nature="I" Active="true">
+</Rule116>
+<Rule117 I1="4" I2="4" I3="4" I4="4" I5="2" I6="1" I7="1" I8="3" I9="3" I10="4" I11="2" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule117>
+<Rule118 I1="2" I2="4" I3="3" I4="3" I5="3" I6="2" I7="2" I8="1" I9="1" I10="2" I11="2" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule118>
+<Rule119 I1="1" I2="2" I3="3" I4="3" I5="1" I6="3" I7="3" I8="4" I9="4" I10="1" I11="5" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule119>
+<Rule120 I1="4" I2="4" I3="4" I4="2" I5="3" I6="3" I7="4" I8="1" I9="3" I10="2" I11="3" I12="4" I13="3" O1="1" Nature="I" Active="true">
+</Rule120>
+<Rule121 I1="1" I2="1" I3="3" I4="3" I5="2" I6="4" I7="3" I8="1" I9="3" I10="1" I11="3" I12="4" I13="3" O1="2" Nature="I" Active="true">
+</Rule121>
+<Rule122 I1="5" I2="3" I3="3" I4="2" I5="3" I6="4" I7="4" I8="2" I9="4" I10="3" I11="3" I12="3" I13="5" O1="1" Nature="I" Active="true">
+</Rule122>
+<Rule123 I1="4" I2="5" I3="3" I4="4" I5="1" I6="1" I7="1" I8="4" I9="2" I10="3" I11="2" I12="1" I13="1" O1="3" Nature="I" Active="true">
+</Rule123>
+<Rule124 I1="5" I2="3" I3="4" I4="4" I5="2" I6="4" I7="2" I8="4" I9="5" I10="5" I11="1" I12="2" I13="2" O1="3" Nature="I" Active="true">
+</Rule124>
+<Rule125 I1="4" I2="3" I3="3" I4="2" I5="2" I6="3" I7="4" I8="2" I9="4" I10="2" I11="3" I12="5" I13="3" O1="1" Nature="I" Active="true">
+</Rule125>
+<Rule126 I1="5" I2="3" I3="4" I4="3" I5="3" I6="4" I7="4" I8="3" I9="4" I10="2" I11="4" I12="4" I13="3" O1="1" Nature="I" Active="true">
+</Rule126>
+<Rule127 I1="5" I2="5" I3="3" I4="3" I5="1" I6="1" I7="1" I8="3" I9="1" I10="2" I11="1" I12="1" I13="1" O1="3" Nature="I" Active="true">
+</Rule127>
+<Rule128 I1="3" I2="4" I3="4" I4="3" I5="2" I6="4" I7="4" I8="2" I9="5" I10="3" I11="3" I12="4" I13="4" O1="1" Nature="I" Active="true">
+</Rule128>
+<Rule129 I1="3" I2="3" I3="4" I4="2" I5="3" I6="3" I7="3" I8="2" I9="2" I10="2" I11="3" I12="3" I13="3" O1="1" Nature="I" Active="true">
+</Rule129>
+<Rule130 I1="4" I2="4" I3="4" I4="4" I5="2" I6="1" I7="1" I8="4" I9="1" I10="2" I11="2" I12="2" I13="1" O1="3" Nature="I" Active="true">
+</Rule130>
+<Rule131 I1="2" I2="4" I3="3" I4="4" I5="1" I6="2" I7="2" I8="5" I9="3" I10="1" I11="2" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule131>
+<Rule132 I1="1" I2="2" I3="2" I4="3" I5="1" I6="2" I7="2" I8="2" I9="3" I10="1" I11="3" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule132>
+<Rule133 I1="4" I2="3" I3="3" I4="3" I5="2" I6="3" I7="4" I8="2" I9="4" I10="2" I11="3" I12="5" I13="3" O1="1" Nature="I" Active="true">
+</Rule133>
+<Rule134 I1="4" I2="2" I3="4" I4="4" I5="2" I6="4" I7="4" I8="2" I9="4" I10="3" I11="4" I12="3" I13="4" O1="1" Nature="I" Active="true">
+</Rule134>
+<Rule135 I1="2" I2="4" I3="3" I4="2" I5="1" I6="4" I7="4" I8="3" I9="5" I10="1" I11="4" I12="3" I13="1" O1="2" Nature="I" Active="true">
+</Rule135>
+<Rule136 I1="4" I2="3" I3="4" I4="3" I5="3" I6="3" I7="3" I8="2" I9="3" I10="2" I11="3" I12="3" I13="3" O1="1" Nature="I" Active="true">
+</Rule136>
+<Rule137 I1="4" I2="3" I3="4" I4="2" I5="3" I6="4" I7="4" I8="2" I9="3" I10="3" I11="4" I12="3" I13="4" O1="1" Nature="I" Active="true">
+</Rule137>
+<Rule138 I1="2" I2="1" I3="3" I4="2" I5="1" I6="2" I7="1" I8="5" I9="2" I10="2" I11="2" I12="1" I13="2" O1="3" Nature="I" Active="true">
+</Rule138>
+<Rule139 I1="3" I2="5" I3="3" I4="3" I5="3" I6="1" I7="1" I8="3" I9="2" I10="4" I11="1" I12="1" I13="3" O1="3" Nature="I" Active="true">
+</Rule139>
+<Rule140 I1="1" I2="1" I3="2" I4="3" I5="1" I6="3" I7="3" I8="2" I9="3" I10="1" I11="4" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule140>
+<Rule141 I1="3" I2="3" I3="3" I4="2" I5="2" I6="3" I7="3" I8="2" I9="2" I10="2" I11="3" I12="3" I13="4" O1="1" Nature="I" Active="true">
+</Rule141>
+<Rule142 I1="1" I2="1" I3="4" I4="2" I5="2" I6="3" I7="3" I8="1" I9="4" I10="1" I11="2" I12="4" I13="1" O1="2" Nature="I" Active="true">
+</Rule142>
+<Rule143 I1="1" I2="4" I3="4" I4="3" I5="2" I6="2" I7="2" I8="5" I9="1" I10="2" I11="4" I12="3" I13="2" O1="2" Nature="I" Active="true">
+</Rule143>
+</Rules>
+</KnowledgeBase>

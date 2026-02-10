@@ -1,0 +1,75 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='BEER'
+Ninputs=3
+Noutputs=1
+Nrules=8
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='Color'
+Range=[   0.000,   45.000]
+NMFs=5
+MF1='Pale','SemiTrapezoidalInf',[   0.000,   1.500,   5.250]
+MF2='Straw','trapezoidal',[   1.500,   5.250,   5.250,   13.250]
+MF3='Amber','trapezoidal',[   5.250,   13.250,   13.250,   24.000]
+MF4='Brown','trapezoidal',[   13.250,   24.000,   24.000,   37.000]
+MF5='Black','SemiTrapezoidalSup',[   24.000,   37.000,   45.000]
+
+
+[Input2]
+Active='yes'
+Name='Bitterness'
+Range=[   8.000,   250.000]
+NMFs=3
+MF1='more or less (Low)','SemiTrapezoidalInf',[   8.000,   14.500,   40.000]
+MF2='more or less (Medium-high)','trapezoidal',[   14.500,   40.000,   40.000,   148.750]
+MF3='High','SemiTrapezoidalSup',[   40.000,   148.750,   250.000]
+
+
+[Input3]
+Active='yes'
+Name='Strength'
+Range=[   0.039,   0.136]
+NMFs=3
+MF1='more or less (Session)','SemiTrapezoidalInf',[   0.039,   0.046,   0.079]
+MF2='more or less (High)','trapezoidal',[   0.046,   0.079,   0.079,   0.113]
+MF3='Very-high','SemiTrapezoidalSup',[   0.079,   0.113,   0.136]
+
+[Output1]
+Nature='fuzzy'
+Defuzzification='area'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='no'
+Active='yes'
+Name='Class'
+Range=[   1.000,   8.000]
+NMFs=8
+MF1='Blanche','SemiTrapezoidalInf',[   1.000,   1.000,   2.000]
+MF2='Lager','trapezoidal',[   1.000,   2.000,   2.000,   3.000]
+MF3='Pilsner','trapezoidal',[   2.000,   3.000,   3.000,   4.000]
+MF4='IPA','trapezoidal',[   3.000,   4.000,   4.000,   5.000]
+MF5='Stout','trapezoidal',[   4.000,   5.000,   5.000,   6.000]
+MF6='Barleywine','trapezoidal',[   5.000,   6.000,   6.000,   7.000]
+MF7='Porter','trapezoidal',[   6.000,   7.000,   7.000,   8.000]
+MF8='Belgian-Strong-Ale','SemiTrapezoidalSup',[   7.000,   8.000,   8.000]
+
+[Rules]
+1, 1, 0,    1.000, 
+3, 1, 0,    2.000, 
+2, 2, 0,    3.000, 
+0, 3, 2,    4.000, 
+5, 0, 0,    5.000, 
+0, 3, 3,    6.000, 
+4, 0, 1,    7.000, 
+0, 2, 3,    8.000, 
+
+[Exceptions]
+

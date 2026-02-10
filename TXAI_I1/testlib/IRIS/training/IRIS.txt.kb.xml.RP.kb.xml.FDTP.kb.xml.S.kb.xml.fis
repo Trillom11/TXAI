@@ -1,0 +1,50 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=2
+Noutputs=1
+Nrules=4
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='Petal Length'
+Range=[   1.000,   6.900]
+NMFs=2
+MF1='more or less (average)','SemiTrapezoidalInf',[   1.000,   3.950,   6.900]
+MF2='high','SemiTrapezoidalSup',[   3.950,   6.900,   6.900]
+
+
+[Input2]
+Active='yes'
+Name='Petal Width'
+Range=[   0.100,   2.500]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   0.100,   0.100,   1.300]
+MF2='average','triangular',[   0.100,   1.300,   2.500]
+MF3='high','SemiTrapezoidalSup',[   1.300,   2.500,   2.500]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='Class'
+Range=[   1.000,   3.000]
+NMFs=0
+
+[Rules]
+0, 1,    1.000, 
+1, 2,    2.000, 
+2, 2,    3.000, 
+0, 3,    3.000, 
+
+[Exceptions]
+

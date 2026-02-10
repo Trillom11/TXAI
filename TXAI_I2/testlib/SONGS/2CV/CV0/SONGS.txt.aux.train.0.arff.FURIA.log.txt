@@ -1,0 +1,43 @@
+=== Run information ===
+
+Relation:     SONGS
+Instances:    1008
+Attributes:   14
+              acoustics
+              danceability
+              duration
+              energy
+              instrumentalness
+              key
+              liveness
+              loudness
+              mode
+              speechiness
+              tempo
+              timeSignature
+              valence
+              like 
+
+=== Classifier model (full training set) ===
+
+FURIA rules:
+===========
+
+(instrumentalness in [-inf, -inf, 0.000056, 0.000058]) and (speechiness in [-inf, -inf, 0.0576, 0.0586]) => like =1.0 (CF = 0.77)
+(loudness in [-5.605, -5.594, inf, inf]) and (duration in [-inf, -inf, 212701, 212712]) => like =1.0 (CF = 0.69)
+(loudness in [-6.101, -5.594, inf, inf]) and (energy in [0.95, 0.951, inf, inf]) and (valence in [-inf, -inf, 0.623, 0.64]) => like =1.0 (CF = 0.91)
+(energy in [-inf, -inf, 0.249, 0.265]) => like =1.0 (CF = 0.81)
+(instrumentalness in [-inf, -inf, 0.001, 0.00108]) and (danceability in [-inf, -inf, 0.68, 0.706]) and (loudness in [-5.784, -5.758, inf, inf]) => like =1.0 (CF = 0.72)
+(instrumentalness in [0.0534, 0.0687, inf, inf]) and (valence in [0.378, 0.391, inf, inf]) and (duration in [245053, 246823, inf, inf]) => like =2.0 (CF = 0.99)
+(instrumentalness in [0.000033, 0.000058, inf, inf]) and (valence in [0.461, 0.464, inf, inf]) and (speechiness in [0.0467, 0.0468, inf, inf]) and (danceability in [-inf, -inf, 0.77, 0.771]) and (loudness in [-inf, -inf, -5.065, -4.749]) and (liveness in [0.116, 0.12, inf, inf]) => like =2.0 (CF = 0.98)
+(instrumentalness in [0.000034, 0.000058, inf, inf]) and (danceability in [0.447, 0.485, inf, inf]) and (loudness in [-inf, -inf, -6.884, -6.532]) and (speechiness in [0.0577, 0.0578, inf, inf]) and (danceability in [-inf, -inf, 0.827, 0.828]) => like =2.0 (CF = 0.95)
+(speechiness in [0.216, 0.235, inf, inf]) and (danceability in [0.602, 0.603, inf, inf]) and (liveness in [0.118, 0.122, inf, inf]) and (energy in [0.489, 0.504, inf, inf]) => like =2.0 (CF = 0.93)
+(instrumentalness in [0.0161, 0.0239, inf, inf]) and (energy in [0.249, 0.313, inf, inf]) and (loudness in [-inf, -inf, -6.193, -5.474]) and (liveness in [0.111, 0.113, inf, inf]) and (acoustics in [0.0102, 0.0127, inf, inf]) => like =2.0 (CF = 0.98)
+(danceability in [0.732, 0.735, inf, inf]) and (tempo in [107.024, 109.982, inf, inf]) and (duration in [204960, 204992, inf, inf]) and (acoustics in [-inf, -inf, 0.136, 0.139]) => like =2.0 (CF = 0.89)
+(speechiness in [0.0508, 0.0511, inf, inf]) and (loudness in [-inf, -inf, -6.339, -6.252]) and (acoustics in [-inf, -inf, 0.516, 0.519]) and (duration in [-inf, -inf, 202710, 203992]) => like =2.0 (CF = 0.85)
+(instrumentalness in [0.00003, 0.000053, inf, inf]) and (key in [8, 9, inf, inf]) and (liveness in [-inf, -inf, 0.105, 0.106]) => like =2.0 (CF = 0.85)
+(instrumentalness in [0.000811, 0.000829, inf, inf]) and (valence in [0.372, 0.381, inf, inf]) and (danceability in [-inf, -inf, 0.535, 0.555]) => like =2.0 (CF = 0.88)
+
+Number of Rules : 14
+
+

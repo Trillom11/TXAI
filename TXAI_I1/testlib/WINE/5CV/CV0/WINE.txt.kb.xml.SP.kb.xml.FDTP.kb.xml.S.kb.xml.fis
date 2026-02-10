@@ -1,0 +1,97 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=6
+Noutputs=1
+Nrules=8
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='Alcohol'
+Range=[   11.030,   14.830]
+NMFs=2
+MF1='very low OR low','SemiTrapezoidalInf',[   11.030,   12.363,   12.903]
+MF2='average OR high OR very high','SemiTrapezoidalSup',[   12.363,   12.903,   14.830]
+
+
+[Input2]
+Active='yes'
+Name='Magnesium'
+Range=[   70.000,   162.000]
+NMFs=2
+MF1='very low','SemiTrapezoidalInf',[   70.000,   85.667,   98.267]
+MF2='more or less (low)','SemiTrapezoidalSup',[   85.667,   98.267,   162.000]
+
+
+[Input3]
+Active='yes'
+Name='flavanoids'
+Range=[   0.340,   5.080]
+NMFs=7
+MF1='very low','SemiTrapezoidalInf',[   0.340,   0.685,   1.586]
+MF2='low','triangular',[   0.685,   1.586,   2.505]
+MF3='average','triangular',[   1.586,   2.505,   3.270]
+MF4='high','triangular',[   2.505,   3.270,   5.080]
+MF5='very high','SemiTrapezoidalSup',[   3.270,   5.080,   5.080]
+MF6='(very low) OR (low)','SemiTrapezoidalInf',[   0.340,   1.586,   2.505]
+MF7='(average) OR (high) OR (very high)','SemiTrapezoidalSup',[   1.586,   2.505,   5.080]
+
+
+[Input4]
+Active='yes'
+Name='ColorIntensity'
+Range=[   1.280,   13.000]
+NMFs=4
+MF1='very low','SemiTrapezoidalInf',[   1.280,   2.665,   4.154]
+MF2='low','triangular',[   2.665,   4.154,   5.475]
+MF3='more or less (average)','SemiTrapezoidalSup',[   4.154,   5.475,   13.000]
+MF4='NOT(very low)','SemiTrapezoidalSup',[   2.665,   4.154,   13.000]
+
+
+[Input5]
+Active='yes'
+Name='OD280/OD315'
+Range=[   1.270,   4.000]
+NMFs=2
+MF1='very low','SemiTrapezoidalInf',[   1.270,   1.554,   2.042]
+MF2='more or less (low)','SemiTrapezoidalSup',[   1.554,   2.042,   4.000]
+
+
+[Input6]
+Active='yes'
+Name='Proline'
+Range=[   278.000,   1680.000]
+NMFs=3
+MF1='very low','SemiTrapezoidalInf',[   278.000,   437.163,   657.234]
+MF2='low','triangular',[   437.163,   657.234,   982.708]
+MF3='average OR high OR very high','SemiTrapezoidalSup',[   657.234,   982.708,   1680.000]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='Class'
+Range=[   1.000,   3.000]
+NMFs=0
+
+[Rules]
+0, 0, 6, 1, 0, 0,    2.000, 
+0, 0, 2, 2, 2, 0,    2.000, 
+0, 0, 7, 0, 0, 1,    2.000, 
+1, 0, 3, 0, 0, 2,    2.000, 
+0, 1, 4, 0, 0, 2,    2.000, 
+0, 0, 1, 4, 0, 0,    3.000, 
+2, 0, 3, 0, 0, 2,    1.000, 
+0, 0, 7, 0, 0, 3,    1.000, 
+
+[Exceptions]
+

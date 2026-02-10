@@ -1,0 +1,834 @@
+{
+  "dataset" : "SONGS",
+  "attributes" : [ {
+    "type" : "numericAtt",
+    "id" : "acoustics",
+    "name" : "acoustics",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.66
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.66,
+        "right" : 0.99
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.0,
+      "right" : 0.99
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "danceability",
+    "name" : "danceability",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.12,
+        "right" : 0.41
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.41,
+        "right" : 0.7
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.7,
+        "right" : 0.98
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.12,
+      "right" : 0.98
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "duration",
+    "name" : "duration",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 16042.0,
+        "right" : 345570.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 345570.33,
+        "right" : 675098.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 675098.67,
+        "right" : 1004627.0
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 16042.0,
+      "right" : 1004627.0
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "energy",
+    "name" : "energy",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.01,
+        "right" : 0.34
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.34,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.01,
+      "right" : 1.0
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "instrumentalness",
+    "name" : "instrumentalness",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.65
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.65,
+        "right" : 0.98
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.0,
+      "right" : 0.98
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "key",
+    "name" : "key",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 3.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 3.67,
+        "right" : 7.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 7.33,
+        "right" : 11.0
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.0,
+      "right" : 11.0
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "liveness",
+    "name" : "liveness",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.02,
+        "right" : 0.34
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.34,
+        "right" : 0.65
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.65,
+        "right" : 0.97
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.02,
+      "right" : 0.97
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "loudness",
+    "name" : "loudness",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : -33.1,
+        "right" : -22.17
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : -22.17,
+        "right" : -11.24
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : -11.24,
+        "right" : -0.31
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : -33.1,
+      "right" : -0.31
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "mode",
+    "name" : "mode",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "speechiness",
+    "name" : "speechiness",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.02,
+        "right" : 0.29
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.29,
+        "right" : 0.55
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.55,
+        "right" : 0.82
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.02,
+      "right" : 0.82
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "tempo",
+    "name" : "tempo",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 47.86,
+        "right" : 105.02
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 105.02,
+        "right" : 162.17
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 162.17,
+        "right" : 219.33
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 47.86,
+      "right" : 219.33
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "timeSignature",
+    "name" : "timeSignature",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 1.0,
+        "right" : 2.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 2.33,
+        "right" : 3.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 3.67,
+        "right" : 5.0
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 1.0,
+      "right" : 5.0
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "valence",
+    "name" : "valence",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Low",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.03,
+        "right" : 0.35
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.35,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "High",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 0.99
+      }
+    } ],
+    "normalizedProperties" : [ {
+      "type" : "numericProp",
+      "name" : "L1",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.0,
+        "right" : 0.33
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L2",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.33,
+        "right" : 0.67
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "L3",
+      "id" : 2,
+      "interval" : {
+        "left" : 0.67,
+        "right" : 1.0
+      }
+    } ],
+    "interval" : {
+      "left" : 0.03,
+      "right" : 0.99
+    },
+    "intervalNormalized" : {
+      "left" : 0.0,
+      "right" : 1.0
+    },
+    "value" : 0.0
+  } ],
+  "consequents" : [ {
+    "matrixPosition" : 1,
+    "id" : "1.0",
+    "name" : "1.0",
+    "percentageNode" : 0.0
+  }, {
+    "matrixPosition" : 2,
+    "id" : "2.0",
+    "name" : "2.0",
+    "percentageNode" : 0.0
+  } ]
+}

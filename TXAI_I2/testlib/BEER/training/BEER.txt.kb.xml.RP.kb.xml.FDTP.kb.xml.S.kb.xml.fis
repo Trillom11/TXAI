@@ -1,0 +1,71 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=3
+Noutputs=1
+Nrules=8
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='Color'
+Range=[   0.000,   45.000]
+NMFs=7
+MF1='Pale','SemiTrapezoidalInf',[   0.000,   0.000,   9.000]
+MF2='Straw','triangular',[   0.000,   9.000,   18.000]
+MF3='Amber','triangular',[   9.000,   18.000,   27.000]
+MF4='Brown','triangular',[   18.000,   27.000,   36.000]
+MF5='Black','SemiTrapezoidalSup',[   27.000,   36.000,   45.000]
+MF6='(Straw) OR (Amber)','trapezoidal',[   0.000,   9.000,   18.000,   27.000]
+MF7='(Amber) OR (Brown)','trapezoidal',[   9.000,   18.000,   27.000,   36.000]
+
+
+[Input2]
+Active='yes'
+Name='Bitterness'
+Range=[   8.000,   250.000]
+NMFs=2
+MF1='Low','SemiTrapezoidalInf',[   8.000,   8.000,   56.400]
+MF2='High','SemiTrapezoidalSup',[   8.000,   56.400,   250.000]
+
+
+[Input3]
+Active='yes'
+Name='Strength'
+Range=[   0.039,   0.136]
+NMFs=6
+MF1='Session','SemiTrapezoidalInf',[   0.039,   0.039,   0.058]
+MF2='Standard','triangular',[   0.039,   0.058,   0.078]
+MF3='High','triangular',[   0.058,   0.078,   0.097]
+MF4='Very high','SemiTrapezoidalSup',[   0.078,   0.097,   0.136]
+MF5='(Session) OR (Standard)','SemiTrapezoidalInf',[   0.039,   0.058,   0.078]
+MF6='(High) OR (Very high)','SemiTrapezoidalSup',[   0.058,   0.078,   0.136]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='Class'
+Range=[   1.000,   8.000]
+NMFs=0
+
+[Rules]
+1, 1, 0,    1.000, 
+1, 2, 0,    3.000, 
+6, 0, 3,    4.000, 
+2, 1, 2,    2.000, 
+6, 0, 4,    6.000, 
+7, 0, 5,    7.000, 
+4, 0, 6,    8.000, 
+5, 0, 0,    5.000, 
+
+[Exceptions]
+

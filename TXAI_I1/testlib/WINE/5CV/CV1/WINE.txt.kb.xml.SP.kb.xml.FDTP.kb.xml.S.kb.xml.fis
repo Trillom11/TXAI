@@ -1,0 +1,86 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=5
+Noutputs=1
+Nrules=8
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='Alcohol'
+Range=[   11.030,   14.830]
+NMFs=2
+MF1='very low OR low','SemiTrapezoidalInf',[   11.030,   12.330,   13.003]
+MF2='more or less (average)','SemiTrapezoidalSup',[   12.330,   13.003,   14.830]
+
+
+[Input2]
+Active='yes'
+Name='flavanoids'
+Range=[   0.340,   5.080]
+NMFs=7
+MF1='very low','SemiTrapezoidalInf',[   0.340,   0.684,   1.715]
+MF2='low','triangular',[   0.684,   1.715,   2.641]
+MF3='average','triangular',[   1.715,   2.641,   3.374]
+MF4='high','triangular',[   2.641,   3.374,   5.080]
+MF5='very high','SemiTrapezoidalSup',[   3.374,   5.080,   5.080]
+MF6='(very low) OR (low)','SemiTrapezoidalInf',[   0.340,   1.715,   2.641]
+MF7='(average) OR (high)','trapezoidal',[   1.715,   2.641,   3.374,   5.080]
+
+
+[Input3]
+Active='yes'
+Name='ColorIntensity'
+Range=[   1.280,   13.000]
+NMFs=2
+MF1='very low','SemiTrapezoidalInf',[   1.280,   2.728,   4.659]
+MF2='more or less (low)','SemiTrapezoidalSup',[   2.728,   4.659,   13.000]
+
+
+[Input4]
+Active='yes'
+Name='Hue'
+Range=[   0.480,   1.710]
+NMFs=2
+MF1='more or less (very low)','SemiTrapezoidalInf',[   0.480,   0.612,   1.057]
+MF2='more or less (average OR high OR very high)','SemiTrapezoidalSup',[   0.612,   1.057,   1.710]
+
+
+[Input5]
+Active='yes'
+Name='Proline'
+Range=[   278.000,   1680.000]
+NMFs=3
+MF1='very low','SemiTrapezoidalInf',[   278.000,   436.152,   661.370]
+MF2='low OR average','trapezoidal',[   436.152,   661.370,   950.692,   1242.250]
+MF3='high OR very high','SemiTrapezoidalSup',[   950.692,   1242.250,   1680.000]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='Class'
+Range=[   1.000,   3.000]
+NMFs=0
+
+[Rules]
+0, 6, 1, 0, 0,    2.000, 
+0, 2, 0, 2, 0,    2.000, 
+0, 7, 0, 0, 1,    2.000, 
+1, 3, 0, 0, 2,    2.000, 
+0, 5, 0, 0, 0,    2.000, 
+0, 1, 2, 0, 0,    3.000, 
+2, 3, 0, 0, 2,    1.000, 
+0, 7, 0, 0, 3,    1.000, 
+
+[Exceptions]
+

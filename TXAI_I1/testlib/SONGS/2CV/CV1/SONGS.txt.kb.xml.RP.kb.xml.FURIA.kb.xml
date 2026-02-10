@@ -1,0 +1,166 @@
+<KnowledgeBase>
+<System Name="SONGS" Inputs="13" Outputs="1" Rules="9">
+</System>
+<Inputs>
+<Input1 Active="true" Name="acoustics" Type="numerical" Trust="llow" PhysicalLowerRange="0.000" PhysicalUpperRange="0.990" InterestLowerRange="0.000" InterestUpperRange="0.990" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input1>
+<Labels>
+<Input1-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="0.000" P2="0.165" P3="0.495" ModalPoint="No MP">
+</Input1-Label1>
+<Input1-Label2 Name="Medium" MF="trapezoidal" P1="0.165" P2="0.495" P3="0.495" P4="0.825" ModalPoint="No MP" ModalPointAux="No MP">
+</Input1-Label2>
+<Input1-Label3 Name="High" MF="SemiTrapezoidalSup" P1="0.495" P2="0.825" P3="0.990" ModalPoint="No MP">
+</Input1-Label3>
+</Labels>
+<Input2 Active="true" Name="danceability" Type="numerical" Trust="llow" PhysicalLowerRange="0.120" PhysicalUpperRange="0.980" InterestLowerRange="0.120" InterestUpperRange="0.980" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input2>
+<Labels>
+<Input2-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="0.120" P2="0.265" P3="0.555" ModalPoint="No MP">
+</Input2-Label1>
+<Input2-Label2 Name="Medium" MF="trapezoidal" P1="0.265" P2="0.555" P3="0.555" P4="0.840" ModalPoint="No MP" ModalPointAux="No MP">
+</Input2-Label2>
+<Input2-Label3 Name="High" MF="SemiTrapezoidalSup" P1="0.555" P2="0.840" P3="0.980" ModalPoint="No MP">
+</Input2-Label3>
+</Labels>
+<Input3 Active="true" Name="duration" Type="numerical" Trust="llow" PhysicalLowerRange="16042.000" PhysicalUpperRange="1004627.000" InterestLowerRange="16042.000" InterestUpperRange="1004627.000" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input3>
+<Labels>
+<Input3-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="16042.000" P2="180806.172" P3="510334.500" ModalPoint="No MP">
+</Input3-Label1>
+<Input3-Label2 Name="Medium" MF="trapezoidal" P1="180806.172" P2="510334.500" P3="510334.500" P4="839862.812" ModalPoint="No MP" ModalPointAux="No MP">
+</Input3-Label2>
+<Input3-Label3 Name="High" MF="SemiTrapezoidalSup" P1="510334.500" P2="839862.812" P3="1004627.000" ModalPoint="No MP">
+</Input3-Label3>
+</Labels>
+<Input4 Active="true" Name="energy" Type="numerical" Trust="llow" PhysicalLowerRange="0.010" PhysicalUpperRange="1.000" InterestLowerRange="0.010" InterestUpperRange="1.000" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input4>
+<Labels>
+<Input4-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="0.010" P2="0.175" P3="0.505" ModalPoint="No MP">
+</Input4-Label1>
+<Input4-Label2 Name="Medium" MF="trapezoidal" P1="0.175" P2="0.505" P3="0.505" P4="0.835" ModalPoint="No MP" ModalPointAux="No MP">
+</Input4-Label2>
+<Input4-Label3 Name="High" MF="SemiTrapezoidalSup" P1="0.505" P2="0.835" P3="1.000" ModalPoint="No MP">
+</Input4-Label3>
+</Labels>
+<Input5 Active="true" Name="instrumentalness" Type="numerical" Trust="llow" PhysicalLowerRange="0.000" PhysicalUpperRange="0.980" InterestLowerRange="0.000" InterestUpperRange="0.980" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input5>
+<Labels>
+<Input5-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="0.000" P2="0.165" P3="0.490" ModalPoint="No MP">
+</Input5-Label1>
+<Input5-Label2 Name="Medium" MF="trapezoidal" P1="0.165" P2="0.490" P3="0.490" P4="0.815" ModalPoint="No MP" ModalPointAux="No MP">
+</Input5-Label2>
+<Input5-Label3 Name="High" MF="SemiTrapezoidalSup" P1="0.490" P2="0.815" P3="0.980" ModalPoint="No MP">
+</Input5-Label3>
+</Labels>
+<Input6 Active="true" Name="key" Type="numerical" Trust="llow" PhysicalLowerRange="0.000" PhysicalUpperRange="11.000" InterestLowerRange="0.000" InterestUpperRange="11.000" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input6>
+<Labels>
+<Input6-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="0.000" P2="1.835" P3="5.500" ModalPoint="No MP">
+</Input6-Label1>
+<Input6-Label2 Name="Medium" MF="trapezoidal" P1="1.835" P2="5.500" P3="5.500" P4="9.165" ModalPoint="No MP" ModalPointAux="No MP">
+</Input6-Label2>
+<Input6-Label3 Name="High" MF="SemiTrapezoidalSup" P1="5.500" P2="9.165" P3="11.000" ModalPoint="No MP">
+</Input6-Label3>
+</Labels>
+<Input7 Active="true" Name="liveness" Type="numerical" Trust="llow" PhysicalLowerRange="0.020" PhysicalUpperRange="0.970" InterestLowerRange="0.020" InterestUpperRange="0.970" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input7>
+<Labels>
+<Input7-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="0.020" P2="0.180" P3="0.495" ModalPoint="No MP">
+</Input7-Label1>
+<Input7-Label2 Name="Medium" MF="trapezoidal" P1="0.180" P2="0.495" P3="0.495" P4="0.810" ModalPoint="No MP" ModalPointAux="No MP">
+</Input7-Label2>
+<Input7-Label3 Name="High" MF="SemiTrapezoidalSup" P1="0.495" P2="0.810" P3="0.970" ModalPoint="No MP">
+</Input7-Label3>
+</Labels>
+<Input8 Active="true" Name="loudness" Type="numerical" Trust="llow" PhysicalLowerRange="-33.100" PhysicalUpperRange="-0.310" InterestLowerRange="-33.100" InterestUpperRange="-0.310" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input8>
+<Labels>
+<Input8-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="-33.100" P2="-27.635" P3="-16.705" ModalPoint="No MP">
+</Input8-Label1>
+<Input8-Label2 Name="Medium" MF="trapezoidal" P1="-27.635" P2="-16.705" P3="-16.705" P4="-5.775" ModalPoint="No MP" ModalPointAux="No MP">
+</Input8-Label2>
+<Input8-Label3 Name="High" MF="SemiTrapezoidalSup" P1="-16.705" P2="-5.775" P3="-0.310" ModalPoint="No MP">
+</Input8-Label3>
+</Labels>
+<Input9 Active="true" Name="mode" Type="numerical" Trust="llow" PhysicalLowerRange="0.000" PhysicalUpperRange="1.000" InterestLowerRange="0.000" InterestUpperRange="1.000" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input9>
+<Labels>
+<Input9-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="0.000" P2="0.165" P3="0.500" ModalPoint="No MP">
+</Input9-Label1>
+<Input9-Label2 Name="Medium" MF="trapezoidal" P1="0.165" P2="0.500" P3="0.500" P4="0.835" ModalPoint="No MP" ModalPointAux="No MP">
+</Input9-Label2>
+<Input9-Label3 Name="High" MF="SemiTrapezoidalSup" P1="0.500" P2="0.835" P3="1.000" ModalPoint="No MP">
+</Input9-Label3>
+</Labels>
+<Input10 Active="true" Name="speechiness" Type="numerical" Trust="llow" PhysicalLowerRange="0.020" PhysicalUpperRange="0.820" InterestLowerRange="0.020" InterestUpperRange="0.820" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input10>
+<Labels>
+<Input10-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="0.020" P2="0.155" P3="0.420" ModalPoint="No MP">
+</Input10-Label1>
+<Input10-Label2 Name="Medium" MF="trapezoidal" P1="0.155" P2="0.420" P3="0.420" P4="0.685" ModalPoint="No MP" ModalPointAux="No MP">
+</Input10-Label2>
+<Input10-Label3 Name="High" MF="SemiTrapezoidalSup" P1="0.420" P2="0.685" P3="0.820" ModalPoint="No MP">
+</Input10-Label3>
+</Labels>
+<Input11 Active="true" Name="tempo" Type="numerical" Trust="llow" PhysicalLowerRange="47.860" PhysicalUpperRange="219.330" InterestLowerRange="47.860" InterestUpperRange="219.330" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input11>
+<Labels>
+<Input11-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="47.860" P2="76.440" P3="133.595" ModalPoint="No MP">
+</Input11-Label1>
+<Input11-Label2 Name="Medium" MF="trapezoidal" P1="76.440" P2="133.595" P3="133.595" P4="190.750" ModalPoint="No MP" ModalPointAux="No MP">
+</Input11-Label2>
+<Input11-Label3 Name="High" MF="SemiTrapezoidalSup" P1="133.595" P2="190.750" P3="219.330" ModalPoint="No MP">
+</Input11-Label3>
+</Labels>
+<Input12 Active="true" Name="timeSignature" Type="numerical" Trust="llow" PhysicalLowerRange="1.000" PhysicalUpperRange="5.000" InterestLowerRange="1.000" InterestUpperRange="5.000" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input12>
+<Labels>
+<Input12-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="1.000" P2="1.665" P3="3.000" ModalPoint="No MP">
+</Input12-Label1>
+<Input12-Label2 Name="Medium" MF="trapezoidal" P1="1.665" P2="3.000" P3="3.000" P4="4.335" ModalPoint="No MP" ModalPointAux="No MP">
+</Input12-Label2>
+<Input12-Label3 Name="High" MF="SemiTrapezoidalSup" P1="3.000" P2="4.335" P3="5.000" ModalPoint="No MP">
+</Input12-Label3>
+</Labels>
+<Input13 Active="true" Name="valence" Type="numerical" Trust="llow" PhysicalLowerRange="0.030" PhysicalUpperRange="0.990" InterestLowerRange="0.030" InterestUpperRange="0.990" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input13>
+<Labels>
+<Input13-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="0.030" P2="0.190" P3="0.510" ModalPoint="No MP">
+</Input13-Label1>
+<Input13-Label2 Name="Medium" MF="trapezoidal" P1="0.190" P2="0.510" P3="0.510" P4="0.830" ModalPoint="No MP" ModalPointAux="No MP">
+</Input13-Label2>
+<Input13-Label3 Name="High" MF="SemiTrapezoidalSup" P1="0.510" P2="0.830" P3="0.990" ModalPoint="No MP">
+</Input13-Label3>
+</Labels>
+</Inputs>
+<Outputs>
+<Output1 Active="true" Name="like" Type="numerical" Trust="llow" Classif="no" PhysicalLowerRange="1.000" PhysicalUpperRange="2.000" InterestLowerRange="1.000" InterestUpperRange="2.000" Labels="2" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Output1>
+<Labels>
+<Output1-Label1 Name="1.0" MF="SemiTrapezoidalInf" P1="1.000" P2="1.000" P3="2.000" ModalPoint="No MP">
+</Output1-Label1>
+<Output1-Label2 Name="2.0" MF="SemiTrapezoidalSup" P1="1.000" P2="2.000" P3="2.000" ModalPoint="No MP">
+</Output1-Label2>
+</Labels>
+</Outputs>
+<Rules>
+<Rule1 I1="2" I2="1" I3="0" I4="0" I5="0" I6="0" I7="0" I8="0" I9="0" I10="1" I11="0" I12="0" I13="0" O1="1" Nature="I" Active="true">
+</Rule1>
+<Rule2 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="0" I8="3" I9="0" I10="0" I11="0" I12="0" I13="0" O1="1" Nature="I" Active="true">
+</Rule2>
+<Rule3 I1="0" I2="0" I3="1" I4="0" I5="0" I6="0" I7="0" I8="0" I9="0" I10="1" I11="0" I12="0" I13="0" O1="1" Nature="I" Active="true">
+</Rule3>
+<Rule4 I1="3" I2="0" I3="0" I4="1" I5="0" I6="0" I7="0" I8="0" I9="0" I10="0" I11="0" I12="0" I13="0" O1="1" Nature="I" Active="true">
+</Rule4>
+<Rule5 I1="0" I2="0" I3="0" I4="3" I5="3" I6="0" I7="0" I8="0" I9="0" I10="1" I11="0" I12="0" I13="2" O1="2" Nature="I" Active="true">
+</Rule5>
+<Rule6 I1="0" I2="0" I3="0" I4="0" I5="1" I6="0" I7="0" I8="2" I9="0" I10="0" I11="0" I12="0" I13="2" O1="2" Nature="I" Active="true">
+</Rule6>
+<Rule7 I1="0" I2="0" I3="0" I4="0" I5="0" I6="0" I7="0" I8="2" I9="0" I10="3" I11="0" I12="0" I13="0" O1="2" Nature="I" Active="true">
+</Rule7>
+<Rule8 I1="1" I2="0" I3="2" I4="0" I5="1" I6="0" I7="0" I8="2" I9="0" I10="0" I11="0" I12="0" I13="0" O1="2" Nature="I" Active="true">
+</Rule8>
+<Rule9 I1="0" I2="3" I3="2" I4="0" I5="0" I6="0" I7="0" I8="0" I9="0" I10="0" I11="0" I12="0" I13="1" O1="2" Nature="I" Active="true">
+</Rule9>
+</Rules>
+</KnowledgeBase>

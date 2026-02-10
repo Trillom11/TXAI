@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fuzzySystem xmlns="http://www.ieee1855.org" name="New Knowledge Base - MAMDANI">
+    <knowledgeBase>
+        <fuzzyVariable name="Alcohol" scale="" domainleft="11.03" domainright="14.83" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="11.03" param2="11.03" param3="11.657" param4="12.33"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="11.657" param2="12.33" param3="13.003"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="12.33" param2="13.003" param3="13.647"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="13.003" param2="13.647" param3="14.278"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="13.647" param2="14.278" param3="14.83" param4="14.83"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="MalicAcid" scale="" domainleft="0.74" domainright="5.8" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.74" param2="0.74" param3="1.155" param4="1.778"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="1.155" param2="1.778" param3="2.855"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="1.778" param2="2.855" param3="4.076"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="2.855" param2="4.076" param3="5.438"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="4.076" param2="5.438" param3="5.8" param4="5.8"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Ash" scale="" domainleft="1.36" domainright="3.23" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="1.36" param2="1.36" param3="1.36" param4="2.003"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="1.36" param2="2.003" param3="2.309"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="2.003" param2="2.309" param3="2.633"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="2.309" param2="2.633" param3="3.225"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="2.633" param2="3.225" param3="3.23" param4="3.23"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="AlcalinityOfAsh" scale="" domainleft="10.6" domainright="30.0" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="10.6" param2="10.6" param3="11.042" param4="17.042"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="11.042" param2="17.042" param3="18.968"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="17.042" param2="18.968" param3="21.153"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="18.968" param2="21.153" param3="28.373"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="21.153" param2="28.373" param3="30.0" param4="30.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Magnesium" scale="" domainleft="70.0" domainright="162.0" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="70.0" param2="70.0" param3="85.583" param4="98.259"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="85.583" param2="98.259" param3="110.4"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="98.259" param2="110.4" param3="126.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="110.4" param2="126.0" param3="162.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="126.0" param2="162.0" param3="162.0" param4="162.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="TotalPhenols" scale="" domainleft="0.98" domainright="3.88" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.98" param2="0.98" param3="1.431" param4="1.86"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="1.431" param2="1.86" param3="2.476"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="1.86" param2="2.476" param3="2.983"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="2.476" param2="2.983" param3="3.626"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="2.983" param2="3.626" param3="3.88" param4="3.88"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="flavanoids" scale="" domainleft="0.34" domainright="5.08" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.34" param2="0.34" param3="0.684" param4="1.715"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.684" param2="1.715" param3="2.641"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="1.715" param2="2.641" param3="3.374"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="2.641" param2="3.374" param3="5.08"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="3.374" param2="5.08" param3="5.08" param4="5.08"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="NonflavanoidsPhenols" scale="" domainleft="0.13" domainright="0.66" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.13" param2="0.13" param3="0.194" param4="0.28"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.194" param2="0.28" param3="0.4"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.28" param2="0.4" param3="0.51"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="0.4" param2="0.51" param3="0.611"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="0.51" param2="0.611" param3="0.66" param4="0.66"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Proanthocyanins" scale="" domainleft="0.41" domainright="3.58" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.41" param2="0.41" param3="0.887" param4="1.36"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.887" param2="1.36" param3="1.534"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="1.36" param2="1.534" param3="1.992"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="1.534" param2="1.992" param3="3.58"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="1.992" param2="3.58" param3="3.58" param4="3.58"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="ColorIntensity" scale="" domainleft="1.28" domainright="13.0" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="1.28" param2="1.28" param3="2.728" param4="4.659"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="2.728" param2="4.659" param3="6.498"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="4.659" param2="6.498" param3="9.355"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="6.498" param2="9.355" param3="12.375"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="9.355" param2="12.375" param3="13.0" param4="13.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Hue" scale="" domainleft="0.48" domainright="1.71" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.48" param2="0.48" param3="0.612" param4="0.836"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.612" param2="0.836" param3="1.057"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.836" param2="1.057" param3="1.264"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="1.057" param2="1.264" param3="1.71"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="1.264" param2="1.71" param3="1.71" param4="1.71"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="OD280/OD315" scale="" domainleft="1.27" domainright="4.0" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="1.27" param2="1.27" param3="1.598" param4="2.114"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="1.598" param2="2.114" param3="2.752"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="2.114" param2="2.752" param3="3.195"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="2.752" param2="3.195" param3="3.607"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="3.195" param2="3.607" param3="4.0" param4="4.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Proline" scale="" domainleft="278.0" domainright="1680.0" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="278.0" param2="278.0" param3="436.152" param4="661.37"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="436.152" param2="661.37" param3="950.692"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="661.37" param2="950.692" param3="1242.25"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="950.692" param2="1242.25" param3="1555.5"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="1242.25" param2="1555.5" param3="1680.0" param4="1680.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Class" scale="" domainleft="1.0" domainright="3.0" type="output" accumulation="MAX" defuzzifier="MOM" defaultValue="1.0">
+            <fuzzyTerm name="1.0" complement="false">
+                <singletonShape param1="1.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="2.0" complement="false">
+                <singletonShape param1="2.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="3.0" complement="false">
+                <singletonShape param1="3.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+    </knowledgeBase>
+    <mamdaniRuleBase name="rulebase-New Knowledge Base" activationMethod="MIN" andMethod="MIN" orMethod="MAX">
+        <rule name="rule1" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>very_low</term>
+                </clause>
+                <clause>
+                    <variable>ColorIntensity</variable>
+                    <term>very_low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule2" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>very_low</term>
+                </clause>
+                <clause>
+                    <variable>ColorIntensity</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>3.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule3" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>very_low</term>
+                </clause>
+                <clause>
+                    <variable>ColorIntensity</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>3.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule4" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>very_low</term>
+                </clause>
+                <clause>
+                    <variable>ColorIntensity</variable>
+                    <term>high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>3.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule5" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>very_low</term>
+                </clause>
+                <clause>
+                    <variable>ColorIntensity</variable>
+                    <term>very_high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>3.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule6" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>ColorIntensity</variable>
+                    <term>very_low</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>very_low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule7" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>ColorIntensity</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>very_low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>3.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule8" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>ColorIntensity</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>very_low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>3.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule9" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>ColorIntensity</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>very_low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>3.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule10" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>ColorIntensity</variable>
+                    <term>very_high</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>very_low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>3.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule11" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>OD280/OD315</variable>
+                    <term>very_low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>3.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule12" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>OD280/OD315</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule13" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>OD280/OD315</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule14" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>OD280/OD315</variable>
+                    <term>high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule15" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>OD280/OD315</variable>
+                    <term>very_high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule16" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule17" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule18" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>Hue</variable>
+                    <term>very_high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule19" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>very_low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule20" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>very_low</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule21" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule22" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Magnesium</variable>
+                    <term>very_low</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule23" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Magnesium</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule24" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Magnesium</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule25" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Magnesium</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule26" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule27" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>very_high</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule28" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>very_low</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule29" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule30" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule31" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule32" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Alcohol</variable>
+                    <term>very_high</term>
+                </clause>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule33" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule34" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>average</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>very_high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule35" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>very_low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule36" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule37" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule38" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule39" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>Proline</variable>
+                    <term>very_high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule40" andMethod="min" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>flavanoids</variable>
+                    <term>very_high</term>
+                </clause>
+            </antecedent>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>Class</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+    </mamdaniRuleBase>
+</fuzzySystem>

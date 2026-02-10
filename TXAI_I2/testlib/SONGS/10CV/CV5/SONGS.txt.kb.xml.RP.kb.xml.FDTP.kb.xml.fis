@@ -1,0 +1,226 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=13
+Noutputs=1
+Nrules=47
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='acoustics'
+Range=[   0.000,   0.995]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   0.000,   0.000,   0.249]
+MF2='low','triangular',[   0.000,   0.249,   0.497]
+MF3='average','triangular',[   0.249,   0.497,   0.746]
+MF4='high','triangular',[   0.497,   0.746,   0.995]
+MF5='very high','SemiTrapezoidalSup',[   0.746,   0.995,   0.995]
+
+
+[Input2]
+Active='yes'
+Name='danceability'
+Range=[   0.122,   0.984]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   0.122,   0.122,   0.338]
+MF2='low','triangular',[   0.122,   0.338,   0.553]
+MF3='average','triangular',[   0.338,   0.553,   0.768]
+MF4='high','triangular',[   0.553,   0.768,   0.984]
+MF5='very high','SemiTrapezoidalSup',[   0.768,   0.984,   0.984]
+
+
+[Input3]
+Active='yes'
+Name='duration'
+Range=[   16042.000,   1004627.000]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   16042.000,   16042.000,   263188.250]
+MF2='low','triangular',[   16042.000,   263188.250,   510334.500]
+MF3='average','triangular',[   263188.250,   510334.500,   757480.750]
+MF4='high','triangular',[   510334.500,   757480.750,   1004627.000]
+MF5='very high','SemiTrapezoidalSup',[   757480.750,   1004627.000,   1004627.000]
+
+
+[Input4]
+Active='yes'
+Name='energy'
+Range=[   0.015,   0.998]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   0.015,   0.015,   0.261]
+MF2='low','triangular',[   0.015,   0.261,   0.506]
+MF3='average','triangular',[   0.261,   0.506,   0.752]
+MF4='high','triangular',[   0.506,   0.752,   0.998]
+MF5='very high','SemiTrapezoidalSup',[   0.752,   0.998,   0.998]
+
+
+[Input5]
+Active='yes'
+Name='instrumentalness'
+Range=[   0.000,   0.976]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   0.000,   0.000,   0.244]
+MF2='low','triangular',[   0.000,   0.244,   0.488]
+MF3='average','triangular',[   0.244,   0.488,   0.732]
+MF4='high','triangular',[   0.488,   0.732,   0.976]
+MF5='very high','SemiTrapezoidalSup',[   0.732,   0.976,   0.976]
+
+
+[Input6]
+Active='yes'
+Name='key'
+Range=[   0.000,   11.000]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   0.000,   0.000,   2.750]
+MF2='low','triangular',[   0.000,   2.750,   5.500]
+MF3='average','triangular',[   2.750,   5.500,   8.250]
+MF4='high','triangular',[   5.500,   8.250,   11.000]
+MF5='very high','SemiTrapezoidalSup',[   8.250,   11.000,   11.000]
+
+
+[Input7]
+Active='yes'
+Name='liveness'
+Range=[   0.019,   0.969]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   0.019,   0.019,   0.257]
+MF2='low','triangular',[   0.019,   0.257,   0.494]
+MF3='average','triangular',[   0.257,   0.494,   0.732]
+MF4='high','triangular',[   0.494,   0.732,   0.969]
+MF5='very high','SemiTrapezoidalSup',[   0.732,   0.969,   0.969]
+
+
+[Input8]
+Active='yes'
+Name='loudness'
+Range=[   -33.097,   -0.307]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   -33.097,   -33.097,   -24.899]
+MF2='low','triangular',[   -33.097,   -24.899,   -16.702]
+MF3='average','triangular',[   -24.899,   -16.702,   -8.505]
+MF4='high','triangular',[   -16.702,   -8.505,   -0.307]
+MF5='very high','SemiTrapezoidalSup',[   -8.505,   -0.307,   -0.307]
+
+
+[Input9]
+Active='yes'
+Name='mode'
+Range=[   0.000,   1.000]
+NMFs=2
+MF1='0.0','discrete',[   0.000]
+MF2='1.0','discrete',[   1.000]
+
+
+[Input10]
+Active='yes'
+Name='speechiness'
+Range=[   0.023,   0.816]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   0.023,   0.023,   0.221]
+MF2='low','triangular',[   0.023,   0.221,   0.419]
+MF3='average','triangular',[   0.221,   0.419,   0.618]
+MF4='high','triangular',[   0.419,   0.618,   0.816]
+MF5='very high','SemiTrapezoidalSup',[   0.618,   0.816,   0.816]
+
+
+[Input11]
+Active='yes'
+Name='tempo'
+Range=[   47.859,   219.331]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   47.859,   47.859,   90.727]
+MF2='low','triangular',[   47.859,   90.727,   133.595]
+MF3='average','triangular',[   90.727,   133.595,   176.463]
+MF4='high','triangular',[   133.595,   176.463,   219.331]
+MF5='very high','SemiTrapezoidalSup',[   176.463,   219.331,   219.331]
+
+
+[Input12]
+Active='yes'
+Name='timeSignature'
+Range=[   1.000,   5.000]
+NMFs=4
+MF1='1.0','discrete',[   1.000]
+MF2='3.0','discrete',[   3.000]
+MF3='4.0','discrete',[   4.000]
+MF4='5.0','discrete',[   5.000]
+
+
+[Input13]
+Active='yes'
+Name='valence'
+Range=[   0.035,   0.992]
+NMFs=5
+MF1='very low','SemiTrapezoidalInf',[   0.035,   0.035,   0.274]
+MF2='low','triangular',[   0.035,   0.274,   0.513]
+MF3='average','triangular',[   0.274,   0.513,   0.753]
+MF4='high','triangular',[   0.513,   0.753,   0.992]
+MF5='very high','SemiTrapezoidalSup',[   0.753,   0.992,   0.992]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='like '
+Range=[   1.000,   2.000]
+NMFs=0
+
+[Rules]
+0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,    1.000, 
+0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0,    1.000, 
+0, 0, 0, 3, 1, 0, 0, 0, 0, 1, 0, 0, 0,    1.000, 
+0, 0, 0, 3, 1, 0, 0, 0, 0, 2, 0, 0, 0,    2.000, 
+0, 0, 0, 3, 1, 0, 0, 0, 0, 3, 0, 0, 0,    2.000, 
+0, 0, 0, 3, 1, 0, 0, 0, 0, 4, 0, 0, 0,    2.000, 
+0, 0, 0, 3, 1, 0, 0, 0, 0, 5, 0, 0, 0,    2.000, 
+0, 0, 0, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 0, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 0, 3, 5, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 1, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0,    1.000, 
+0, 0, 2, 4, 1, 0, 0, 0, 0, 1, 0, 0, 0,    1.000, 
+0, 0, 2, 4, 1, 0, 0, 0, 0, 2, 0, 0, 0,    2.000, 
+0, 0, 2, 4, 1, 0, 0, 0, 0, 3, 0, 0, 0,    2.000, 
+0, 0, 2, 4, 1, 0, 0, 0, 0, 4, 0, 0, 0,    1.000, 
+0, 0, 2, 4, 1, 0, 0, 0, 0, 5, 0, 0, 0,    2.000, 
+0, 0, 3, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 4, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 5, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 0, 4, 2, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 0, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 0, 4, 5, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0,    1.000, 
+1, 0, 2, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0,    1.000, 
+2, 0, 2, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0,    1.000, 
+3, 0, 2, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+4, 0, 2, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 2, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0,    1.000, 
+0, 0, 2, 5, 3, 0, 0, 0, 0, 0, 0, 0, 1,    1.000, 
+0, 0, 2, 5, 3, 0, 0, 0, 0, 0, 0, 0, 2,    1.000, 
+0, 0, 2, 5, 3, 0, 0, 0, 0, 0, 0, 0, 3,    2.000, 
+0, 0, 2, 5, 3, 0, 1, 0, 0, 0, 0, 0, 4,    2.000, 
+0, 0, 2, 5, 3, 0, 2, 0, 0, 0, 0, 0, 4,    2.000, 
+0, 0, 2, 5, 3, 0, 3, 0, 0, 0, 0, 0, 4,    1.000, 
+0, 0, 2, 5, 3, 0, 4, 0, 0, 0, 0, 0, 4,    1.000, 
+0, 0, 2, 5, 3, 0, 5, 0, 0, 0, 0, 0, 4,    1.000, 
+0, 0, 2, 5, 3, 0, 0, 0, 0, 0, 0, 0, 5,    2.000, 
+0, 0, 2, 5, 4, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 2, 5, 5, 0, 0, 0, 0, 0, 0, 0, 1,    1.000, 
+0, 0, 2, 5, 5, 0, 0, 0, 0, 0, 0, 0, 2,    2.000, 
+0, 0, 2, 5, 5, 0, 0, 0, 0, 0, 0, 0, 3,    2.000, 
+0, 0, 2, 5, 5, 0, 0, 0, 0, 0, 0, 0, 4,    2.000, 
+0, 0, 2, 5, 5, 0, 0, 0, 0, 0, 0, 0, 5,    2.000, 
+0, 0, 3, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+0, 0, 4, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0,    2.000, 
+
+[Exceptions]
+

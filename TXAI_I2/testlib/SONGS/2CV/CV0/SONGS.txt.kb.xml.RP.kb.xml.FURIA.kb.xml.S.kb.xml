@@ -1,0 +1,32 @@
+<KnowledgeBase>
+<System Name="SONGS" Inputs="1" Outputs="1" Rules="2">
+</System>
+<Inputs>
+<Input1 Active="true" Name="acoustics" Type="numerical" Trust="llow" PhysicalLowerRange="0.000" PhysicalUpperRange="0.990" InterestLowerRange="0.000" InterestUpperRange="0.990" Labels="3" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Input1>
+<Labels>
+<Input1-Label1 Name="Low" MF="SemiTrapezoidalInf" P1="0.000" P2="0.165" P3="0.495" ModalPoint="No MP">
+</Input1-Label1>
+<Input1-Label2 Name="Medium" MF="trapezoidal" P1="0.165" P2="0.495" P3="0.495" P4="0.825" ModalPoint="No MP" ModalPointAux="No MP">
+</Input1-Label2>
+<Input1-Label3 Name="High" MF="SemiTrapezoidalSup" P1="0.495" P2="0.825" P3="0.990" ModalPoint="No MP">
+</Input1-Label3>
+</Labels>
+</Inputs>
+<Outputs>
+<Output1 Active="true" Name="like" Type="numerical" Trust="llow" Classif="no" PhysicalLowerRange="1.000" PhysicalUpperRange="2.000" InterestLowerRange="1.000" InterestUpperRange="2.000" Labels="2" ScaleOfLabels="user" FlagOntology="false" NameFromOntology="null" FlagOntObjectProperty="false" FlagOntDatatypeProperty="false">
+</Output1>
+<Labels>
+<Output1-Label1 Name="1.0" MF="SemiTrapezoidalInf" P1="1.000" P2="1.000" P3="2.000" ModalPoint="No MP">
+</Output1-Label1>
+<Output1-Label2 Name="2.0" MF="SemiTrapezoidalSup" P1="1.000" P2="2.000" P3="2.000" ModalPoint="No MP">
+</Output1-Label2>
+</Labels>
+</Outputs>
+<Rules>
+<Rule1 I1="0" O1="1" Nature="I" Active="true">
+</Rule1>
+<Rule2 I1="0" O1="2" Nature="I" Active="true">
+</Rule2>
+</Rules>
+</KnowledgeBase>

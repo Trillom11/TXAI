@@ -1,0 +1,159 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=8
+Noutputs=1
+Nrules=8
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='Alcohol'
+Range=[   11.030,   14.830]
+NMFs=9
+MF1='very low','SemiTrapezoidalInf',[   11.030,   11.924,   12.519]
+MF2='low','triangular',[   11.924,   12.519,   13.073]
+MF3='average','triangular',[   12.519,   13.073,   13.631]
+MF4='high','triangular',[   13.073,   13.631,   14.299]
+MF5='very high','SemiTrapezoidalSup',[   13.631,   14.299,   14.830]
+MF6='(average) OR (high) OR (very high)','SemiTrapezoidalSup',[   12.519,   13.073,   14.830]
+MF7='NOT(very low)','SemiTrapezoidalSup',[   11.924,   12.519,   14.830]
+MF8='(low) OR (average) OR (high)','trapezoidal',[   11.924,   12.519,   13.631,   14.299]
+MF9='(very low) OR (low)','SemiTrapezoidalInf',[   11.030,   12.519,   13.073]
+
+
+[Input2]
+Active='yes'
+Name='MalicAcid'
+Range=[   0.740,   5.800]
+NMFs=7
+MF1='very low','SemiTrapezoidalInf',[   0.740,   1.282,   1.782]
+MF2='low','triangular',[   1.282,   1.782,   2.786]
+MF3='average','triangular',[   1.782,   2.786,   3.847]
+MF4='high','triangular',[   2.786,   3.847,   5.182]
+MF5='very high','SemiTrapezoidalSup',[   3.847,   5.182,   5.800]
+MF6='(average) OR (high) OR (very high)','SemiTrapezoidalSup',[   1.782,   2.786,   5.800]
+MF7='NOT(very high)','SemiTrapezoidalInf',[   0.740,   3.847,   5.182]
+
+
+[Input3]
+Active='yes'
+Name='AlcalinityOfAsh'
+Range=[   10.600,   30.000]
+NMFs=9
+MF1='very low','SemiTrapezoidalInf',[   10.600,   11.300,   16.770]
+MF2='low','triangular',[   11.300,   16.770,   19.011]
+MF3='average','triangular',[   16.770,   19.011,   20.032]
+MF4='high','triangular',[   19.011,   20.032,   23.714]
+MF5='very high','SemiTrapezoidalSup',[   20.032,   23.714,   30.000]
+MF6='NOT(very high)','SemiTrapezoidalInf',[   10.600,   20.032,   23.714]
+MF7='NOT(very low)','SemiTrapezoidalSup',[   11.300,   16.770,   30.000]
+MF8='(average) OR (high) OR (very high)','SemiTrapezoidalSup',[   16.770,   19.011,   30.000]
+MF9='(low) OR (average)','trapezoidal',[   11.300,   16.770,   19.011,   20.032]
+
+
+[Input4]
+Active='yes'
+Name='flavanoids'
+Range=[   0.340,   5.080]
+NMFs=8
+MF1='very low','SemiTrapezoidalInf',[   0.340,   0.715,   1.511]
+MF2='low','triangular',[   0.715,   1.511,   2.419]
+MF3='average','triangular',[   1.511,   2.419,   3.225]
+MF4='high','triangular',[   2.419,   3.225,   5.080]
+MF5='very high','SemiTrapezoidalSup',[   3.225,   5.080,   5.080]
+MF6='(average) OR (high)','trapezoidal',[   1.511,   2.419,   3.225,   5.080]
+MF7='(very low) OR (low)','SemiTrapezoidalInf',[   0.340,   1.511,   2.419]
+MF8='(low) OR (average) OR (high)','trapezoidal',[   0.715,   1.511,   3.225,   5.080]
+
+
+[Input5]
+Active='yes'
+Name='ColorIntensity'
+Range=[   1.280,   13.000]
+NMFs=9
+MF1='very low','SemiTrapezoidalInf',[   1.280,   2.837,   4.960]
+MF2='low','triangular',[   2.837,   4.960,   7.155]
+MF3='average','triangular',[   4.960,   7.155,   9.541]
+MF4='high','triangular',[   7.155,   9.541,   12.375]
+MF5='very high','SemiTrapezoidalSup',[   9.541,   12.375,   13.000]
+MF6='NOT(very high)','SemiTrapezoidalInf',[   1.280,   9.541,   12.375]
+MF7='NOT(very low)','SemiTrapezoidalSup',[   2.837,   4.960,   13.000]
+MF8='(low) OR (average)','trapezoidal',[   2.837,   4.960,   7.155,   9.541]
+MF9='(very low) OR (low)','SemiTrapezoidalInf',[   1.280,   4.960,   7.155]
+
+
+[Input6]
+Active='yes'
+Name='Hue'
+Range=[   0.480,   1.710]
+NMFs=10
+MF1='very low','SemiTrapezoidalInf',[   0.480,   0.618,   0.854]
+MF2='low','triangular',[   0.618,   0.854,   1.060]
+MF3='average','triangular',[   0.854,   1.060,   1.261]
+MF4='high','triangular',[   1.060,   1.261,   1.710]
+MF5='very high','SemiTrapezoidalSup',[   1.261,   1.710,   1.710]
+MF6='(low) OR (average) OR (high)','trapezoidal',[   0.618,   0.854,   1.261,   1.710]
+MF7='(very low) OR (low)','SemiTrapezoidalInf',[   0.480,   0.854,   1.060]
+MF8='(very low) OR (low) OR (average)','SemiTrapezoidalInf',[   0.480,   1.060,   1.261]
+MF9='NOT(very high)','SemiTrapezoidalInf',[   0.480,   1.261,   1.710]
+MF10='(average) OR (high)','trapezoidal',[   0.854,   1.060,   1.261,   1.710]
+
+
+[Input7]
+Active='yes'
+Name='OD280/OD315'
+Range=[   1.270,   4.000]
+NMFs=9
+MF1='very low','SemiTrapezoidalInf',[   1.270,   1.563,   2.067]
+MF2='low','triangular',[   1.563,   2.067,   2.739]
+MF3='average','triangular',[   2.067,   2.739,   3.208]
+MF4='high','triangular',[   2.739,   3.208,   3.602]
+MF5='very high','SemiTrapezoidalSup',[   3.208,   3.602,   4.000]
+MF6='(average) OR (high) OR (very high)','SemiTrapezoidalSup',[   2.067,   2.739,   4.000]
+MF7='(low) OR (average)','trapezoidal',[   1.563,   2.067,   2.739,   3.208]
+MF8='NOT(very low)','SemiTrapezoidalSup',[   1.563,   2.067,   4.000]
+MF9='(very low) OR (low) OR (average)','SemiTrapezoidalInf',[   1.270,   2.739,   3.208]
+
+
+[Input8]
+Active='yes'
+Name='Proline'
+Range=[   278.000,   1680.000]
+NMFs=7
+MF1='very low','SemiTrapezoidalInf',[   278.000,   427.841,   662.239]
+MF2='low','triangular',[   427.841,   662.239,   970.250]
+MF3='average','triangular',[   662.239,   970.250,   1240.333]
+MF4='more or less (high)','SemiTrapezoidalSup',[   970.250,   1240.333,   1680.000]
+MF5='NOT(very low)','SemiTrapezoidalSup',[   427.841,   662.239,   1680.000]
+MF6='NOT(more or less (high))','SemiTrapezoidalInf',[   278.000,   970.250,   1240.333]
+MF7='(very low) OR (low)','SemiTrapezoidalInf',[   278.000,   662.239,   970.250]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='Class'
+Range=[   1.000,   3.000]
+NMFs=0
+
+[Rules]
+6, 0, 6, 6, 6, 6, 6, 5,    1.000, 
+3, 2, 5, 3, 1, 3, 4, 3,    1.000, 
+7, 0, 7, 7, 7, 7, 1, 6,    3.000, 
+8, 6, 8, 1, 8, 8, 7, 6,    3.000, 
+9, 7, 7, 8, 9, 9, 8, 6,    2.000, 
+3, 4, 5, 2, 2, 2, 2, 1,    2.000, 
+8, 1, 9, 7, 9, 10, 9, 7,    2.000, 
+4, 1, 5, 4, 1, 4, 4, 1,    2.000, 
+
+[Exceptions]
+

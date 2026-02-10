@@ -1,0 +1,21 @@
+>>>>BEGIN
+FURIA
+  NR=14
+    Bitterness:8.0:24.5;Class:1.0;Color:0.0:5.5
+    Bitterness:8.0:26.5;Class:1.0;Color:0.0:5.5
+    Bitterness:8.0:39.5;Class:2.0;Color:6.5:15.0
+    Bitterness:29.5:56.5;Class:3.0;Color:0.0:7.0
+    Bitterness:51.5:250.0;Class:4.0;Color:0.0:13.5;Strength:0.039:0.093
+    Bitterness:49.0:250.0;Class:4.0;Color:0.0:14.5;Strength:0.09:0.096
+    Bitterness:44.0:250.0;Class:4.0;Strength:0.084:0.087
+    Class:5.0;Color:29.5:45.0
+    Bitterness:48.5:250.0;Class:6.0;Color:11.5:45.0;Strength:0.089:0.136
+    Bitterness:69.5:91.5;Class:6.0;Color:13.5:45.0
+    Bitterness:57.5:250.0;Class:6.0;Strength:0.108:0.136
+    Class:7.0;Color:16.0:32.0;Strength:0.039:0.052
+    Bitterness:27.5:250.0;Class:7.0;Color:14.0:29.0;Strength:0.039:0.062
+    Bitterness:8.0:48.5;Class:8.0;Strength:0.079:0.136
+  TRL=45
+  Concepts=38
+  0.786	0.857	0.571	
+>>>>END

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fuzzySystem xmlns="http://www.ieee1855.org" name="New Knowledge Base - MAMDANI">
+    <knowledgeBase>
+        <fuzzyVariable name="Alcohol" scale="" domainleft="11.03" domainright="14.83" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="11.03" param2="11.03" param3="11.796" param4="12.363"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="11.796" param2="12.363" param3="12.903"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="12.363" param2="12.903" param3="13.519"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="12.903" param2="13.519" param3="14.309"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="13.519" param2="14.309" param3="14.83" param4="14.83"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="MalicAcid" scale="" domainleft="0.74" domainright="5.8" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.74" param2="0.74" param3="1.271" param4="1.816"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="1.271" param2="1.816" param3="2.777"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="1.816" param2="2.777" param3="3.811"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="2.777" param2="3.811" param3="5.053"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="3.811" param2="5.053" param3="5.8" param4="5.8"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Ash" scale="" domainleft="1.36" domainright="3.23" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="1.36" param2="1.36" param3="1.36" param4="1.986"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="1.36" param2="1.986" param3="2.312"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="1.986" param2="2.312" param3="2.625"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="2.312" param2="2.625" param3="3.225"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="2.625" param2="3.225" param3="3.23" param4="3.23"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="AlcalinityOfAsh" scale="" domainleft="10.6" domainright="30.0" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="10.6" param2="10.6" param3="10.6" param4="17.005"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="10.6" param2="17.005" param3="18.997"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="17.005" param2="18.997" param3="21.05"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="18.997" param2="21.05" param3="28.5"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="21.05" param2="28.5" param3="30.0" param4="30.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Magnesium" scale="" domainleft="70.0" domainright="162.0" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="70.0" param2="70.0" param3="85.667" param4="98.267"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="85.667" param2="98.267" param3="110.97"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="98.267" param2="110.97" param3="125.75"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="110.97" param2="125.75" param3="151.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="125.75" param2="151.0" param3="162.0" param4="162.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="TotalPhenols" scale="" domainleft="0.98" domainright="3.88" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.98" param2="0.98" param3="1.424" param4="1.858"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="1.424" param2="1.858" param3="2.455"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="1.858" param2="2.455" param3="2.984"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="2.455" param2="2.984" param3="3.63"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="2.984" param2="3.63" param3="3.88" param4="3.88"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="flavanoids" scale="" domainleft="0.34" domainright="5.08" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.34" param2="0.34" param3="0.685" param4="1.586"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.685" param2="1.586" param3="2.505"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="1.586" param2="2.505" param3="3.27"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="2.505" param2="3.27" param3="5.08"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="3.27" param2="5.08" param3="5.08" param4="5.08"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="NonflavanoidsPhenols" scale="" domainleft="0.13" domainright="0.66" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.13" param2="0.13" param3="0.188" param4="0.282"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.188" param2="0.282" param3="0.391"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.282" param2="0.391" param3="0.495"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="0.391" param2="0.495" param3="0.596"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="0.495" param2="0.596" param3="0.66" param4="0.66"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Proanthocyanins" scale="" domainleft="0.41" domainright="3.58" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.41" param2="0.41" param3="0.854" param4="1.414"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.854" param2="1.414" param3="1.901"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="1.414" param2="1.901" param3="2.584"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="1.901" param2="2.584" param3="3.58"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="2.584" param2="3.58" param3="3.58" param4="3.58"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="ColorIntensity" scale="" domainleft="1.28" domainright="13.0" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="1.28" param2="1.28" param3="2.665" param4="4.154"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="2.665" param2="4.154" param3="5.475"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="4.154" param2="5.475" param3="7.549"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="5.475" param2="7.549" param3="9.873"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="7.549" param2="9.873" param3="13.0" param4="13.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Hue" scale="" domainleft="0.48" domainright="1.71" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="0.48" param2="0.48" param3="0.642" param4="0.89"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="0.642" param2="0.89" param3="1.064"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.89" param2="1.064" param3="1.269"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="1.064" param2="1.269" param3="1.71"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="1.269" param2="1.71" param3="1.71" param4="1.71"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="OD280/OD315" scale="" domainleft="1.27" domainright="4.0" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="1.27" param2="1.27" param3="1.554" param4="2.042"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="1.554" param2="2.042" param3="2.738"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="2.042" param2="2.738" param3="3.206"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="2.738" param2="3.206" param3="3.611"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="3.206" param2="3.611" param3="4.0" param4="4.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Proline" scale="" domainleft="278.0" domainright="1680.0" type="input">
+            <fuzzyTerm name="very_low" complement="false">
+                <trapezoidShape param1="278.0" param2="278.0" param3="437.163" param4="657.234"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="low" complement="false">
+                <triangularShape param1="437.163" param2="657.234" param3="982.708"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="657.234" param2="982.708" param3="1236.176"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <triangularShape param1="982.708" param2="1236.176" param3="1533.4"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="very_high" complement="false">
+                <trapezoidShape param1="1236.176" param2="1533.4" param3="1680.0" param4="1680.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Class" scale="" domainleft="1.0" domainright="3.0" type="output" accumulation="MAX" defuzzifier="MOM" defaultValue="1.0">
+            <fuzzyTerm name="1.0" complement="false">
+                <singletonShape param1="1.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="2.0" complement="false">
+                <singletonShape param1="2.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="3.0" complement="false">
+                <singletonShape param1="3.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+    </knowledgeBase>
+    <mamdaniRuleBase name="rulebase-New Knowledge Base" activationMethod="MIN" andMethod="MIN" orMethod="MAX"/>
+</fuzzySystem>

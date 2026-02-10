@@ -1,0 +1,112 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=7
+Noutputs=1
+Nrules=12
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='acoustics'
+Range=[   0.000,   0.995]
+NMFs=2
+MF1='very low OR low','SemiTrapezoidalInf',[   0.000,   0.249,   0.497]
+MF2='more or less (average OR high)','SemiTrapezoidalSup',[   0.249,   0.497,   0.995]
+
+
+[Input2]
+Active='yes'
+Name='danceability'
+Range=[   0.122,   0.984]
+NMFs=3
+MF1='very low','SemiTrapezoidalInf',[   0.122,   0.122,   0.338]
+MF2='low','triangular',[   0.122,   0.338,   0.553]
+MF3='more or less (average)','SemiTrapezoidalSup',[   0.338,   0.553,   0.984]
+
+
+[Input3]
+Active='yes'
+Name='duration'
+Range=[   16042.000,   1004627.000]
+NMFs=3
+MF1='very low','SemiTrapezoidalInf',[   16042.000,   16042.000,   263188.250]
+MF2='low','triangular',[   16042.000,   263188.250,   510334.500]
+MF3='average OR high OR very high','SemiTrapezoidalSup',[   263188.250,   510334.500,   1004627.000]
+
+
+[Input4]
+Active='yes'
+Name='energy'
+Range=[   0.015,   0.998]
+NMFs=6
+MF1='very low OR low','SemiTrapezoidalInf',[   0.015,   0.261,   0.506]
+MF2='average','triangular',[   0.261,   0.506,   0.752]
+MF3='high','triangular',[   0.506,   0.752,   0.998]
+MF4='very high','SemiTrapezoidalSup',[   0.752,   0.998,   0.998]
+MF5='(average) OR (high)','trapezoidal',[   0.261,   0.506,   0.752,   0.998]
+MF6='(high) OR (very high)','SemiTrapezoidalSup',[   0.506,   0.752,   0.998]
+
+
+[Input5]
+Active='yes'
+Name='instrumentalness'
+Range=[   0.000,   0.976]
+NMFs=4
+MF1='very low','SemiTrapezoidalInf',[   0.000,   0.000,   0.244]
+MF2='low OR average','trapezoidal',[   0.000,   0.244,   0.488,   0.732]
+MF3='high OR very high','SemiTrapezoidalSup',[   0.488,   0.732,   0.976]
+MF4='NOT(very low)','SemiTrapezoidalSup',[   0.000,   0.244,   0.976]
+
+
+[Input6]
+Active='yes'
+Name='speechiness'
+Range=[   0.023,   0.816]
+NMFs=2
+MF1='very low','SemiTrapezoidalInf',[   0.023,   0.023,   0.221]
+MF2='more or less (low)','SemiTrapezoidalSup',[   0.023,   0.221,   0.816]
+
+
+[Input7]
+Active='yes'
+Name='valence'
+Range=[   0.035,   0.992]
+NMFs=4
+MF1='very low','SemiTrapezoidalInf',[   0.035,   0.035,   0.274]
+MF2='low','triangular',[   0.035,   0.274,   0.513]
+MF3='average OR high OR very high','SemiTrapezoidalSup',[   0.274,   0.513,   0.992]
+MF4='NOT(average OR high OR very high)','SemiTrapezoidalInf',[   0.035,   0.274,   0.513]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='like '
+Range=[   1.000,   2.000]
+NMFs=0
+
+[Rules]
+0, 0, 0, 1, 0, 0, 0,    1.000, 
+0, 0, 0, 2, 1, 1, 0,    1.000, 
+0, 0, 2, 3, 1, 1, 0,    1.000, 
+0, 0, 1, 4, 0, 0, 0,    1.000, 
+1, 0, 2, 4, 1, 0, 0,    1.000, 
+0, 0, 2, 4, 2, 0, 4,    1.000, 
+0, 2, 2, 4, 3, 0, 2,    1.000, 
+0, 0, 0, 5, 1, 2, 0,    2.000, 
+0, 0, 0, 5, 4, 0, 0,    2.000, 
+0, 0, 3, 6, 0, 0, 0,    2.000, 
+2, 0, 2, 4, 1, 0, 0,    2.000, 
+0, 0, 2, 4, 4, 0, 3,    2.000, 
+
+[Exceptions]
+

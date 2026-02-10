@@ -1,0 +1,36 @@
+=== Run information ===
+
+Relation:     BEER
+Instances:    360
+Attributes:   4
+              Color
+              Bitterness
+              Strength
+              Class
+
+=== Classifier model (full training set) ===
+
+FURIA rules:
+===========
+
+(Bitterness in [-inf, -inf, 19, 30]) and (Color in [-inf, -inf, 4, 7]) => Class=1.0 (CF = 0.96)
+(Color in [-inf, -inf, 4, 7]) and (Bitterness in [-inf, -inf, 23, 30]) => Class=1.0 (CF = 0.96)
+(Bitterness in [-inf, -inf, 27, 52]) and (Color in [6, 7, inf, inf]) and (Color in [-inf, -inf, 14, 16]) => Class=2.0 (CF = 0.94)
+(Color in [-inf, -inf, 6, 13]) and (Bitterness in [29, 30, inf, inf]) and (Bitterness in [-inf, -inf, 52, 53]) => Class=3.0 (CF = 0.96)
+(Bitterness in [52, 53, inf, inf]) and (Strength in [-inf, -inf, 0.091, 0.093]) and (Color in [-inf, -inf, 13, 14]) => Class=4.0 (CF = 0.96)
+(Bitterness in [52, 59, inf, inf]) and (Strength in [-inf, -inf, 0.095, 0.096]) and (Color in [-inf, -inf, 14, 15]) and (Bitterness in [-inf, -inf, 93, 95]) => Class=4.0 (CF = 0.91)
+(Bitterness in [118, 131, inf, inf]) => Class=4.0 (CF = 0.71)
+(Color in [29, 30, inf, inf]) and (Strength in [-inf, -inf, 0.07, 0.089]) => Class=5.0 (CF = 0.94)
+(Strength in [0.087, 0.093, inf, inf]) and (Bitterness in [47, 50, inf, inf]) and (Color in [11, 12, inf, inf]) => Class=6.0 (CF = 0.96)
+(Bitterness in [93, 95, inf, inf]) and (Strength in [0.089, 0.092, inf, inf]) => Class=6.0 (CF = 0.85)
+(Bitterness in [41, 77, inf, inf]) and (Strength in [0.096, 0.097, inf, inf]) => Class=6.0 (CF = 0.94)
+(Bitterness in [62, 79, inf, inf]) and (Color in [13, 14, inf, inf]) and (Bitterness in [-inf, -inf, 85, 98]) => Class=6.0 (CF = 0.88)
+(Color in [12, 20, inf, inf]) and (Strength in [-inf, -inf, 0.051, 0.053]) and (Color in [-inf, -inf, 30, 34]) => Class=7.0 (CF = 0.96)
+(Color in [14, 20, inf, inf]) and (Color in [-inf, -inf, 25, 30]) and (Strength in [-inf, -inf, 0.055, 0.08]) and (Bitterness in [23, 25, inf, inf]) => Class=7.0 (CF = 0.93)
+(Color in [20, 27, inf, inf]) and (Strength in [-inf, -inf, 0.054, 0.082]) and (Color in [-inf, -inf, 29, 30]) => Class=7.0 (CF = 0.94)
+(Strength in [0.07, 0.089, inf, inf]) and (Bitterness in [-inf, -inf, 47, 50]) => Class=8.0 (CF = 0.96)
+(Color in [23, 27, inf, inf]) and (Strength in [0.07, 0.082, inf, inf]) => Class=8.0 (CF = 0.96)
+
+Number of Rules : 17
+
+

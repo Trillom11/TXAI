@@ -1,0 +1,112 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=3
+Noutputs=1
+Nrules=46
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='Color'
+Range=[   0.000,   45.000]
+NMFs=6
+MF1='very low','SemiTrapezoidalInf',[   0.000,   0.000,   9.000]
+MF2='low','triangular',[   0.000,   9.000,   18.000]
+MF3='average low','triangular',[   9.000,   18.000,   27.000]
+MF4='average high','triangular',[   18.000,   27.000,   36.000]
+MF5='high','triangular',[   27.000,   36.000,   45.000]
+MF6='very high','SemiTrapezoidalSup',[   36.000,   45.000,   45.000]
+
+
+[Input2]
+Active='yes'
+Name='Bitterness'
+Range=[   8.000,   250.000]
+NMFs=6
+MF1='very low','SemiTrapezoidalInf',[   8.000,   8.000,   56.400]
+MF2='low','triangular',[   8.000,   56.400,   104.800]
+MF3='average low','triangular',[   56.400,   104.800,   153.200]
+MF4='average high','triangular',[   104.800,   153.200,   201.600]
+MF5='high','triangular',[   153.200,   201.600,   250.000]
+MF6='very high','SemiTrapezoidalSup',[   201.600,   250.000,   250.000]
+
+
+[Input3]
+Active='yes'
+Name='Strength'
+Range=[   0.039,   0.136]
+NMFs=6
+MF1='very low','SemiTrapezoidalInf',[   0.039,   0.039,   0.058]
+MF2='low','triangular',[   0.039,   0.058,   0.078]
+MF3='average low','triangular',[   0.058,   0.078,   0.097]
+MF4='average high','triangular',[   0.078,   0.097,   0.117]
+MF5='high','triangular',[   0.097,   0.117,   0.136]
+MF6='very high','SemiTrapezoidalSup',[   0.117,   0.136,   0.136]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='Class'
+Range=[   1.000,   8.000]
+NMFs=0
+
+[Rules]
+6, 1, 2,    5.000, 
+2, 2, 1,    3.000, 
+5, 2, 2,    5.000, 
+4, 1, 5,    8.000, 
+3, 1, 4,    8.000, 
+6, 2, 2,    5.000, 
+2, 4, 3,    4.000, 
+2, 2, 2,    4.000, 
+4, 1, 6,    8.000, 
+4, 2, 5,    8.000, 
+2, 2, 3,    4.000, 
+3, 3, 3,    6.000, 
+3, 1, 2,    2.000, 
+3, 2, 3,    4.000, 
+5, 1, 2,    5.000, 
+4, 2, 3,    8.000, 
+2, 2, 4,    4.000, 
+3, 3, 5,    6.000, 
+4, 2, 2,    5.000, 
+2, 6, 3,    4.000, 
+2, 3, 5,    6.000, 
+5, 1, 1,    5.000, 
+3, 2, 4,    6.000, 
+4, 2, 1,    7.000, 
+2, 2, 5,    6.000, 
+4, 1, 4,    8.000, 
+5, 1, 3,    5.000, 
+2, 3, 3,    4.000, 
+3, 2, 5,    6.000, 
+5, 2, 3,    5.000, 
+2, 2, 6,    6.000, 
+3, 4, 3,    4.000, 
+4, 2, 4,    8.000, 
+2, 1, 1,    2.000, 
+1, 2, 1,    3.000, 
+1, 1, 1,    1.000, 
+3, 2, 2,    7.000, 
+2, 1, 2,    2.000, 
+4, 1, 3,    8.000, 
+1, 2, 2,    3.000, 
+4, 1, 2,    7.000, 
+4, 1, 1,    7.000, 
+1, 1, 2,    1.000, 
+2, 3, 4,    6.000, 
+3, 1, 1,    7.000, 
+3, 3, 4,    6.000, 
+
+[Exceptions]
+

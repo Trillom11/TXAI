@@ -1,0 +1,41 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='SONGS'
+Ninputs=1
+Noutputs=1
+Nrules=2
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='acoustics'
+Range=[   0.000,   0.990]
+NMFs=3
+MF1='Low','SemiTrapezoidalInf',[   0.000,   0.165,   0.495]
+MF2='Medium','trapezoidal',[   0.165,   0.495,   0.495,   0.825]
+MF3='High','SemiTrapezoidalSup',[   0.495,   0.825,   0.990]
+
+[Output1]
+Nature='fuzzy'
+Defuzzification='area'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='no'
+Active='yes'
+Name='like'
+Range=[   1.000,   2.000]
+NMFs=2
+MF1='1.0','SemiTrapezoidalInf',[   1.000,   1.000,   2.000]
+MF2='2.0','SemiTrapezoidalSup',[   1.000,   2.000,   2.000]
+
+[Rules]
+0,    1.000, 
+0,    2.000, 
+
+[Exceptions]
+

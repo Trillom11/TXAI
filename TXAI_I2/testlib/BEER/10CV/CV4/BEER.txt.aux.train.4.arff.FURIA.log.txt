@@ -1,0 +1,30 @@
+=== Run information ===
+
+Relation:     BEER
+Instances:    360
+Attributes:   4
+              Color
+              Bitterness
+              Strength
+              Class
+
+=== Classifier model (full training set) ===
+
+FURIA rules:
+===========
+
+(Bitterness in [-inf, -inf, 19, 30]) and (Color in [-inf, -inf, 4, 7]) => Class=1.0 (CF = 0.96)
+(Color in [-inf, -inf, 4, 7]) and (Bitterness in [-inf, -inf, 23, 30]) => Class=1.0 (CF = 0.96)
+(Bitterness in [-inf, -inf, 27, 31]) and (Color in [-inf, -inf, 20, 21]) and (Color in [4, 7, inf, inf]) => Class=2.0 (CF = 0.9)
+(Color in [-inf, -inf, 6, 8]) and (Bitterness in [27, 30, inf, inf]) and (Bitterness in [-inf, -inf, 52, 63]) => Class=3.0 (CF = 0.96)
+(Bitterness in [44, 50, inf, inf]) and (Strength in [-inf, -inf, 0.091, 0.092]) => Class=4.0 (CF = 0.87)
+(Color in [29, 30, inf, inf]) and (Strength in [-inf, -inf, 0.07, 0.089]) => Class=5.0 (CF = 0.96)
+(Strength in [0.091, 0.092, inf, inf]) and (Bitterness in [47, 50, inf, inf]) and (Color in [6, 9, inf, inf]) => Class=6.0 (CF = 0.96)
+(Bitterness in [62, 79, inf, inf]) and (Color in [13, 14, inf, inf]) and (Bitterness in [-inf, -inf, 85, 98]) => Class=6.0 (CF = 0.89)
+(Color in [12, 20, inf, inf]) and (Strength in [-inf, -inf, 0.051, 0.053]) and (Color in [-inf, -inf, 29, 34]) => Class=7.0 (CF = 0.96)
+(Color in [20, 23, inf, inf]) and (Strength in [-inf, -inf, 0.054, 0.082]) and (Color in [-inf, -inf, 29, 30]) => Class=7.0 (CF = 0.95)
+(Strength in [0.07, 0.087, inf, inf]) and (Bitterness in [-inf, -inf, 47, 50]) => Class=8.0 (CF = 0.96)
+
+Number of Rules : 11
+
+

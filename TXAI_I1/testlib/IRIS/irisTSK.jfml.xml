@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fuzzySystem xmlns="http://www.ieee1855.org" name="iris - TSK">
+    <knowledgeBase>
+        <fuzzyVariable name="Petal Length" scale="" domainleft="1.0" domainright="6.9" type="input">
+            <fuzzyTerm name="low" complement="false">
+                <trapezoidShape param1="1.0" param2="1.0" param3="3.95" param4="6.9"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <trapezoidShape param1="3.95" param2="6.9" param3="6.9" param4="6.9"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="Petal Width" scale="" domainleft="0.1" domainright="2.5" type="input">
+            <fuzzyTerm name="low" complement="false">
+                <trapezoidShape param1="0.1" param2="0.1" param3="0.1" param4="1.3"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="average" complement="false">
+                <triangularShape param1="0.1" param2="1.3" param3="2.5"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="high" complement="false">
+                <trapezoidShape param1="1.3" param2="2.5" param3="2.5" param4="2.5"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <tskVariable name="Class" scale="" type="IrisClass" combination="WA" defaultValue="1.0">
+            <tskTerm name="Setosa" order="1">
+                <tskValue>1.0</tskValue>
+            </tskTerm>
+            <tskTerm name="Versicolor" order="1">
+                <tskValue>2.0</tskValue>
+            </tskTerm>
+            <tskTerm name="Virginica" order="1">
+                <tskValue>3.0</tskValue>
+            </tskTerm>
+        </tskVariable>
+    </knowledgeBase>
+    <tskRuleBase name="RB1" activationMethod="PROD" andMethod="PROD" orMethod="BSUM">
+        <tskRule name="r1" andMethod="PROD" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Petal Width</variable>
+                    <term>low</term>
+                </clause>
+            </antecedent>
+            <tskConsequent>
+                <tskThen>
+                    <tskClause>
+                        <variable>Class</variable>
+                        <term>Setosa</term>
+                    </tskClause>
+                </tskThen>
+            </tskConsequent>
+        </tskRule>
+        <tskRule name="r2" andMethod="PROD" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Petal Length</variable>
+                    <term>low</term>
+                </clause>
+                <clause>
+                    <variable>Petal Width</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <tskConsequent>
+                <tskThen>
+                    <tskClause>
+                        <variable>Class</variable>
+                        <term>Versicolor</term>
+                    </tskClause>
+                </tskThen>
+            </tskConsequent>
+        </tskRule>
+        <tskRule name="r3" andMethod="PROD" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Petal Length</variable>
+                    <term>high</term>
+                </clause>
+                <clause>
+                    <variable>Petal Width</variable>
+                    <term>average</term>
+                </clause>
+            </antecedent>
+            <tskConsequent>
+                <tskThen>
+                    <tskClause>
+                        <variable>Class</variable>
+                        <term>Virginica</term>
+                    </tskClause>
+                </tskThen>
+            </tskConsequent>
+        </tskRule>
+        <tskRule name="r4" andMethod="PROD" connector="and" weight="1.0">
+            <antecedent>
+                <clause>
+                    <variable>Petal Width</variable>
+                    <term>high</term>
+                </clause>
+            </antecedent>
+            <tskConsequent>
+                <tskThen>
+                    <tskClause>
+                        <variable>Class</variable>
+                        <term>Virginica</term>
+                    </tskClause>
+                </tskThen>
+            </tskConsequent>
+        </tskRule>
+    </tskRuleBase>
+</fuzzySystem>

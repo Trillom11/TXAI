@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fuzzySystem xmlns="http://www.ieee1855.org" name="SONGS - MAMDANI">
+    <knowledgeBase>
+        <fuzzyVariable name="acoustics" scale="" domainleft="0.0" domainright="0.99" type="input">
+            <fuzzyTerm name="Low" complement="false">
+                <trapezoidShape param1="0.0" param2="0.0" param3="0.165" param4="0.495"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="Medium" complement="false">
+                <trapezoidShape param1="0.165" param2="0.495" param3="0.495" param4="0.825"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="High" complement="false">
+                <trapezoidShape param1="0.495" param2="0.825" param3="0.99" param4="0.99"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+        <fuzzyVariable name="like" scale="" domainleft="1.0" domainright="2.0" type="output" accumulation="max" defuzzifier="area" defaultValue="1.5">
+            <fuzzyTerm name="1.0" complement="false">
+                <trapezoidShape param1="1.0" param2="1.0" param3="1.0" param4="2.0"/>
+            </fuzzyTerm>
+            <fuzzyTerm name="2.0" complement="false">
+                <trapezoidShape param1="1.0" param2="2.0" param3="2.0" param4="2.0"/>
+            </fuzzyTerm>
+        </fuzzyVariable>
+    </knowledgeBase>
+    <mamdaniRuleBase name="rulebase-SONGS" activationMethod="MIN" andMethod="MIN" orMethod="MAX">
+        <rule name="rule1" andMethod="min" connector="and" weight="1.0">
+            <antecedent/>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>1.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+        <rule name="rule2" andMethod="min" connector="and" weight="1.0">
+            <antecedent/>
+            <consequent>
+                <then>
+                    <clause>
+                        <variable>like</variable>
+                        <term>2.0</term>
+                    </clause>
+                </then>
+            </consequent>
+        </rule>
+    </mamdaniRuleBase>
+</fuzzySystem>

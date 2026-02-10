@@ -1,0 +1,157 @@
+[Interface]
+DataSep=,
+
+[System]
+Name='New Knowledge Base'
+Ninputs=13
+Noutputs=1
+Nrules=0
+Nexceptions=0
+Conjunction='min'
+MissingValues='random'
+
+
+[Input1]
+Active='yes'
+Name='Alcohol'
+Range=[   11.030,   14.830]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   11.030,   11.030,   12.930]
+MF2='average','triangular',[   11.030,   12.930,   14.830]
+MF3='high','SemiTrapezoidalSup',[   12.930,   14.830,   14.830]
+
+
+[Input2]
+Active='yes'
+Name='MalicAcid'
+Range=[   0.740,   5.800]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   0.740,   0.740,   3.270]
+MF2='average','triangular',[   0.740,   3.270,   5.800]
+MF3='high','SemiTrapezoidalSup',[   3.270,   5.800,   5.800]
+
+
+[Input3]
+Active='yes'
+Name='Ash'
+Range=[   1.360,   3.230]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   1.360,   1.360,   2.295]
+MF2='average','triangular',[   1.360,   2.295,   3.230]
+MF3='high','SemiTrapezoidalSup',[   2.295,   3.230,   3.230]
+
+
+[Input4]
+Active='yes'
+Name='AlcalinityOfAsh'
+Range=[   10.600,   30.000]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   10.600,   10.600,   20.300]
+MF2='average','triangular',[   10.600,   20.300,   30.000]
+MF3='high','SemiTrapezoidalSup',[   20.300,   30.000,   30.000]
+
+
+[Input5]
+Active='yes'
+Name='Magnesium'
+Range=[   70.000,   162.000]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   70.000,   70.000,   116.000]
+MF2='average','triangular',[   70.000,   116.000,   162.000]
+MF3='high','SemiTrapezoidalSup',[   116.000,   162.000,   162.000]
+
+
+[Input6]
+Active='yes'
+Name='TotalPhenols'
+Range=[   0.980,   3.880]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   0.980,   0.980,   2.430]
+MF2='average','triangular',[   0.980,   2.430,   3.880]
+MF3='high','SemiTrapezoidalSup',[   2.430,   3.880,   3.880]
+
+
+[Input7]
+Active='yes'
+Name='flavanoids'
+Range=[   0.340,   5.080]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   0.340,   0.340,   2.710]
+MF2='average','triangular',[   0.340,   2.710,   5.080]
+MF3='high','SemiTrapezoidalSup',[   2.710,   5.080,   5.080]
+
+
+[Input8]
+Active='yes'
+Name='NonflavanoidsPhenols'
+Range=[   0.130,   0.660]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   0.130,   0.130,   0.395]
+MF2='average','triangular',[   0.130,   0.395,   0.660]
+MF3='high','SemiTrapezoidalSup',[   0.395,   0.660,   0.660]
+
+
+[Input9]
+Active='yes'
+Name='Proanthocyanins'
+Range=[   0.410,   3.580]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   0.410,   0.410,   1.995]
+MF2='average','triangular',[   0.410,   1.995,   3.580]
+MF3='high','SemiTrapezoidalSup',[   1.995,   3.580,   3.580]
+
+
+[Input10]
+Active='yes'
+Name='ColorIntensity'
+Range=[   1.280,   13.000]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   1.280,   1.280,   7.140]
+MF2='average','triangular',[   1.280,   7.140,   13.000]
+MF3='high','SemiTrapezoidalSup',[   7.140,   13.000,   13.000]
+
+
+[Input11]
+Active='yes'
+Name='Hue'
+Range=[   0.480,   1.710]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   0.480,   0.480,   1.095]
+MF2='average','triangular',[   0.480,   1.095,   1.710]
+MF3='high','SemiTrapezoidalSup',[   1.095,   1.710,   1.710]
+
+
+[Input12]
+Active='yes'
+Name='OD280/OD315'
+Range=[   1.270,   4.000]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   1.270,   1.270,   2.635]
+MF2='average','triangular',[   1.270,   2.635,   4.000]
+MF3='high','SemiTrapezoidalSup',[   2.635,   4.000,   4.000]
+
+
+[Input13]
+Active='yes'
+Name='Proline'
+Range=[   278.000,   1680.000]
+NMFs=3
+MF1='low','SemiTrapezoidalInf',[   278.000,   278.000,   979.000]
+MF2='average','triangular',[   278.000,   979.000,   1680.000]
+MF3='high','SemiTrapezoidalSup',[   979.000,   1680.000,   1680.000]
+
+[Output1]
+Nature='crisp'
+Defuzzification='MaxCrisp'
+Disjunction='max'
+DefaultValue=     -1.000
+Classif='yes'
+Active='yes'
+Name='Class'
+Range=[   1.000,   3.000]
+NMFs=0
+
+[Rules]
+
+[Exceptions]
+

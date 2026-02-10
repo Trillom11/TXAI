@@ -1,0 +1,172 @@
+{
+  "dataset" : "example",
+  "attributes" : [ {
+    "type" : "numericAtt",
+    "id" : "Sepal Length",
+    "name" : "Sepal Length",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Small",
+      "id" : 0,
+      "interval" : {
+        "left" : 4.3,
+        "right" : 5.5
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 5.5,
+        "right" : 6.7
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Large",
+      "id" : 2,
+      "interval" : {
+        "left" : 6.7,
+        "right" : 7.9
+      }
+    } ],
+    "interval" : {
+      "left" : 4.3,
+      "right" : 7.9
+    },
+    "intervalNormalized" : {
+      "left" : 4.3,
+      "right" : 7.9
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Sepal Width",
+    "name" : "Sepal Width",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Small",
+      "id" : 0,
+      "interval" : {
+        "left" : 2.0,
+        "right" : 2.8000000000000003
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 2.8000000000000003,
+        "right" : 3.6000000000000005
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Large",
+      "id" : 2,
+      "interval" : {
+        "left" : 3.6000000000000005,
+        "right" : 4.4
+      }
+    } ],
+    "interval" : {
+      "left" : 2.0,
+      "right" : 4.4
+    },
+    "intervalNormalized" : {
+      "left" : 2.0,
+      "right" : 4.4
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Petal Length",
+    "name" : "Petal Length",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Small",
+      "id" : 0,
+      "interval" : {
+        "left" : 1.0,
+        "right" : 2.966666666666667
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 2.966666666666667,
+        "right" : 4.933333333333334
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Large",
+      "id" : 2,
+      "interval" : {
+        "left" : 4.933333333333334,
+        "right" : 6.9
+      }
+    } ],
+    "interval" : {
+      "left" : 1.0,
+      "right" : 6.9
+    },
+    "intervalNormalized" : {
+      "left" : 1.0,
+      "right" : 6.9
+    },
+    "value" : 0.0
+  }, {
+    "type" : "numericAtt",
+    "id" : "Petal Width",
+    "name" : "Petal Width",
+    "properties" : [ {
+      "type" : "numericProp",
+      "name" : "Small",
+      "id" : 0,
+      "interval" : {
+        "left" : 0.1,
+        "right" : 0.8999999999999999
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Medium",
+      "id" : 1,
+      "interval" : {
+        "left" : 0.8999999999999999,
+        "right" : 1.7
+      }
+    }, {
+      "type" : "numericProp",
+      "name" : "Large",
+      "id" : 2,
+      "interval" : {
+        "left" : 1.7,
+        "right" : 2.5
+      }
+    } ],
+    "interval" : {
+      "left" : 0.1,
+      "right" : 2.5
+    },
+    "intervalNormalized" : {
+      "left" : 0.1,
+      "right" : 2.5
+    },
+    "value" : 0.0
+  } ],
+  "consequents" : [ {
+    "matrixPosition" : 1,
+    "id" : "1.0",
+    "name" : "Iris_setosa",
+    "percentageNode" : 0.0
+  }, {
+    "matrixPosition" : 2,
+    "id" : "2.0",
+    "name" : "Iris_versicolor",
+    "percentageNode" : 0.0
+  }, {
+    "matrixPosition" : 3,
+    "id" : "3.0",
+    "name" : "Iris_virginica",
+    "percentageNode" : 0.0
+  } ]
+}

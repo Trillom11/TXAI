@@ -1,0 +1,16 @@
+>>>>BEGIN
+FURIA
+  NR=9
+    acoustics:0.022:0.99;danceability:0.12:0.713;speechiness:0.02:0.101;like:1.0;instrumentalness:0.0:0.0
+    like:1.0;loudness:-5.074:-0.31
+    speechiness:0.02:0.101;like:1.0;duration:16042.0:213562.0;instrumentalness:0.0:0.0
+    acoustics:0.714:0.99;like:1.0;energy:0.01:0.374
+    speechiness:0.02:0.06;like:2.0;energy:0.477:1.0;instrumentalness:0.005:0.98;valence:0.337:0.99
+    like:2.0;loudness:-33.1:-4.803;instrumentalness:0.0:0.98;valence:0.333:0.99
+    speechiness:0.101:0.82;like:2.0;loudness:-33.1:-5.221
+    acoustics:0.0:0.144;like:2.0;loudness:-33.1:-6.156;duration:222733.0:1004627.0;instrumentalness:0.0:0.98
+    danceability:0.708:0.98;like:2.0;duration:212906.5:1004627.0;valence:0.03:0.326
+  TRL=35
+  Concepts=25
+  0.333	0.222	0.333	0.222	0.556	0.000	0.000	0.444	0.000	0.444	0.000	0.000	0.333	
+>>>>END
